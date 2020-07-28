@@ -1,2 +1,2 @@
 # VTLFramework
-VTL Istat Framework
+VTL Framework
