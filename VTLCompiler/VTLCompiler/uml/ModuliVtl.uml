@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>MODULES</ID>
+  <OriginalElement>mdl-vtl-compiler</OriginalElement>
+  <nodes>
+    <node x="219.5" y="120.0">mdl-vtl-semantic</node>
+    <node x="219.0" y="0.0">mdl-vtl-common</node>
+    <node x="227.5" y="240.0">mdl-vtl-parser</node>
+    <node x="216.0" y="60.0">mdl-vtl-interpreter</node>
+    <node x="217.5" y="180.0">mdl-vtl-sqlbuilder</node>
+    <node x="0.0" y="120.0">mdl-vtl-api</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="mdl-vtl-interpreter" target="mdl-vtl-parser">
+      <point x="-72.5" y="-0.0" />
+      <point x="156.0" y="70.0" />
+      <point x="156.0" y="250.0" />
+      <point x="-61.0" y="-0.0" />
+    </edge>
+    <edge source="mdl-vtl-sqlbuilder" target="mdl-vtl-parser">
+      <point x="0.0" y="10.0" />
+      <point x="0.0" y="-10.0" />
+    </edge>
+    <edge source="mdl-vtl-sqlbuilder" target="mdl-vtl-semantic">
+      <point x="0.0" y="-10.0" />
+      <point x="0.0" y="10.0" />
+    </edge>
+    <edge source="mdl-vtl-sqlbuilder" target="mdl-vtl-common">
+      <point x="-71.0" y="-0.0" />
+      <point x="176.0" y="190.0" />
+      <point x="176.0" y="10.0" />
+      <point x="-69.5" y="-0.0" />
+    </edge>
+    <edge source="mdl-vtl-semantic" target="mdl-vtl-parser">
+      <point x="-69.0" y="6.666666666666671" />
+      <point x="166.0" y="136.66666666666669" />
+      <point x="166.0" y="243.33333333333331" />
+      <point x="-61.0" y="-6.666666666666667" />
+    </edge>
+    <edge source="mdl-vtl-semantic" target="mdl-vtl-interpreter">
+      <point x="0.0" y="-10.0" />
+      <point x="0.0" y="10.0" />
+    </edge>
+    <edge source="mdl-vtl-api" target="mdl-vtl-sqlbuilder">
+      <point x="53.0" y="4.0" />
+      <point x="156.0" y="196.66666666666666" />
+      <point x="-71.0" y="6.666666666666657" />
+    </edge>
+    <edge source="mdl-vtl-interpreter" target="mdl-vtl-common">
+      <point x="0.0" y="-10.0" />
+      <point x="0.0" y="10.0" />
+    </edge>
+    <edge source="mdl-vtl-api" target="mdl-vtl-interpreter">
+      <point x="53.0" y="-4.0" />
+      <point x="156.0" y="63.33333333333334" />
+      <point x="-72.5" y="-6.666666666666657" />
+    </edge>
+    <edge source="mdl-vtl-semantic" target="mdl-vtl-common">
+      <point x="-69.0" y="-6.666666666666664" />
+      <point x="196.0" y="123.33333333333334" />
+      <point x="196.0" y="16.666666666666686" />
+      <point x="-69.5" y="6.666666666666686" />
+    </edge>
+    <edge source="mdl-vtl-api" target="mdl-vtl-common">
+      <point x="53.0" y="-8.0" />
+      <point x="156.0" y="3.333333333333343" />
+      <point x="-69.5" y="-6.666666666666657" />
+    </edge>
+    <edge source="mdl-vtl-api" target="mdl-vtl-parser">
+      <point x="53.0" y="8.0" />
+      <point x="156.0" y="256.6666666666667" />
+      <point x="-61.0" y="6.666666666666668" />
+    </edge>
+    <edge source="mdl-vtl-sqlbuilder" target="mdl-vtl-interpreter">
+      <point x="-71.0" y="-6.666666666666671" />
+      <point x="186.0" y="183.33333333333331" />
+      <point x="186.0" y="76.66666666666666" />
+      <point x="-72.5" y="6.666666666666657" />
+    </edge>
+    <edge source="mdl-vtl-api" target="mdl-vtl-semantic">
+      <point x="53.0" y="-0.0" />
+      <point x="-69.0" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="180.5" y="130.0" />
+  <SelectedNodes />
+  <Categories />
+</Diagram>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="288.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.validation.CheckDatasetService</node>
+    <node x="0.0" y="216.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.validation.CheckComponentService</node>
+    <node x="0.0" y="144.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.UserFunctionResultService</node>
+    <node x="0.0" y="72.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.validation.DatasetSemanticValidationService</node>
+    <node x="0.0" y="0.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.validation.ComponentSemanticValidationService</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.7000000000000006" x="733.5" y="401.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

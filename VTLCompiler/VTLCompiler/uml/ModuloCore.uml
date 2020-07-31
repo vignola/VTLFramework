@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="342.0" y="360.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.time</node>
+    <node x="194.0" y="216.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.functions</node>
+    <node x="185.0" y="288.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.persist</node>
+    <node x="0.0" y="0.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.FunctionResultService</node>
+    <node x="199.0" y="144.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.SemanticService</node>
+    <node x="0.0" y="360.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.assign</node>
+    <node x="171.0" y="360.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.clause</node>
+    <node x="0.0" y="432.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.join</node>
+    <node x="0.0" y="216.0">com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory</node>
+    <node x="0.0" y="72.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.conditional</node>
+    <node x="0.0" y="288.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.terminal</node>
+    <node x="236.0" y="0.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.StatementValidation</node>
+    <node x="0.0" y="144.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.comparison</node>
+    <node x="206.0" y="72.0">com.capgemini.istat.vtlcompiler.vtlapi.controller.EngineController</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="731.5" y="424.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.capgemini.istat.vtlengine.controller.EngineController</OriginalElement>
+  <nodes>
+    <node x="362.07043650793656" y="0.0">com.capgemini.istat.vtlengine.model.dataset.VtlType</node>
+    <node x="348.93928571428575" y="1377.0">com.capgemini.istat.vtlengine.controller.EngineController</node>
+    <node x="462.875" y="1276.0">org.springframework.web.bind.annotation.RequestMapping</node>
+    <node x="79.68928571428575" y="986.0">com.capgemini.istat.vtlengine.semantic.expression.StatementValidation</node>
+    <node x="198.37500000000003" y="444.0">com.capgemini.istat.vtlengine.model.dataset.VtlDataset</node>
+    <node x="620.875" y="1276.0">org.springframework.web.bind.annotation.RestController</node>
+    <node x="7.375" y="543.0">com.capgemini.istat.vtlengine.model.validation.SemanticMessage</node>
+    <node x="208.15634920634926" y="797.0">com.capgemini.istat.vtlengine.model.validation.ResultExpression</node>
+    <node x="0.0" y="1109.0">com.capgemini.istat.vtlengine.semantic.SemanticFactory</node>
+    <node x="193.07043650793656" y="44.0">com.capgemini.istat.vtlengine.model.dataset.VtlComponentRole</node>
+    <node x="210.875" y="1254.0">com.capgemini.istat.vtlengine.semantic.service.SemanticService</node>
+    <node x="264.82043650793656" y="167.0">com.capgemini.istat.vtlengine.model.dataset.VtlComponent</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.capgemini.istat.vtlengine.controller.EngineController" target="com.capgemini.istat.vtlengine.model.validation.ResultExpression">
+      <point x="0.0" y="-36.5" />
+      <point x="462.43928571428575" y="1352.0" />
+      <point x="452.375" y="1352.0" />
+      <point x="452.375" y="956.0" />
+      <point x="414.65634920634926" y="956.0" />
+      <point x="88.5" y="69.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.validation.ResultExpression" target="com.capgemini.istat.vtlengine.model.dataset.VtlDataset">
+      <point x="-19.66666666666663" y="-69.5" />
+      <point x="306.48968253968263" y="757.0" />
+      <point x="260.875" y="757.0" />
+      <point x="-62.5" y="146.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.semantic.expression.StatementValidation" target="com.capgemini.istat.vtlengine.model.validation.ResultExpression">
+      <point x="0.0" y="-36.5" />
+      <point x="195.18928571428575" y="966.0" />
+      <point x="237.65634920634926" y="966.0" />
+      <point x="-88.5" y="69.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.controller.EngineController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="90.80000000000001" y="-36.5" />
+      <point x="553.2392857142858" y="1352.0" />
+      <point x="682.375" y="1352.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.semantic.expression.StatementValidation" target="com.capgemini.istat.vtlengine.semantic.SemanticFactory">
+      <point x="0.0" y="36.5" />
+      <point x="195.18928571428575" y="1084.0" />
+      <point x="154.125" y="1084.0" />
+      <point x="-51.375" y="-47.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.dataset.VtlDataset" target="com.capgemini.istat.vtlengine.model.dataset.VtlComponentRole">
+      <point x="-100.0" y="-146.5" />
+      <point x="223.37500000000003" y="419.0" />
+      <point x="243.92460317460322" y="419.0" />
+      <point x="243.92460317460322" y="142.0" />
+      <point x="217.9037698412699" y="142.0" />
+      <point x="-49.66666666666666" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.dataset.VtlComponent" target="com.capgemini.istat.vtlengine.model.dataset.VtlType">
+      <point x="32.125" y="-113.5" />
+      <point x="425.44543650793656" y="142.0" />
+      <point x="409.82043650793656" y="142.0" />
+      <point x="-47.75" y="58.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.semantic.SemanticFactory" target="com.capgemini.istat.vtlengine.model.validation.ResultExpression">
+      <point x="154.125" y="-47.5" />
+      <point x="359.625" y="1084.0" />
+      <point x="327.1329365079365" y="1084.0" />
+      <point x="327.1329365079365" y="966.0" />
+      <point x="296.65634920634926" y="966.0" />
+      <point x="-29.5" y="69.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.dataset.VtlComponent" target="com.capgemini.istat.vtlengine.model.dataset.VtlDataset">
+      <point x="-21.416666666666657" y="113.5" />
+      <point x="371.9037698412699" y="419.0" />
+      <point x="373.375" y="419.0" />
+      <point x="50.0" y="-146.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.dataset.VtlComponent" target="com.capgemini.istat.vtlengine.model.dataset.VtlComponentRole">
+      <point x="-32.125" y="-113.5" />
+      <point x="361.19543650793656" y="142.0" />
+      <point x="317.23710317460325" y="142.0" />
+      <point x="49.666666666666686" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.controller.EngineController" target="com.capgemini.istat.vtlengine.semantic.service.SemanticService">
+      <point x="-45.400000000000034" y="-36.5" />
+      <point x="417.0392857142857" y="1352.0" />
+      <point x="384.125" y="1352.0" />
+      <point x="57.75" y="36.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.validation.ResultExpression" target="com.capgemini.istat.vtlengine.model.validation.SemanticMessage">
+      <point x="-98.33333333333337" y="-69.5" />
+      <point x="227.8230158730159" y="777.0" />
+      <point x="50.125" y="777.0" />
+      <point x="-42.75" y="47.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.semantic.service.SemanticService" target="com.capgemini.istat.vtlengine.semantic.SemanticFactory">
+      <point x="0.0" y="-36.5" />
+      <point x="326.375" y="1229.0" />
+      <point x="308.25" y="1229.0" />
+      <point x="102.75" y="47.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.controller.EngineController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="45.39999999999998" y="-36.5" />
+      <point x="507.8392857142857" y="1352.0" />
+      <point x="531.875" y="1352.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.dataset.VtlDataset" target="com.capgemini.istat.vtlengine.model.dataset.VtlComponent">
+      <point x="0.0" y="-146.5" />
+      <point x="323.375" y="419.0" />
+      <point x="329.07043650793656" y="419.0" />
+      <point x="-64.25" y="113.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.semantic.service.SemanticService" target="com.capgemini.istat.vtlengine.model.validation.ResultExpression">
+      <point x="77.0" y="-36.5" />
+      <point x="403.375" y="1229.0" />
+      <point x="422.375" y="1229.0" />
+      <point x="422.375" y="966.0" />
+      <point x="355.65634920634926" y="966.0" />
+      <point x="29.5" y="69.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.semantic.SemanticFactory" target="com.capgemini.istat.vtlengine.semantic.expression.StatementValidation">
+      <point x="-154.125" y="-47.5" />
+      <point x="51.375" y="1084.0" />
+      <point x="118.18928571428575" y="1084.0" />
+      <point x="-77.0" y="36.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.validation.ResultExpression" target="com.capgemini.istat.vtlengine.model.dataset.VtlComponent">
+      <point x="98.33333333333337" y="-69.5" />
+      <point x="424.48968253968263" y="777.0" />
+      <point x="469.875" y="777.0" />
+      <point x="469.875" y="419.0" />
+      <point x="500.40376984126993" y="419.0" />
+      <point x="107.08333333333337" y="113.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="538.0" y="936.5" />
+  <SelectedNodes>
+    <node>com.capgemini.istat.vtlengine.model.dataset.VtlComponent</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

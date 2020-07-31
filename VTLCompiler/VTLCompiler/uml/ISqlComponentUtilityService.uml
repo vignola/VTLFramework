@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.ISqlComponentUtilityService</OriginalElement>
+  <nodes>
+    <node x="0.0" y="154.0">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.sqlserver.SqlServerComponentUtilityService</node>
+    <node x="843.0" y="154.0">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.oracle.OracleSqlComponentUtilityService</node>
+    <node x="288.0" y="154.0">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.postgresql.PostgreSqlComponentUtilityService</node>
+    <node x="430.25" y="77.0">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.CommonSqlComponentUtilityService</node>
+    <node x="447.75" y="0.0">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.ISqlComponentUtilityService</node>
+    <node x="583.0" y="154.0">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.mysql.MySqlComponentUtilityService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.oracle.OracleSqlComponentUtilityService" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.CommonSqlComponentUtilityService">
+      <point x="0.0" y="-13.5" />
+      <point x="977.0" y="124.0" />
+      <point x="664.75" y="124.0" />
+      <point x="100.5" y="13.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.sqlserver.SqlServerComponentUtilityService" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.CommonSqlComponentUtilityService">
+      <point x="0.0" y="-13.5" />
+      <point x="134.0" y="124.0" />
+      <point x="463.75" y="124.0" />
+      <point x="-100.5" y="13.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.postgresql.PostgreSqlComponentUtilityService" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.CommonSqlComponentUtilityService">
+      <point x="0.0" y="-13.5" />
+      <point x="425.5" y="134.0" />
+      <point x="530.75" y="134.0" />
+      <point x="-33.5" y="13.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.mysql.MySqlComponentUtilityService" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.CommonSqlComponentUtilityService">
+      <point x="0.0" y="-13.5" />
+      <point x="703.0" y="134.0" />
+      <point x="597.75" y="134.0" />
+      <point x="33.5" y="13.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.CommonSqlComponentUtilityService" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.utility.ISqlComponentUtilityService">
+      <point x="0.0" y="-13.5" />
+      <point x="0.0" y="13.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="484.0" y="95.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

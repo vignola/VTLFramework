@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="307.0" y="146.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.time</node>
+    <node x="444.0" y="48.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.functions</node>
+    <node x="342.0" y="415.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.persist</node>
+    <node x="27.0" y="212.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.SemanticService</node>
+    <node x="568.0" y="348.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.assign</node>
+    <node x="460.0" y="227.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.clause</node>
+    <node x="190.0" y="289.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.join</node>
+    <node x="343.0" y="295.0">com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory</node>
+    <node x="468.0" y="506.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.conditional</node>
+    <node x="126.0" y="446.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.terminal</node>
+    <node x="257.0" y="574.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.StatementValidation</node>
+    <node x="126.0" y="122.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.general</node>
+    <node x="579.0" y="159.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.define</node>
+    <node x="249.0" y="0.0">com.capgemini.istat.vtlcompiler.vtlsemantic.expression.comparison</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.clause">
+      <point x="-18.458225771073344" y="0.0" />
+      <point x="-18.45822577107338" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.general">
+      <point x="-16.40580148696644" y="7.105427357601002E-15" />
+      <point x="-16.405801486966425" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.StatementValidation">
+      <point x="10.327619737794919" y="0.0" />
+      <point x="10.327619737794919" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.SemanticService" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="0.16312947805721478" y="-3.9966722124023164" />
+      <point x="0.1631294780572361" y="-3.9966722124023093" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.assign">
+      <point x="29.05397715400848" y="0.0" />
+      <point x="29.053977154008464" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.join" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="0.0" y="-6.003670816505178" />
+      <point x="7.105427357601002E-15" y="-6.003670816505178" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.general" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="16.405801486966425" y="0.0" />
+      <point x="16.405801486966453" y="-7.105427357601002E-15" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.comparison">
+      <point x="-10.469981439683359" y="7.105427357601002E-15" />
+      <point x="-10.469981439683352" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.conditional" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="-11.77055031700587" y="0.0" />
+      <point x="-11.77055031700587" y="7.105427357601002E-15" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.time">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.assign" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="-29.053977154008464" y="0.0" />
+      <point x="-29.05397715400848" y="7.105427357601002E-15" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.define">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.persist">
+      <point x="10.028085560065783" y="-7.105427357601002E-15" />
+      <point x="10.028085560065783" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.terminal">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.conditional">
+      <point x="11.770550317005863" y="-7.105427357601002E-15" />
+      <point x="11.770550317005885" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.StatementValidation" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.functions">
+      <point x="-10.78846718839646" y="0.0" />
+      <point x="-10.788467188396446" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.clause" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.persist" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory" target="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.join">
+      <point x="-7.105427357601002E-15" y="6.003670816505185" />
+      <point x="0.0" y="6.003670816505185" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.comparison" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="10.469981439683352" y="0.0" />
+      <point x="10.469981439683359" y="-7.105427357601002E-15" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.expression.functions" target="com.capgemini.istat.vtlcompiler.vtlsemantic.SemanticFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="273.5" y="260.0" />
+  <SelectedNodes>
+    <node>com.capgemini.istat.vtlcompiler.vtlsemantic.service.SemanticService</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

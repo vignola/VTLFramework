@@ -1,0 +1,21 @@
+package com.capgemini.istat.vtlcompiler.vtlcommon.model;
+
+public enum KeyVariables {
+    REQUEST_UUID,
+    DATASET_MEMBERSHIP,
+    DATASET_IN_CLAUSE,
+    SELECT_CLAUSE,
+    COMPONENT_CLAUSE,
+    COMPONENT_ALIAS,
+    MEMBERSHIP_IN_CLAUSE,
+    JOIN_OPERATOR,
+    JOIN_RESULT,
+    FILTER_CLAUSE,
+    PARAMETER_MAP,
+    PARAMETER_USED,
+    SQL_TYPE_ORACLE,
+    SQL_TYPE_MYSQL,
+    SQL_TYPE_POSTGRES,
+    SQL_TYPE_SQL_SERVER
+
+}

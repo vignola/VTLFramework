@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="196.10906862745094" y="346.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.FunctionResultService</node>
+    <node x="0.0" y="188.0">com.capgemini.istat.vtlcompiler.vtlcommon.service.DatasetUtilityService</node>
+    <node x="46.60784313725492" y="267.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.DatasetResultService</node>
+    <node x="132.49877450980387" y="0.0">com.capgemini.istat.vtlcompiler.vtlcommon.service.VtlTypeUtilityService</node>
+    <node x="394.0" y="188.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.ComponentResultService</node>
+    <node x="131.06127450980392" y="89.0">com.capgemini.istat.vtlcompiler.vtlcommon.service.ComponentUtilityService</node>
+    <node x="187.0" y="188.0">com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.UserFunctionResultService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.FunctionResultService" target="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.ComponentResultService">
+      <point x="68.33333333333331" y="-14.5" />
+      <point x="346.44240196078425" y="326.0" />
+      <point x="492.9828431372549" y="326.0" />
+      <point x="492.9828431372549" y="242.0" />
+      <point x="529.75" y="242.0" />
+      <point x="45.25" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.DatasetResultService" target="com.capgemini.istat.vtlcompiler.vtlcommon.service.ComponentUtilityService">
+      <point x="19.5" y="-14.5" />
+      <point x="144.10784313725492" y="242.0" />
+      <point x="165.5" y="242.0" />
+      <point x="165.5" y="158.0" />
+      <point x="187.31127450980392" y="158.0" />
+      <point x="-33.75" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.FunctionResultService" target="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.DatasetResultService">
+      <point x="-41.0" y="-14.5" />
+      <point x="237.10906862745094" y="316.0" />
+      <point x="163.60784313725492" y="316.0" />
+      <point x="39.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.service.DatasetUtilityService" target="com.capgemini.istat.vtlcompiler.vtlcommon.service.ComponentUtilityService">
+      <point x="58.125" y="-14.5" />
+      <point x="135.625" y="148.0" />
+      <point x="164.81127450980392" y="148.0" />
+      <point x="-56.25" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.service.ComponentUtilityService" target="com.capgemini.istat.vtlcompiler.vtlcommon.service.VtlTypeUtilityService">
+      <point x="-45.00000000000003" y="-14.5" />
+      <point x="176.0612745098039" y="69.0" />
+      <point x="197.49877450980387" y="69.0" />
+      <point x="-13.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.FunctionResultService" target="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.UserFunctionResultService">
+      <point x="-13.666666666666629" y="-14.5" />
+      <point x="264.4424019607843" y="326.0" />
+      <point x="277.9828431372549" y="326.0" />
+      <point x="277.9828431372549" y="242.0" />
+      <point x="233.75" y="242.0" />
+      <point x="-46.75" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.ComponentResultService" target="com.capgemini.istat.vtlcompiler.vtlcommon.service.ComponentUtilityService">
+      <point x="-67.875" y="-14.5" />
+      <point x="416.625" y="158.0" />
+      <point x="277.31127450980387" y="158.0" />
+      <point x="56.24999999999997" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.UserFunctionResultService" target="com.capgemini.istat.vtlcompiler.vtlcommon.service.ComponentUtilityService">
+      <point x="-46.75" y="-14.5" />
+      <point x="233.75" y="168.0" />
+      <point x="232.31127450980392" y="168.0" />
+      <point x="11.25" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.ComponentResultService" target="com.capgemini.istat.vtlcompiler.vtlcommon.service.VtlTypeUtilityService">
+      <point x="22.625" y="-14.5" />
+      <point x="507.125" y="168.0" />
+      <point x="524.25" y="168.0" />
+      <point x="524.25" y="59.0" />
+      <point x="249.49877450980387" y="59.0" />
+      <point x="39.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.service.DatasetUtilityService" target="com.capgemini.istat.vtlcompiler.vtlcommon.service.VtlTypeUtilityService">
+      <point x="-58.125" y="-14.5" />
+      <point x="19.375" y="168.0" />
+      <point x="38.62377450980392" y="168.0" />
+      <point x="38.62377450980392" y="49.0" />
+      <point x="145.49877450980387" y="49.0" />
+      <point x="-65.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsemantic.service.result.DatasetResultService" target="com.capgemini.istat.vtlcompiler.vtlcommon.service.DatasetUtilityService">
+      <point x="-19.5" y="-14.5" />
+      <point x="105.10784313725492" y="242.0" />
+      <point x="116.25" y="242.0" />
+      <point x="38.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="287.5" y="187.5" />
+  <SelectedNodes>
+    <node>com.capgemini.istat.vtlcompiler.vtlcommon.service.DatasetUtilityService</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

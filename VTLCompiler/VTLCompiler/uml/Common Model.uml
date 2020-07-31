@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="484.0" y="675.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.clause</node>
+    <node x="658.0" y="319.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.set</node>
+    <node x="456.0" y="328.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.conditional</node>
+    <node x="490.0" y="260.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time</node>
+    <node x="59.0" y="252.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlPersist</node>
+    <node x="234.0" y="326.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlStatement</node>
+    <node x="464.0" y="0.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.numeric</node>
+    <node x="482.0" y="410.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression</node>
+    <node x="745.0" y="463.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlParenthesisExpression</node>
+    <node x="436.0" y="565.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.hierarchy</node>
+    <node x="349.0" y="185.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison</node>
+    <node x="329.0" y="418.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.join</node>
+    <node x="766.0" y="160.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.booleans</node>
+    <node x="557.0" y="172.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function</node>
+    <node x="661.0" y="0.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.string</node>
+    <node x="624.0" y="607.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlMembership</node>
+    <node x="173.0" y="126.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlAssignment</node>
+    <node x="0.0" y="455.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlStatementExpression</node>
+    <node x="239.0" y="492.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.generic</node>
+    <node x="550.0" y="478.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.validation</node>
+    <node x="303.0" y="633.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.grouping</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.grouping" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlAssignment" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlStatement">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.set" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.join" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlStatementExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlStatement">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlStatement" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.conditional" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.generic" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.hierarchy" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlMembership" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.booleans" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlPersist" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.statement.VtlStatement">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.validation" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.numeric" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlParenthesisExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.conditional" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.set" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.string" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.clause" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="477.5" y="404.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

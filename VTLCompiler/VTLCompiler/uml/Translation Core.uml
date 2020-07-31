@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory</OriginalElement>
+  <nodes>
+    <node x="0.0" y="721.8074789151676">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.set</node>
+    <node x="330.2806903526731" y="332.71934598785106">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.terminal</node>
+    <node x="739.9756300479075" y="573.7415372312026">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.general</node>
+    <node x="870.4849276896464" y="348.7503595806784">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.clause</node>
+    <node x="192.64422520824235" y="378.6713063857461">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.assign</node>
+    <node x="376.5709720029216" y="1110.5470308411102">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService</node>
+    <node x="748.144563901692" y="870.1745780965325">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.join</node>
+    <node x="234.65116001254623" y="1082.0252466133957">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.binary</node>
+    <node x="665.478874309191" y="987.2847931453418">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.persist</node>
+    <node x="763.5025255471937" y="726.666133981276">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.grouping</node>
+    <node x="13.433686926407518" y="858.9283336850083">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.generic</node>
+    <node x="83.29519389592224" y="470.07968134455473">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.unary</node>
+    <node x="89.78968852888124" y="994.2730843025588">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.conditional</node>
+    <node x="637.1046935803292" y="439.32316069259537">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.comparison</node>
+    <node x="477.348379737682" y="208.0">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.StatementTranslation</node>
+    <node x="17.443833539211198" y="591.306243308079">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.time</node>
+    <node x="540.8410431833895" y="1074.686296364374">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.analytic</node>
+    <node x="484.51665430838705" y="349.0429136646016">com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.clause" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="11.848847729152396" y="0.0" />
+      <point x="11.848847729152368" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.generic" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.persist" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="2.0302774462879825" y="4.569242113424764" />
+      <point x="2.030277446287979" y="4.569242113424764" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.assign" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="-5.176064950378134" y="0.0" />
+      <point x="-5.17606495037814" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.time" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="4.051099292772733" y="-2.9306303963645917" />
+      <point x="4.051099292772754" y="-2.93063039636462" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.binary" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="-10.642159200344906" y="0.0" />
+      <point x="-10.642159200344949" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.grouping" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="-7.062329794916366" y="0.0" />
+      <point x="-7.0623297949163275" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.terminal" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="4.988524172756669" y="-0.338565470511071" />
+      <point x="4.988524172756669" y="-0.338565470511071" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.unary" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="-25.263186057817506" y="0.0" />
+      <point x="-25.263186057817663" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.general">
+      <point x="14.679047826366059" y="5.6843418860808015E-14" />
+      <point x="14.679047826366059" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.time">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.join" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="-11.010539184950062" y="0.0" />
+      <point x="-11.01053918495019" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.join" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="-8.884749652784421" y="0.0" />
+      <point x="-8.884749652784354" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.set" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="-7.151839433580847" y="0.0" />
+      <point x="-7.151839433580944" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.conditional">
+      <point x="11.751248611876406" y="0.0" />
+      <point x="11.751248611876463" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.analytic" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.terminal">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.conditional" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.set">
+      <point x="16.957726105353714" y="0.0" />
+      <point x="16.957726105353743" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.generic">
+      <point x="13.802462760833663" y="0.0" />
+      <point x="13.802462760833635" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.binary" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="0.0" y="4.576606540350497" />
+      <point x="8.881784197001252E-16" y="4.576606540350497" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.analytic" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="0.0" y="-4.616966477253754" />
+      <point x="0.0" y="-4.616966477253811" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.StatementTranslation">
+      <point x="-10.024267862037604" y="0.0" />
+      <point x="-10.024267862037647" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.comparison">
+      <point x="19.44799655261528" y="5.6843418860808015E-14" />
+      <point x="19.447996552615336" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.generic" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="2.800621041390059" y="-4.142043189359953" />
+      <point x="2.800621041390066" y="-4.142043189359981" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.assign" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.persist" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.join">
+      <point x="11.010539184950062" y="0.0" />
+      <point x="11.010539184950176" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.conditional" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="-13.247448268737628" y="0.0" />
+      <point x="-13.24744826873776" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.unary">
+      <point x="25.26318605781782" y="-5.6843418860808015E-14" />
+      <point x="25.26318605781762" y="2.8421709430404007E-14" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.set" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.persist">
+      <point x="10.326659792929263" y="0.0" />
+      <point x="10.326659792929263" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.analytic">
+      <point x="10.017807457015806" y="0.0" />
+      <point x="10.017807457015806" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.comparison" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="-19.447996552615336" y="0.0" />
+      <point x="-19.447996552615308" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.comparison" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="4.654138166775624" y="1.8272925120414243" />
+      <point x="4.65413816677561" y="1.8272925120414243" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.StatementTranslation" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="10.024267862037618" y="0.0" />
+      <point x="10.024267862037618" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.general" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="4.172643056924869" y="2.754823028707449" />
+      <point x="4.172643056924851" y="2.754823028707449" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.clause">
+      <point x="-11.848847729152453" y="0.0" />
+      <point x="-11.848847729152453" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.assign">
+      <point x="0.0" y="7.032131450671216" />
+      <point x="0.0" y="7.032131450671272" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.grouping">
+      <point x="12.292962281088023" y="0.0" />
+      <point x="12.292962281087966" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.unary" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.service.sqlresult.ISqlResultService">
+      <point x="-5.543980769248151" y="0.0" />
+      <point x="-5.543980769248081" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.general" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.grouping" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory">
+      <point x="-12.292962281088023" y="0.0" />
+      <point x="-12.292962281088052" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.TranslationFactory" target="com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.binary">
+      <point x="10.642159200344935" y="0.0" />
+      <point x="10.642159200344992" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="454.5" y="705.0" />
+  <SelectedNodes>
+    <node>com.capgemini.istat.vtlcompiler.vtlsqlbuilder.expression.StatementTranslation</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

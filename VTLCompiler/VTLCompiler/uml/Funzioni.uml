@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="569.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time.VtlTimeUnaryWithOneParameterExpression</node>
+    <node x="1540.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison.VtlComparisonUnaryWithOneParameterExpression</node>
+    <node x="2096.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time.VtlCurrentDate</node>
+    <node x="3416.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.booleans.VtlBooleanBinaryExpression</node>
+    <node x="4521.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time.VtlTimeUnaryExpression</node>
+    <node x="5080.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.clause.VtlClauseOperator</node>
+    <node x="1894.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison.VtlBetweenExpression</node>
+    <node x="4287.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.numeric.VtlNumericUnaryExpression</node>
+    <node x="3649.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryExpression</node>
+    <node x="3837.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.booleans.VtlBooleanUnaryExpression</node>
+    <node x="4068.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.string.VtlStringUnaryExpression</node>
+    <node x="335.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryWithOneParameter</node>
+    <node x="0.0" y="0.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression</node>
+    <node x="4900.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlCastExpression</node>
+    <node x="3164.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.conditional.VtlConditionalBinaryExpression</node>
+    <node x="4736.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.conditional.VtlIfExpression</node>
+    <node x="2452.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison.VtlComparisonBinaryExpression</node>
+    <node x="885.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.numeric.VtlNumericUnaryWithOneParameterExpression</node>
+    <node x="2707.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.numeric.VtlNumericBinaryExpression</node>
+    <node x="1220.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.string.VtlStringUnaryWithOneParameterExpression</node>
+    <node x="2943.0" y="140.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.string.VtlStringBinaryExpression</node>
+    <node x="2262.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlBinaryExpression</node>
+    <node x="157.0" y="70.0">com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.join.VtlJoinExpression</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlBinaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="2337.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison.VtlComparisonUnaryWithOneParameterExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryWithOneParameter">
+      <point x="0.0" y="0.0" />
+      <point x="1697.0" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.booleans.VtlBooleanUnaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="3932.5" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="3723.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.numeric.VtlNumericBinaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlBinaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="2805.0" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison.VtlBetweenExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="1975.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.string.VtlStringUnaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="4157.5" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time.VtlTimeUnaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="4608.5" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.clause.VtlClauseOperator" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="5152.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.string.VtlStringBinaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlBinaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="3033.5" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryWithOneParameter" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="432.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.booleans.VtlBooleanBinaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlBinaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="3512.5" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.numeric.VtlNumericUnaryWithOneParameterExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryWithOneParameter">
+      <point x="0.0" y="0.0" />
+      <point x="1032.5" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time.VtlTimeUnaryWithOneParameterExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryWithOneParameter">
+      <point x="0.0" y="0.0" />
+      <point x="707.0" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.comparison.VtlComparisonBinaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlBinaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="2559.5" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.numeric.VtlNumericUnaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="4384.0" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.conditional.VtlIfExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="4798.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.conditional.VtlConditionalBinaryExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlBinaryExpression">
+      <point x="0.0" y="0.0" />
+      <point x="3270.0" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlCastExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="4970.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.time.VtlCurrentDate" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="2159.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.string.VtlStringUnaryWithOneParameterExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.function.VtlUnaryWithOneParameter">
+      <point x="0.0" y="0.0" />
+      <point x="1360.0" y="85.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.join.VtlJoinExpression" target="com.capgemini.istat.vtlcompiler.vtlcommon.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="0.0" />
+      <point x="226.0" y="15.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4591370558375635" x="1783.6252072968489" y="540.9646323986462" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

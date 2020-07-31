@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.capgemini.istat.vtlengine.controller.EngineController</OriginalElement>
+  <nodes>
+    <node x="455.5" y="568.0">com.capgemini.istat.vtlengine.visitor.StartVisitor</node>
+    <node x="509.92604166666666" y="669.0">com.capgemini.istat.vtlengine.service.EngineService</node>
+    <node x="311.5" y="579.0">com.capgemini.istat.vtlengine.service.IEngineService</node>
+    <node x="124.77604166666669" y="669.0">com.capgemini.istat.vtlengine.controller.EngineController</node>
+    <node x="444.75" y="290.0">com.capgemini.istat.vtlengine.model.vtl.statement.VtlStatement</node>
+    <node x="-74.6572916666666" y="212.49999999999997">com.capgemini.istat.vtlengine.operator.Operator</node>
+    <node x="153.5" y="579.0">org.springframework.web.bind.annotation.RequestMapping</node>
+    <node x="475.25" y="167.0">com.capgemini.istat.vtlengine.model.vtl.expression.VtlExpression</node>
+    <node x="10.5" y="579.0">org.springframework.web.bind.annotation.RestController</node>
+    <node x="433.24999999999994" y="467.0">com.capgemini.istat.vtlengine.visitor.statement.StatementVisitor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.capgemini.istat.vtlengine.visitor.StartVisitor" target="com.capgemini.istat.vtlengine.visitor.statement.StatementVisitor">
+      <point x="0.0" y="-25.5" />
+      <point x="583.5" y="543.0" />
+      <point x="607.25" y="543.0" />
+      <point x="58.0" y="25.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.controller.EngineController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="-45.400000000000034" y="-36.5" />
+      <point x="192.87604166666665" y="639.0" />
+      <point x="72.0" y="639.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.visitor.statement.StatementVisitor" target="com.capgemini.istat.vtlengine.model.vtl.statement.VtlStatement">
+      <point x="58.0" y="-25.5" />
+      <point x="607.25" y="447.0" />
+      <point x="566.6666666666667" y="447.0" />
+      <point x="17.416666666666686" y="58.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.service.IEngineService" target="com.capgemini.istat.vtlengine.model.vtl.statement.VtlStatement">
+      <point x="0.0" y="-14.5" />
+      <point x="373.5" y="437.0" />
+      <point x="497.0" y="437.0" />
+      <point x="-52.25" y="58.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.controller.EngineController" target="com.capgemini.istat.vtlengine.model.vtl.statement.VtlStatement">
+      <point x="-90.80000000000007" y="-36.5" />
+      <point x="147.47604166666662" y="649.0" />
+      <point x="0.0" y="649.0" />
+      <point x="0.0" y="427.0" />
+      <point x="462.16666666666663" y="427.0" />
+      <point x="-87.08333333333334" y="58.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.controller.EngineController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="0.0" y="-36.5" />
+      <point x="238.27604166666669" y="649.0" />
+      <point x="222.5" y="649.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.service.EngineService" target="com.capgemini.istat.vtlengine.service.IEngineService">
+      <point x="-80.25000000000003" y="-36.5" />
+      <point x="536.6760416666666" y="649.0" />
+      <point x="414.8333333333333" y="649.0" />
+      <point x="41.333333333333314" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.service.EngineService" target="com.capgemini.istat.vtlengine.visitor.StartVisitor">
+      <point x="-26.75000000000003" y="-36.5" />
+      <point x="590.1760416666666" y="639.0" />
+      <point x="519.5" y="639.0" />
+      <point x="-64.0" y="25.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.vtl.expression.VtlExpression" target="com.capgemini.istat.vtlengine.operator.Operator">
+      <point x="-37.0" y="-36.5" />
+      <point x="512.25" y="142.0" />
+      <point x="454.0927083333333" y="142.0" />
+      <point x="-88.75" y="58.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.controller.EngineController" target="com.capgemini.istat.vtlengine.service.IEngineService">
+      <point x="90.79999999999995" y="-36.5" />
+      <point x="329.07604166666664" y="649.0" />
+      <point x="373.5" y="649.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.service.EngineService" target="com.capgemini.istat.vtlengine.model.vtl.statement.VtlStatement">
+      <point x="80.24999999999994" y="-36.5" />
+      <point x="697.1760416666666" y="649.0" />
+      <point x="722.0" y="649.0" />
+      <point x="722.0" y="427.0" />
+      <point x="636.3333333333333" y="427.0" />
+      <point x="87.08333333333331" y="58.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.visitor.StartVisitor" target="com.capgemini.istat.vtlengine.model.vtl.statement.VtlStatement">
+      <point x="85.33333333333331" y="-25.5" />
+      <point x="668.8333333333333" y="543.0" />
+      <point x="693.7041666666667" y="543.0" />
+      <point x="693.7041666666667" y="437.0" />
+      <point x="601.5" y="437.0" />
+      <point x="52.25" y="58.5" />
+    </edge>
+    <edge source="com.capgemini.istat.vtlengine.model.vtl.statement.VtlStatement" target="com.capgemini.istat.vtlengine.model.vtl.expression.VtlExpression">
+      <point x="0.0" y="-58.5" />
+      <point x="0.0" y="36.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="355.0" y="179.58333333333331" />
+  <SelectedNodes>
+    <node>com.capgemini.istat.vtlengine.operator.Operator</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
