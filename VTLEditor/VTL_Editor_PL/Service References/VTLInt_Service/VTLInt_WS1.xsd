@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDataStructureComponentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataStructureComponentInfo" nillable="true" type="tns:DataStructureComponentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataStructureComponentInfo" nillable="true" type="tns:ArrayOfDataStructureComponentInfo" />
+  <xs:complexType name="DataStructureComponentInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseComponentInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="datastructure_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="role" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="valuedomain_id" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataStructureComponentInfo" nillable="true" type="tns:DataStructureComponentInfo" />
+  <xs:complexType name="BaseComponentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValueDomainInfo" nillable="true" type="tns:ValueDomainInfoInDataStructure" />
+      <xs:element minOccurs="0" name="datastructure_id_ref" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="tns:ArrayOfLocalizedValue" />
+      <xs:element minOccurs="0" name="seq_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vtlId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseComponentInfo" nillable="true" type="tns:BaseComponentInfo" />
+  <xs:complexType name="ValueDomainInfoInDataStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="names" nillable="true" type="tns:ArrayOfLocalizedValue" />
+      <xs:element minOccurs="0" name="role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="values" nillable="true" type="tns:ArrayOfBaseArtefactInfo" />
+      <xs:element minOccurs="0" name="vd_agency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vd_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vd_version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValueDomainInfoInDataStructure" nillable="true" type="tns:ValueDomainInfoInDataStructure" />
+  <xs:complexType name="ArrayOfLocalizedValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LocalizedValue" nillable="true" type="tns:LocalizedValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLocalizedValue" nillable="true" type="tns:ArrayOfLocalizedValue" />
+  <xs:complexType name="LocalizedValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="lang" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocalizedValue" nillable="true" type="tns:LocalizedValue" />
+  <xs:complexType name="ArrayOfBaseArtefactInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseArtefactInfo" nillable="true" type="tns:BaseArtefactInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBaseArtefactInfo" nillable="true" type="tns:ArrayOfBaseArtefactInfo" />
+  <xs:complexType name="BaseArtefactInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataStructureDetails" nillable="true" type="tns:BaseArtefactInfo.DataStructureInformation" />
+      <xs:element minOccurs="0" name="creationType" type="xs:int" />
+      <xs:element minOccurs="0" name="dataSource" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="description" nillable="true" type="tns:ArrayOfLocalizedValue" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="tns:ArrayOfLocalizedValue" />
+      <xs:element minOccurs="0" name="sdmxAgency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sdmxId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sdmxVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vtlId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseArtefactInfo" nillable="true" type="tns:BaseArtefactInfo" />
+  <xs:complexType name="BaseArtefactInfo.DataStructureInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Components" nillable="true" type="tns:ArrayOfBaseComponentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseArtefactInfo.DataStructureInformation" nillable="true" type="tns:BaseArtefactInfo.DataStructureInformation" />
+  <xs:complexType name="ArrayOfBaseComponentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseComponentInfo" nillable="true" type="tns:BaseComponentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBaseComponentInfo" nillable="true" type="tns:ArrayOfBaseComponentInfo" />
+  <xs:complexType name="ArrayOfDataSetInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataSetInfo" nillable="true" type="tns:DataSetInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataSetInfo" nillable="true" type="tns:ArrayOfDataSetInfo" />
+  <xs:complexType name="DataSetInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseArtefactInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="datastructure_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="isCollected" type="xs:boolean" />
+          <xs:element minOccurs="0" name="sdmx_DataStructure_agency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sdmx_DataStructure_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sdmx_DataStructure_version" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataSetInfo" nillable="true" type="tns:DataSetInfo" />
+  <xs:complexType name="ArrayOfValueDomainInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ValueDomainInfo" nillable="true" type="tns:ValueDomainInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValueDomainInfo" nillable="true" type="tns:ArrayOfValueDomainInfo" />
+  <xs:complexType name="ValueDomainInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseArtefactInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="data_type" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="isEnumerated" type="xs:boolean" />
+          <xs:element minOccurs="0" name="value_restriction" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValueDomainInfo" nillable="true" type="tns:ValueDomainInfo" />
+  <xs:complexType name="ArrayOfValueDomainSubsetInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ValueDomainSubsetInfo" nillable="true" type="tns:ValueDomainSubsetInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValueDomainSubsetInfo" nillable="true" type="tns:ArrayOfValueDomainSubsetInfo" />
+  <xs:complexType name="ValueDomainSubsetInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseArtefactInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="isEnumerated" type="xs:boolean" />
+          <xs:element minOccurs="0" name="set_criterion_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vd_id_ref" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValueDomainSubsetInfo" nillable="true" type="tns:ValueDomainSubsetInfo" />
+  <xs:complexType name="ArrayOfBaseUserDefinedOperator">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseUserDefinedOperator" nillable="true" type="tns:BaseUserDefinedOperator" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBaseUserDefinedOperator" nillable="true" type="tns:ArrayOfBaseUserDefinedOperator" />
+  <xs:complexType name="BaseUserDefinedOperator">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OperatorBody" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OperatorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Operator_Seq_Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Operator_Type" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseUserDefinedOperator" nillable="true" type="tns:BaseUserDefinedOperator" />
+</xs:schema>

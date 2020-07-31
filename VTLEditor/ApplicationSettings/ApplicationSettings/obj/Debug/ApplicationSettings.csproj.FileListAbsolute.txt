@@ -1,0 +1,43 @@
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Debug\ApplicationSettings.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Debug\ApplicationSettings.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Debug\Oracle.ManagedDataAccess.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ApplicationSettings.pdb
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.pdb
+H:\SOURCE_CODE\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\bin\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\bin\Debug\ApplicationSettings.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ApplicationSettings.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ApplicationSettings.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csprojAssemblyReference.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csproj.CoreCompileInputs.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.csproj.CopyComplete
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ApplicationSettings\ApplicationSettings\obj\Debug\ApplicationSettings.pdb

@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TabularWriters</name>
+    </assembly>
+    <members>
+        <member name="T:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter">
+            <summary>
+                A fast binary tabular writer.
+            </summary>
+            <example>
+                A sample in C# for <see cref="T:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter" />
+                <code source="..\ReUsingExamples\DataWriting\ReUsingBinaryTabularWriter.cs" lang="cs" />
+            </example>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter._columns">
+            <summary>
+                The column list
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter._dataFile">
+            <summary>
+                The data file
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter._index">
+            <summary>
+                The index of the <see cref="F:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter._dataFile" /> . It holds the start position of each 1024 record page.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter._closed">
+            <summary>
+                A value indicating whether it is closed
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter._dataStarted">
+            <summary>
+                A value indicating whether a <see cref="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.StartRecord" /> has been called
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter._totalRecordsWritten">
+            <summary>
+                The number of records written
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.#ctor(System.IO.BinaryWriter,System.Collections.Generic.IList{System.Int64})">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter" /> class.
+            </summary>
+            <param name="dataFile">
+                The data file
+            </param>
+            <param name="index">
+                The <paramref name="dataFile" /> index. It holds the start position of each 1024 record page.
+            </param>
+        </member>
+        <member name="P:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.TotalRecordsWritten">
+            <summary>
+                Gets the Total number of rows written
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.Close">
+            <summary>
+                Close this writer and commit the changes.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.Dispose">
+            <summary>
+                Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.StartColumns">
+            <summary>
+                Start of the column definition. This could be the CSV header or a database table.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.StartRecord">
+            <summary>
+                Start of a record. This could be a new line in a CSV file or a new record in a database table.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.WriteCellAttributeValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" /> .
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellAttributeValue(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.WriteCellKeyValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" /> .
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellKeyValue(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.WriteCellMeasureValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" /> .
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellMeasureValue(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.WriteColumnAttribute(System.String)">
+            <summary>
+                Write the specified <paramref name="attribute" /> column. This could be the CSV header value or a database field.
+            </summary>
+            <param name="attribute">
+                The column name. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="attribute" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnAttribute(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.WriteColumnKey(System.String)">
+            <summary>
+                Write the specified <paramref name="key" /> column. This could be the CSV header value or a database field.
+            </summary>
+            <param name="key">
+                The column name. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="key" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnKey(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.WriteColumnMeasure(System.String)">
+            <summary>
+                Write the specified <paramref name="measure" /> column. This could be the CSV header value or a database field.
+            </summary>
+            <param name="measure">
+                The column name. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="measure" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnMeasure(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.Dispose(System.Boolean)">
+            <summary>
+                Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources and
+                optionally managed resources.
+            </summary>
+            <param name="disposing">
+                A value indicating whether to dispose managed resources
+            </param>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.WriteCell(System.String)">
+            <summary>
+                Write cell <paramref name="value" /> .
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellAttributeValue(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.BinaryTabularWriter.WriteColumn(System.String)">
+            <summary>
+                Write the specified <paramref name="key" /> column. This could be the CSV header value or a database field.
+            </summary>
+            <param name="key">
+                The column name. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="key" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnKey(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="T:Estat.Sri.TabularWriters.Engine.ITabularWriter">
+            <summary>
+                The interface for tabular Data Writers, such as flat files like CSV or a database table.
+            </summary>
+            <example>
+                A sample in C# for <see cref="T:Estat.Sri.TabularWriters.Engine.ITabularWriter" />
+                <code source="..\ReUsingExamples\DataWriting\ReUsingBinaryTabularWriter.cs" lang="cs" />
+            </example>
+        </member>
+        <member name="P:Estat.Sri.TabularWriters.Engine.ITabularWriter.TotalRecordsWritten">
+            <summary>
+                Gets the Total number of rows written
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.Close">
+            <summary>
+                Close this writer and commit the changes.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.StartColumns">
+            <summary>
+                Start of the column definition. This could be the CSV header or a database table.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.StartRecord">
+            <summary>
+                Start of a record. This could be a new line in a CSV file or a new record in a database table.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellAttributeValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" />.
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellAttributeValue(System.String)" /> was
+                called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellKeyValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" />.
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellKeyValue(System.String)" /> was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellMeasureValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" />.
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellMeasureValue(System.String)" /> was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnAttribute(System.String)">
+            <summary>
+                Write the specified <paramref name="attribute" /> column. This could be the CSV header value or a database field.
+            </summary>
+            <param name="attribute">
+                The column name. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="attribute" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnAttribute(System.String)" /> was
+                called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnKey(System.String)">
+            <summary>
+                Write the specified <paramref name="key" /> column. This could be the CSV header value or a database field.
+            </summary>
+            <param name="key">
+                The column name. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="key" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnKey(System.String)" /> was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnMeasure(System.String)">
+            <summary>
+                Write the specified <paramref name="measure" /> column. This could be the CSV header value or a database field.
+            </summary>
+            <param name="measure">
+                The column name. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="measure" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnMeasure(System.String)" /> was called
+            </remarks>
+        </member>
+        <member name="T:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter">
+            <summary>
+                <c>Sqlite </c> data writer
+            </summary>
+            <example>
+                A sample in C# for <see cref="T:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter" /> (Depends on <c>System.Data.Sqlite</c>)
+                <code source="..\ReUsingExamples\DataWriting\ReUsingSqliteTabularWriter.cs" lang="cs" />
+            </example>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.CreateTableFormat2">
+            <summary>
+                The create table format template. 1st parameter is the table name and second the columns definition
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.DefaultDataType">
+            <summary>
+                The data type used for all column definition
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.DefaultDataTypeComma">
+            <summary>
+                The <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.DefaultDataType" /> followed by a comma
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.InsertIntoFormat3">
+            <summary>
+                The insert into format template. 1st parameter is the table name, second the fields and 3rd the value parameters.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._closeConnection">
+            <summary>
+                A value indicating whether to close the connection.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._connection">
+            <summary>
+                The _connection.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._fieldList">
+            <summary>
+                The _field list.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._table">
+            <summary>
+                The _table.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._closed">
+            <summary>
+                A value indicating whether this writer was closed
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._command">
+            <summary>
+                The _command.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._parameterIndex">
+            <summary>
+                The <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._command" /> parameter index
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._startedData">
+            <summary>
+                A value indicating whether the data has started
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._startedRecord">
+            <summary>
+                A value indicating whether a record has started
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._startHeader">
+            <summary>
+                A value indicating whether the header has started
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._totalRecordsWritten">
+            <summary>
+                the Total number of rows written
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._transaction">
+            <summary>
+                The _transaction.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.#ctor(System.Data.IDbConnection,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter" /> class.
+            </summary>
+            <param name="connection">
+                The connection to the <c>Sqlite</c> database.
+            </param>
+            <param name="table">
+                The name of the table that will be populated.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+                <paramref name="connection" /> is null
+                -or-
+                <paramref name="table" /> is null
+            </exception>
+        </member>
+        <member name="P:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.TotalRecordsWritten">
+            <summary>
+                Gets the Total number of rows written
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.Close">
+            <summary>
+                Close this writer and commit the changes.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.Dispose">
+            <summary>
+                Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.StartColumns">
+            <summary>
+                Start of the header. This could be the CSV header or a database table.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.StartRecord">
+            <summary>
+                Start of a record. This could be a new line in a CSV file or a new record in a database table.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteCellAttributeValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" />.
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellAttributeValue(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteCellKeyValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" />.
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellKeyValue(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteCellMeasureValue(System.String)">
+            <summary>
+                Write cell <paramref name="value" />.
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteCellMeasureValue(System.String)" /> was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteColumnAttribute(System.String)">
+            <summary>
+                Write the specified <paramref name="attribute" /> header value. This could be the CSV header value or a database
+                field.
+            </summary>
+            <param name="attribute">
+                The header value. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="attribute" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnAttribute(System.String)" />
+                was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteColumnKey(System.String)">
+            <summary>
+                Write the specified <paramref name="key" /> header value. This could be the CSV header value or a database field.
+            </summary>
+            <param name="key">
+                The header value. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="key" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnKey(System.String)" /> was
+                called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteColumnMeasure(System.String)">
+            <summary>
+                Write the specified <paramref name="measure" /> header value. This could be the CSV header value or a database
+                field.
+            </summary>
+            <param name="measure">
+                The header value. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="measure" /> depends on the order
+                <see cref="M:Estat.Sri.TabularWriters.Engine.ITabularWriter.WriteColumnMeasure(System.String)" /> was called
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.Dispose(System.Boolean)">
+            <summary>
+                Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <param name="disposing">
+                A value indicating whether managed resources should be disposed
+            </param>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.CheckIfClosed">
+            <summary>
+                Check if <see cref="T:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter" /> was closed and throw an exception if it is
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+                <see cref="T:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter" /> is closed
+            </exception>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.Commit">
+            <summary>
+                Commit the <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._transaction" /> if not null
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.CreateCommand(System.String)">
+            <summary>
+                Create a <see cref="T:System.Data.IDbCommand" /> using the specified <paramref name="sql" /> from <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._connection" /> with
+                <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._transaction" />
+            </summary>
+            <param name="sql">
+                The <c>SQL</c> statement.
+            </param>
+            <returns>
+                A <see cref="T:System.Data.IDbCommand" /> using the specified <paramref name="sql" /> from <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._connection" /> with
+                <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._transaction" />
+            </returns>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.CreateInsertCommand">
+            <summary>
+                Create the <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._command" /> for inserting data
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.CreateTable">
+            <summary>
+                Create the <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._table" /> with the columns from <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._fieldList" />
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.EndHeader">
+            <summary>
+                The end header.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.EndRecord">
+            <summary>
+                Execute the <see cref="F:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter._command" />
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteCell(System.String)">
+            <summary>
+                Write cell <paramref name="value" />.
+            </summary>
+            <param name="value">
+                The cell value
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="value" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteCell(System.String)" /> was called
+            </remarks>
+            <exception cref="T:System.InvalidOperationException">
+                StartRecord was not called
+                -or-
+                Cannot write more cells than header columns
+            </exception>
+        </member>
+        <member name="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteHeader(System.String)">
+            <summary>
+                Write the specified <paramref name="header" /> header value. This could be the CSV header value or a database
+                field.
+            </summary>
+            <param name="header">
+                The header value. i.e. the component name
+            </param>
+            <remarks>
+                The ordinal of each <paramref name="header" /> depends on the order <see cref="M:Estat.Sri.TabularWriters.Engine.SqliteTabularWriter.WriteHeader(System.String)" /> was called
+            </remarks>
+        </member>
+    </members>
+</doc>

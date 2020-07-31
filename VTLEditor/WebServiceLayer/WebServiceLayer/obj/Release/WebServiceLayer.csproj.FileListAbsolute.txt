@@ -1,0 +1,11 @@
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Release\WebServiceLayer.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Release\WebServiceLayer.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Release\ApplicationSettings.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Release\WebServiceConnector.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Release\ApplicationSettings.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Release\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\obj\Release\WebServiceLayer.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\obj\Release\WebServiceLayer.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Release\WebServiceConnector.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\obj\Release\WebServiceLayer.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\obj\Release\WebServiceLayer.csproj.CopyComplete

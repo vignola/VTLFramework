@@ -1,0 +1,114 @@
+ROUND (expr( , (INTEGER_CONSTANT| _ ))?) 
+CEIL (expr) 
+FLOOR (expr) 
+ABS (expr) 
+EXP (expr) 
+LN (expr) 
+LOG (expr,logBase) 
+TRUNC (expr ( , (INTEGER_CONSTANT| _ ))?) 
+POWER (expr,exponent) 
+SQRT (expr) 
+LEN (expr) 
+BETWEEN (expr,expr,expr) 
+TRIM (expr) 
+LTRIM (expr) 
+RTRIM (expr) 
+UCASE (expr) 
+LCASE (expr) 
+SUBSTR (expr ( ,optionalExpr)? ( ,optionalExpr)?) 
+INSTR (expr,STRING_CONSTANT (,optionalExpr)? ( ,optionalExpr)?) 
+REPLACE (expr,expr (,optionalExpr)?) 
+CHARSET_MATCH (expr, STRING_CONSTANT) 
+INTERSECT ( [expr ( ,expr) ] ) 
+UNION ( [expr ( ,expr) ] ) 
+SYMDIFF (expr,expr) 
+SETDIFF (expr,expr) 
+ISNULL (expr) 
+NVL (expr,expr) 
+MOD (expr,expr) 
+FLOW_TO_STOCK (expr) 
+STOCK_TO_FLOW (expr) 
+EVAL (routineName (componentID? ( ,componentID) ) ( ,STRING_CONSTANT)? ( ,RETURNS dataType)?) 
+CAST ( (IDENTIFIER|expr), (dataType|IDENTIFIER) ( ,STRING_CONSTANT)?) 
+PERIOD_INDICATOR (expr?) 
+FILL_TIME_SERIES (expr ( , (SINGLE|ALL))?) 
+TIME_AGGR (STRING_CONSTANT ( , (STRING_CONSTANT| _ ))? ( , (expr| _ ))? ( , (FIRST|LAST))?) 
+CHECK (exprOr (erCode)? (erLevel)? (IMBALANCE expr)? (INVALID|ALL)?) 
+CHECK_DATAPOINT (IDENTIFIER,IDENTIFIER (COMPONENTS componentID ( ,componentID) )? (INVALID|ALL|ALL_MEASURES)?) 
+CHECK_HIERARCHY (IDENTIFIER,IDENTIFIER (CONDITION componentID ( ,componentID) )? (RULE IDENTIFIER)? (modeHierarchical)? (DATASET|DATASET_PRIORITY)? (INVALID|ALL|ALL_MEASURES)?) 
+HIERARCHY (expr,IDENTIFIER (CONDITION componentID ( ,componentID) )? (RULE IDENTIFIER)? (modeHierarchical| _ )? (inputHierarchical| _ )? (outputHierarchical| _ )?) 
+PARTITION BY IDENTIFIER ( ,IDENTIFIER) 
+ORDER BY componentID (ASC|DESC)? ( ,componentID (ASC|DESC)?)
+BETWEEN limitClauseItem AND limitClauseItem
+FIRST_VALUE (expr) 
+LAG (expr,INTEGER_CONSTANT,INTEGER_CONSTANT) 
+LAST_VALUE (expr) 
+NTILE (expr) 
+PERCENT_RANK (expr) 
+RANK (expr) 
+RATIO_TO_REPORT (expr) 
+LEAD (expr) 
+FILTER expr 
+SUM (expr) 
+AVG (expr) 
+COUNT (expr) 
+MEDIAN (expr) 
+MIN (expr) 
+MAX (expr) 
+RANK (expr) 
+STDDEV_POP (expr) 
+STDDEV_SAMP (expr) 
+STDDEV (expr) 
+VAR_POP (expr) 
+VAR_SAMP (expr) 
+VARIANCE (expr) 
+CALC calcClauseItem ( ,calcClauseItem) 
+IN (setExpr|IDENTIFIER)
+NOT_IN (setExpr|IDENTIFIER)
+CURRENT_DATE
+ERRORCODE
+ERRORLEVEL
+MEASURE
+DIMENSION
+ATTRIBUTE
+VIRAL ATTRIBUTE
+STRING_CONSTANT
+IDENTIFIER
+INNER_JOIN
+LEFT_JOIN
+FULL_JOIN
+CROSS_JOIN
+GROUP_BY
+GROUP_EXCEPT
+GROUP_ALL
+INTEGER_CONSTANT
+FLOAT_CONSTANT
+BOOLEAN_CONSTANT
+STRING_CONSTANT
+NULL_CONSTANT
+STRING
+INTEGER
+FLOAT
+BOOLEAN
+DATE
+NUMBER
+TIME_PERIOD
+DURATION
+BOOLEAN_CONSTANT
+ALL
+DEFINE DATAPOINT RULESET
+DEFINE HIERARCHICAL RULESET
+END DATAPOINT RULESET 
+END HIERARCHICAL RULESET
+DEFINE DATA STRUCTURE
+RULE_PRIORITY
+DATASET_PRIORITY
+RULE
+DATASET
+NON_NULL
+NON_ZERO
+PARTIAL_NULL
+PARTIAL_ZERO
+ALWAYS_NULL
+ALWAYS_ZERO
+COMPUTED

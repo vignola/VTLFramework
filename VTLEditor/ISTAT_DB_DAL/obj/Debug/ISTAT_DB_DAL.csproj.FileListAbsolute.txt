@@ -1,0 +1,48 @@
+G:\SOURCE_CODE\VTLGenProj\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTLGenProj\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTLGenProj\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTLGenProj\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTLGenProj\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csprojResolveAssemblyReference.cache
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csprojResolveAssemblyReference.cache
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\bin\Debug\Oracle.ManagedDataAccess.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.CopyComplete
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\bin\Debug\ISTAT_DB_DAL.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.CoreCompileInputs.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.CopyComplete
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.pdb

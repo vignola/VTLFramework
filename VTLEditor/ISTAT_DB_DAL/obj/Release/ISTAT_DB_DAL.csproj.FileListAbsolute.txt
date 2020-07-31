@@ -1,0 +1,8 @@
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\bin\Release\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\bin\Release\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\obj\Release\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\obj\Release\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\obj\Release\ISTAT_DB_DAL.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\bin\Release\ISTAT_DB_DAL.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\bin\Release\Oracle.ManagedDataAccess.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ISTAT_DB_DAL\obj\Release\ISTAT_DB_DAL.csproj.CopyComplete

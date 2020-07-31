@@ -1,0 +1,227 @@
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SDMXMetadataLoader.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SDMXMetadataLoader.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ApplicationSettings.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ArtefactInfo.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\CsvHelper.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\log4net.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Newtonsoft.Json.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxApi.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxDataParser.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxEdiParser.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxObjects.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxParseBase.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxQueryBuilder.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxSourceUtil.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureMutableParser.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureParser.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureRetrieval.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxXmlConstants.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\TabularWriters.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceLayer.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Xml.Schema.Linq.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ApplicationSettings.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ArtefactInfo.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceLayer.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\CsvHelper.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\log4net.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Newtonsoft.Json.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxApi.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxDataParser.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxEdiParser.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxObjects.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxParseBase.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxQueryBuilder.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxSourceUtil.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureMutableParser.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureParser.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureRetrieval.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\TabularWriters.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Xml.Schema.Linq.xml
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csproj.CopyComplete
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Oracle.ManagedDataAccess.dll
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SDMXMetadataLoader.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SDMXMetadataLoader.pdb
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ArtefactInfo.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\CsvHelper.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\log4net.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Newtonsoft.Json.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxApi.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxDataParser.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxEdiParser.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxObjects.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxParseBase.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxQueryBuilder.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxSourceUtil.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureMutableParser.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureParser.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureRetrieval.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxXmlConstants.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\TabularWriters.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceLayer.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Xml.Schema.Linq.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ApplicationSettings.pdb
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ArtefactInfo.pdb
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.dll.config
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceLayer.pdb
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\CsvHelper.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\log4net.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Newtonsoft.Json.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxApi.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxDataParser.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxEdiParser.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxObjects.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxParseBase.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxQueryBuilder.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxSourceUtil.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureMutableParser.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureParser.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureRetrieval.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\TabularWriters.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Xml.Schema.Linq.xml
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.dll
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.pdb
+H:\SOURCE_CODE\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SDMXMetadataLoader.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SDMXMetadataLoader.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ArtefactInfo.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\CsvHelper.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\log4net.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Newtonsoft.Json.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxApi.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxDataParser.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxEdiParser.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxObjects.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxParseBase.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxQueryBuilder.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxSourceUtil.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureMutableParser.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureParser.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureRetrieval.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxXmlConstants.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\TabularWriters.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceLayer.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Xml.Schema.Linq.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ApplicationSettings.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ArtefactInfo.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.dll.config
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceLayer.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\CsvHelper.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\log4net.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Newtonsoft.Json.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxApi.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxDataParser.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxEdiParser.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxObjects.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxParseBase.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxQueryBuilder.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxSourceUtil.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureMutableParser.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureParser.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureRetrieval.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\TabularWriters.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Xml.Schema.Linq.xml
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.dll
+H:\SOURCE_CODE\VTLEditor -GIT\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SDMXMetadataLoader.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SDMXMetadataLoader.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ApplicationSettings.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ArtefactInfo.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\CsvHelper.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\log4net.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Newtonsoft.Json.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxApi.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxDataParser.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxEdiParser.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxObjects.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxParseBase.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxQueryBuilder.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxSourceUtil.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureMutableParser.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureParser.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureRetrieval.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxXmlConstants.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\TabularWriters.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceLayer.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Xml.Schema.Linq.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ApplicationSettings.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ArtefactInfo.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceConnector.dll.config
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\WebServiceLayer.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\CsvHelper.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\log4net.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Newtonsoft.Json.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxApi.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxDataParser.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxEdiParser.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxObjects.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxParseBase.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxQueryBuilder.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxSourceUtil.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureMutableParser.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureParser.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\SdmxStructureRetrieval.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\TabularWriters.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\Xml.Schema.Linq.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csprojAssemblyReference.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csproj.CoreCompileInputs.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.csproj.CopyComplete
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\SDMXMetadataLoader\SDMXMetadataLoader\obj\Debug\SDMXMetadataLoader.pdb

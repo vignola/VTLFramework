@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<predefinedWS>
+            <setting name="WebServiceURLs" serializeAs="Xml">
+                <value>
+                    <WebServices>
+                        <WebService>                            
+                            <Name>SEP</Name>
+                            <Description>Italian institute of statistics - Single Exit Point</Description>
+                            <Url>Hjm4zAqR95INooBeOOWYhqYVOytT3siI68/uEB1utz/2sHgXIZ5NCgKrhMB68owk</Url>
+                            <Crypted>true</Crypted>
+                            <UserName />
+                            <Password />
+                        </WebService>                          
+                    </WebServices>
+                </value>
+				</setting>
+</predefinedWS>

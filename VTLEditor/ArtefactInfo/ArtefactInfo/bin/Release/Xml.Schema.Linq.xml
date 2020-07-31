@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xml.Schema.Linq</name>
+    </assembly>
+    <members>
+        <member name="M:Xml.Schema.Linq.XTypedServices.Load``2(System.Xml.XmlReader,Xml.Schema.Linq.ILinqToXsdTypeManager)">
+            <summary>
+            Load an XML document from a <paramref name="reader"/> and return it as <typeparamref name="W"/>
+            </summary>
+            <typeparam name="W">The element type</typeparam>
+            <typeparam name="T">The element </typeparam>
+            <param name="reader">The input document</param>
+            <param name="typeManager">The Type manager</param>
+            <returns>The <paramref name="reader"/> as <typeparamref name="W"/></returns>
+            <remarks>ADDED by TCH</remarks>
+        </member>
+    </members>
+</doc>

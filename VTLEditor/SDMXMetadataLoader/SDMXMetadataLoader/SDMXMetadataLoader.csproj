@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1161C57C-7978-4653-B407-5D2E869A85DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDMXMetadataLoader</RootNamespace>
+    <AssemblyName>SDMXMetadataLoader</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CsvHelper.2.16.3.0\lib\net45\CsvHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V10, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V20, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V21, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxApi, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxDataParser, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxDataParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxEdiParser, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxEdiParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxObjects, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxParseBase, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxParseBase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxQueryBuilder, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxQueryBuilder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxSourceUtil, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxSourceUtil.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxStructureMutableParser, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxStructureMutableParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxStructureParser, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxStructureParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxStructureRetrieval, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxStructureRetrieval.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxXmlConstants, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\SdmxXmlConstants.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabularWriters, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\TabularWriters.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xml.Schema.Linq, Version=0.3.0.0, Culture=neutral, PublicKeyToken=47d0c84d0ebb13e5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SdmxSource.NuGet.1.12.0\lib\net40-full\Xml.Schema.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="service\CommonNamespace.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="service\MetadataLoader.cs" />
+    <Compile Include="service\MetadataRetriever.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApplicationSettings\ApplicationSettings\ApplicationSettings.csproj">
+      <Project>{9339d90a-abd1-48d8-84fe-92206a6d5797}</Project>
+      <Name>ApplicationSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ArtefactInfo\ArtefactInfo\ArtefactInfo.csproj">
+      <Project>{a714d101-cbe3-4e2d-a0cf-507b80febc16}</Project>
+      <Name>ArtefactInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WebServiceConnector\WebServiceConnector.csproj">
+      <Project>{8443cb05-75a9-46f4-8c5d-204d2bbf4011}</Project>
+      <Name>WebServiceConnector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WebServiceLayer\WebServiceLayer\WebServiceLayer.csproj">
+      <Project>{ee436275-129c-47b7-9537-257f68d65886}</Project>
+      <Name>WebServiceLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

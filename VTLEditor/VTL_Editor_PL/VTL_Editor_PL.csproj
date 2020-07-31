@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6901997-E4E6-4973-B049-2B56BBB1F267}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTL_Editor_PL</RootNamespace>
+    <AssemblyName>VTL_Editor_PL</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\WindowsFormsApplication1\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <PublishUrl>G:\VTLEditorDeploy\VTLEditor\app\VTLEditor\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>18</ApplicationRevision>
+    <ApplicationVersion>1.0.0.18</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4F9EC25992D971CEDDED13F4D30C21E71B2F70D5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>VTL_Editor_PL_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>VTL_Editor_PL_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr4.Runtime, Version=4.6.0.0, Culture=neutral, PublicKeyToken=09abb75b9ed49849, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr4.Runtime.4.6.4\lib\net45\Antlr4.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FastColoredTextBox, Version=2.16.24.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
+      <HintPath>..\packages\FCTB.2.16.24\lib\FastColoredTextBox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\VTL_Editor_PL\VTL_Editor_PL\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.6.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V10, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V20, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V21, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ScintillaNET">
+      <HintPath>lib\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxApi, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxDataParser, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxDataParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxEdiParser, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxEdiParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxObjects, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxParseBase, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxParseBase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxQueryBuilder, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxQueryBuilder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxSourceUtil, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxSourceUtil.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxStructureMutableParser, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxStructureMutableParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxStructureParser, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxStructureParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxStructureRetrieval, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxStructureRetrieval.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SdmxXmlConstants, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\SdmxXmlConstants.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabularWriters, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\TabularWriters.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xml.Schema.Linq, Version=0.3.0.0, Culture=neutral, PublicKeyToken=47d0c84d0ebb13e5, processorArchitecture=MSIL">
+      <HintPath>..\..\VTLGenProj\packages\SdmxSource.NuGet.1.6.0\lib\net40-full\Xml.Schema.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\SQLTextUtils\HotKeyManager.cs" />
+    <Compile Include="classes\SQLTextUtils\SearchManager.cs" />
+    <Compile Include="classes\tool\AutocompleteVocabulary.cs" />
+    <Compile Include="classes\common\BaseJSonMessage.cs" />
+    <Compile Include="classes\common\CommonItem.cs" />
+    <Compile Include="classes\config\MainApplicationSettings.cs" />
+    <Compile Include="classes\net\VTLInt_ServiceManager.cs" />
+    <Compile Include="classes\tool\ArtefactNodeInfo.cs" />
+    <Compile Include="classes\tool\ErrorManager.cs" />
+    <Compile Include="classes\tool\LogManager.cs" />
+    <Compile Include="classes\tool\RemoteFileExists.cs" />
+    <Compile Include="classes\tool\ShowCaretPositionEventArgs.cs" />
+    <Compile Include="classes\tool\TreeViewElementFinder.cs" />
+    <Compile Include="frmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStart.Designer.cs">
+      <DependentUpon>frmStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\fastCodeTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\fastCodeTextBox.Designer.cs">
+      <DependentUpon>fastCodeTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\FindForm.Designer.cs">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmDataExecution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmDataExecution.Designer.cs">
+      <DependentUpon>frmDataExecution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmMedataImportFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmMedataImportFile.Designer.cs">
+      <DependentUpon>frmMedataImportFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmOpenTrasformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmOpenTrasformation.Designer.cs">
+      <DependentUpon>frmOpenTrasformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmSaveOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmSaveOperator.Designer.cs">
+      <DependentUpon>frmSaveOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmSQLViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmSQLViewer.Designer.cs">
+      <DependentUpon>frmSQLViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmStartMessageBoxError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmStartMessageBoxError.Designer.cs">
+      <DependentUpon>frmStartMessageBoxError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\ReplaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\ReplaceForm.Designer.cs">
+      <DependentUpon>ReplaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\UserDefinedValueDomainSubsetPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\UserDefinedValueDomainSubsetPanel.Designer.cs">
+      <DependentUpon>UserDefinedValueDomainSubsetPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\UserDefinedDataSetPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\UserDefinedDataSetPanel.Designer.cs">
+      <DependentUpon>UserDefinedDataSetPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmAddText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmAddText.Designer.cs">
+      <DependentUpon>frmAddText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmArtefactDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmArtefactDescription.Designer.cs">
+      <DependentUpon>frmArtefactDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmArtefactManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmArtefactManager.Designer.cs">
+      <DependentUpon>frmArtefactManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmDefineDatapointRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmDefineDatapointRule.Designer.cs">
+      <DependentUpon>frmDefineDatapointRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmDefineHierarchicalRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmDefineHierarchicalRule.Designer.cs">
+      <DependentUpon>frmDefineHierarchicalRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmDefineOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmDefineOperator.Designer.cs">
+      <DependentUpon>frmDefineOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmMetadataImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmMetadataImport.Designer.cs">
+      <DependentUpon>frmMetadataImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmAddWebService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmAddWebService.Designer.cs">
+      <DependentUpon>frmAddWebService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmErrorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmErrorDetails.Designer.cs">
+      <DependentUpon>frmErrorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmSaveTrasformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmSaveTrasformation.Designer.cs">
+      <DependentUpon>frmSaveTrasformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmSelectValueDomain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmSelectValueDomain.Designer.cs">
+      <DependentUpon>frmSelectValueDomain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Switch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\Switch.Designer.cs">
+      <DependentUpon>Switch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\UserDefinedDataStructurePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\UserDefinedDataStructurePanel.Designer.cs">
+      <DependentUpon>UserDefinedDataStructurePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\UserDefinedValueDomainPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\UserDefinedValueDomainPanel.Designer.cs">
+      <DependentUpon>UserDefinedValueDomainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\VTLInt_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStart.resx">
+      <DependentUpon>frmStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\fastCodeTextBox.resx">
+      <DependentUpon>fastCodeTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FindForm.resx">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmDataExecution.resx">
+      <DependentUpon>frmDataExecution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmMedataImportFile.resx">
+      <DependentUpon>frmMedataImportFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmOpenTrasformation.resx">
+      <DependentUpon>frmOpenTrasformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmSaveOperator.resx">
+      <DependentUpon>frmSaveOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmSQLViewer.resx">
+      <DependentUpon>frmSQLViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmStartMessageBoxError.resx">
+      <DependentUpon>frmStartMessageBoxError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\ReplaceForm.resx">
+      <DependentUpon>ReplaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\UserDefinedValueDomainSubsetPanel.resx">
+      <DependentUpon>UserDefinedValueDomainSubsetPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\UserDefinedDataSetPanel.resx">
+      <DependentUpon>UserDefinedDataSetPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmAddText.resx">
+      <DependentUpon>frmAddText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmArtefactDescription.resx">
+      <DependentUpon>frmArtefactDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmArtefactManager.resx">
+      <DependentUpon>frmArtefactManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmAddWebService.resx">
+      <DependentUpon>frmAddWebService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmDefineDatapointRule.resx">
+      <DependentUpon>frmDefineDatapointRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmDefineHierarchicalRule.resx">
+      <DependentUpon>frmDefineHierarchicalRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmDefineOperator.resx">
+      <DependentUpon>frmDefineOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmErrorDetails.resx">
+      <DependentUpon>frmErrorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmMetadataImport.resx">
+      <DependentUpon>frmMetadataImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmSaveTrasformation.resx">
+      <DependentUpon>frmSaveTrasformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmSelectValueDomain.resx">
+      <DependentUpon>frmSelectValueDomain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Switch.resx">
+      <DependentUpon>Switch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\UserDefinedDataStructurePanel.resx">
+      <DependentUpon>UserDefinedDataStructurePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\UserDefinedValueDomainPanel.resx">
+      <DependentUpon>UserDefinedValueDomainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\ArtefactInfo.model.BaseArtefactInfo.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.BaseArtefactInfo1.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.BaseComponentInfo.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.BaseComponentInfo1.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.BaseUserDefinedOperator.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.DataSetInfo.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.DataSetInfo1.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.DataStructureComponentInfo.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.DataStructureComponentInfo1.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.ValueDomainInfo.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.ValueDomainInfo1.datasource" />
+    <None Include="Properties\DataSources\ArtefactInfo.model.ValueDomainSubsetInfo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\VTLInt_Service\Service.wsdl" />
+    <None Include="Service References\VTLInt_Service\VTLInt_WS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VTLInt_Service\VTLInt_WS1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VTLInt_Service\VTLInt_WS2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VTLInt_Service\VTLInt_WS3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VTLInt_Service\VTLInt_WS4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VTLInt_Service\VTLInt_WS5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTL_Editor_PL_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Close_16xLG.png" />
+    <Content Include="images\copy.png" />
+    <None Include="images\databaseOn.png" />
+    <None Include="images\DbOn.png" />
+    <None Include="images\DbOff.png" />
+    <Content Include="images\ErrorIcon.png" />
+    <None Include="images\Paste_6520.png" />
+    <None Include="images\icons8-chevron-right-16.png" />
+    <None Include="images\icons8-update-25.png" />
+    <Content Include="Resources\Codelist.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CodelistCodes.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ConvertFromGeneric.xslt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dataflow.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DataQueryMessage.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DataStructure.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DataStructureComponent.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DataStructureDetailed.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\getCategorySchema.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\getConstrainedDimensionMember.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\getDataFlows.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\getInfo.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\getStartEndTimePeriods.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\getStructure.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\getStructureWithReference.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PredefinedWS.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\StructureHeader.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\xmlAutoComplete.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="images\icons8-checked-80.png" />
+    <None Include="Service References\VTLInt_Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\VTLInt_Service\configuration.svcinfo" />
+    <None Include="Service References\VTLInt_Service\configuration91.svcinfo" />
+    <None Include="Service References\VTLInt_Service\VTLInt_WS.disco" />
+    <None Include="images\SearchLeng.png" />
+    <None Include="images\icons8-switch-off-32.png" />
+    <None Include="images\icons8-switch-on-32.png" />
+    <None Include="images\icons8-shutdown-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationSettings\ApplicationSettings\ApplicationSettings.csproj">
+      <Project>{9339d90a-abd1-48d8-84fe-92206a6d5797}</Project>
+      <Name>ApplicationSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArtefactInfo\ArtefactInfo\ArtefactInfo.csproj">
+      <Project>{a714d101-cbe3-4e2d-a0cf-507b80febc16}</Project>
+      <Name>ArtefactInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISTAT_DB_DAL\ISTAT_DB_DAL.csproj">
+      <Project>{ac3e3550-170b-4a5e-aabb-ccecc88a1986}</Project>
+      <Name>ISTAT_DB_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDMXMetadataLoader\SDMXMetadataLoader\SDMXMetadataLoader.csproj">
+      <Project>{1161c57c-7978-4653-b407-5d2e869a85df}</Project>
+      <Name>SDMXMetadataLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTLlib\VTLlib.csproj">
+      <Project>{c9c27feb-af21-460b-869e-8eadbc9a8394}</Project>
+      <Name>VTLlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebServiceConnector\WebServiceConnector.csproj">
+      <Project>{8443cb05-75a9-46f4-8c5d-204d2bbf4011}</Project>
+      <Name>WebServiceConnector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebServiceLayer\WebServiceLayer\WebServiceLayer.csproj">
+      <Project>{ee436275-129c-47b7-9537-257f68d65886}</Project>
+      <Name>WebServiceLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\VTLInt_Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Resources\Codelist.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\CodelistCodes.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\Dataflow.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\DataQueryMessage.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\DataStructure.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\DataStructureComponent.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\DataStructureDetailed.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\getCategorySchema.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\getConstrainedDimensionMember.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\getDataFlows.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\getInfo.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\getStartEndTimePeriods.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\getStructure.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\getStructureWithReference.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\PredefinedWS.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\StructureHeader.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\xmlAutoComplete.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

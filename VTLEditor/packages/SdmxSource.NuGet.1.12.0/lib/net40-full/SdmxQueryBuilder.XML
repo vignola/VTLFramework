@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SdmxQueryBuilder</name>
+    </assembly>
+    <members>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.DataQueryBuilderRest">
+            <summary>
+                DataQueryBuilderRest class
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.DataQueryBuilderRest.BuildDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery)">
+            <summary>
+                Get a string based DataQuery
+            </summary>
+            <param name="dataQuery">The data query</param>
+            <returns>the data query</returns>
+            <exception cref="T:System.ArgumentNullException">
+                dataQuery
+                or
+                dataQuery
+            </exception>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.DataQueryBuilderRest.AppendDimensions(Org.Sdmxsource.Sdmx.Api.Model.Objects.DataStructure.IDataStructureObject,System.Text.StringBuilder,System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.ISet{System.String}})">
+            <summary>
+            Appends the dimensions.
+            </summary>
+            <param name="keyFamily">The key family.</param>
+            <param name="sb">The buffer to append to.</param>
+            <param name="selections">The selections.</param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.DataQueryBuilderRest.AppendDataflow(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IBaseDataQuery,System.Text.StringBuilder)">
+            <summary>
+            Appends the dataflow.
+            </summary>
+            <param name="dataQuery">The data query.</param>
+            <param name="sb">The buffer to append to.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="dataQuery"/>   is null.</exception>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.DataQueryBuilderRest.AppendProvider(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IBaseDataQuery,System.Text.StringBuilder)">
+            <summary>
+            Appends the provider.
+            </summary>
+            <param name="dataQuery">The data query.</param>
+            <param name="sb">The buffer to append to.</param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.DataQueryBuilderRest.AppendParameter(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery,System.Text.StringBuilder,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Appends the parameters to <paramref name="sb"/>.
+            </summary>
+            <param name="dataQuery">The data query.</param>
+            <param name="sb">The buffer to append to.</param>
+            <param name="dateFrom">The date from.</param>
+            <param name="dateTo">The date to.</param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.DataQueryBuilderRest.AppendParam(System.Boolean,System.String,System.Object,System.Text.StringBuilder)">
+            <summary>
+                Append parameter and value to string builder
+            </summary>
+            <param name="firstAppend">The first append</param>
+            <param name="param">The parameter</param>
+            <param name="value">The value</param>
+            <param name="sb">The string builder</param>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.StructureQueryBuilderRest">
+            <summary>
+                StructureQueryBuilderRest class
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.StructureQueryBuilderRest.BuildStructureQuery(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery)">
+            <summary>
+                Builds a StructureQuery that matches the passed in format
+            </summary>
+            <param name="structureQuery">
+                The query
+            </param>
+            <returns>
+                The string
+            </returns>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2">
+            <summary>
+                The data query builder.
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.UnknownId">
+            <summary>
+                The unknown id.
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2._header">
+            <summary>
+                The _header.
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2._headerXmlBuilder">
+            <summary>
+                The _header xml builder.
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Header.IHeader,Org.Sdmxsource.Sdmx.Api.Builder.IBuilder{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Message.HeaderType,Org.Sdmxsource.Sdmx.Api.Model.Header.IHeader})">
+            <summary>
+                Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2" /> class.
+            </summary>
+            <param name="header">
+                The header.
+            </param>
+            <param name="headerXmlBuilder">
+                The header Xml Builder.
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.BuildDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery)">
+            <summary>
+                Builds a DataQuery that matches the passed in format
+            </summary>
+            <param name="query">
+                The query
+            </param>
+            <returns>
+                The <see cref="T:System.Xml.Linq.XDocument" /> containing the <paramref name="query" />.
+            </returns>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.BuildAttributeMultipleCriteria(System.String,System.String,Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.OrType)">
+            <summary>
+                Builds the attribute multiple criteria.
+            </summary>
+            <param name="id">
+                The id.
+            </param>
+            <param name="value">
+                The value.
+            </param>
+            <param name="or">
+                The or.
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.BuildAttributeSingleCriteria(System.String,System.String,Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.AndType)">
+            <summary>
+                Builds the attribute single criteria.
+            </summary>
+            <param name="id">
+                The id.
+            </param>
+            <param name="value">
+                The value.
+            </param>
+            <param name="and">
+                The and.
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.BuildComponentCriteria(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuerySelection,Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.AndType,Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureEnumType)">
+            <summary>
+                Build Dimension/Attribute based criteria
+            </summary>
+            <param name="selections">
+                The selections.
+            </param>
+            <param name="root">
+                The root.
+            </param>
+            <param name="sdmxStructureEnumType">
+                The <see cref="T:Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureEnumType" /> of the Dimension or Attribute.
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.BuildDimensionMultipleCriteria(System.String,System.String,Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.OrType)">
+            <summary>
+                Builds the dimension multiple criteria.
+            </summary>
+            <param name="id">
+                The id.
+            </param>
+            <param name="value">
+                The value.
+            </param>
+            <param name="or">
+                The or.
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.BuildDimensionSingleCriteria(System.String,System.String,Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.AndType)">
+            <summary>
+                Builds the dimension single criteria.
+            </summary>
+            <param name="id">
+                The id.
+            </param>
+            <param name="value">
+                The value.
+            </param>
+            <param name="and">
+                The and.
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.BuildSelections(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuerySelectionGroup,Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.AndType)">
+            <summary>
+                Builds the selections.
+            </summary>
+            <param name="query">
+                The query.
+            </param>
+            <param name="dataQuerySelectionGroup">
+                The data query selection group.
+            </param>
+            <param name="root">
+                The root.
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.BuildTime(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuerySelectionGroup,Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.AndType)">
+            <summary>
+                Build time criteria.
+            </summary>
+            <param name="dataQuerySelectionGroup">
+                The data query selection group.
+            </param>
+            <param name="root">
+                The root And
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.GetActionForMultipleValues(Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureEnumType)">
+            <summary>
+                Returns the action for multiple values.
+            </summary>
+            <param name="structure">
+                The structure.
+            </param>
+            <returns>
+                The <see cref="T:System.Action" />.
+            </returns>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.GetActionForSingleValues(Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureEnumType)">
+            <summary>
+                Returns the action for single values.
+            </summary>
+            <param name="structure">
+                The structure.
+            </param>
+            <returns>
+                The <see cref="T:System.Action" />.
+            </returns>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Builder.XDocumentDataQueryBuilderV2.ProcessDataWhere(Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.QueryType,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery)">
+            <summary>
+                Process <see cref="T:Org.Sdmx.Resources.SdmxMl.Schemas.V20.query.DataWhereType" />.
+            </summary>
+            <param name="queryType">
+                The query type.
+            </param>
+            <param name="query">
+                The query.
+            </param>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.CommentDataQueryBuilder">
+            <summary>
+            A <see cref="T:Org.Sdmxsource.Sdmx.Api.Builder.IDataQueryBuilder`1" /> that can insert comments.
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.CommentDataQueryBuilder._dataQueryBuilder">
+            <summary>
+            The _data query builder.
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.CommentDataQueryBuilder._toolIndicator">
+            <summary>
+            The _tool indicator.
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.CommentDataQueryBuilder.#ctor(Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator,Org.Sdmxsource.Sdmx.Api.Builder.IDataQueryBuilder{System.Xml.Linq.XDocument})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.CommentDataQueryBuilder"/> class. 
+            Initializes a new instance of the <see cref="T:System.Object"/> class.
+            </summary>
+            <param name="toolIndicator">
+            The tool Indicator.
+            </param>
+            <param name="dataQueryBuilder">
+            The data Query Builder.
+            </param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.CommentDataQueryBuilder.BuildDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery)">
+            <summary>
+            Builds a DataQuery that matches the passed in format
+            </summary>
+            <param name="query">
+            The query
+            </param>
+            <returns>
+            The data query
+            </returns>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory">
+            <summary>
+                The data query factory implementation.
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory.UnknownId">
+            <summary>
+                The unknown id.
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory._dataQueryBuilderRest">
+            <summary>
+                The _data query builder rest
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory._defaultHeader">
+            <summary>
+                The _default header
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory._toolIndicator">
+            <summary>
+            The _tool indicator
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Header.IHeader,Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory" /> class.
+            </summary>
+            <param name="defaultHeader">The default header.</param>
+            <param name="toolIndicator">The tool indicator.</param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory.#ctor(Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory" /> class.
+            </summary>
+            <param name="toolIndicator">The tool indicator.</param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.DataQueryFactory.GetDataQueryBuilder``1(Org.Sdmxsource.Sdmx.Api.Model.Format.IDataQueryFormat{``0})">
+            <summary>
+                Returns a DataQueryBuilder only if this factory understands the DataQueryFormat.  If the format is unknown, null
+                will be returned
+            </summary>
+            <typeparam name="T">Generic type parameter</typeparam>
+            <param name="format">The Format</param>
+            <returns>
+                DataQueryBuilder is this factory knows how to build this query format, or null if it doesn't
+            </returns>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.RestStructureQueryFactory">
+            <summary>
+                If the required format is RestQueryFormat, then will returns a builder that can build REST
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.RestStructureQueryFactory._structureQueryBuilderRest">
+            <summary>
+                The _structure query builder rest
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Factory.RestStructureQueryFactory.GetStructureQueryBuilder``1(Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{``0})">
+            <summary>
+                Returns a StructureQueryBuilder only if this factory understands the StructureQueryFormat.  If the format is
+                unknown, null will be returned
+            </summary>
+            <typeparam name="T">generic type parameter</typeparam>
+            <param name="format">the format</param>
+            <returns>
+                StructureQueryBuilder is this factory knows how to build this query format, or null if it doesn't
+            </returns>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.DataQueryBuilderManager">
+            <summary>
+                DataQueryBuilderManager class
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.DataQueryBuilderManager._dataDataQueryFactory">
+            <summary>
+                The _data data query factory
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.DataQueryBuilderManager.#ctor(Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator,Org.Sdmxsource.Sdmx.Api.Factory.IDataQueryFactory[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.DataQueryBuilderManager" /> class.
+            </summary>
+            <param name="toolIndicator">The tool indicator.</param>
+            <param name="dataQueryFactory">The data query factory</param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.DataQueryBuilderManager.#ctor(Org.Sdmxsource.Sdmx.Api.Factory.IDataQueryFactory[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.DataQueryBuilderManager" /> class.
+            </summary>
+            <param name="dataQueryFactory">The data query factory</param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.DataQueryBuilderManager.BuildDataQuery``1(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery,Org.Sdmxsource.Sdmx.Api.Model.Format.IDataQueryFormat{``0})">
+            <summary>
+                Builds a data query in the requested format
+            </summary>
+            <typeparam name="T">
+                Generic type parameter.
+            </typeparam>
+            <param name="dataQuery">
+                The query to build a representation of
+            </param>
+            <param name="dataQueryFormat">
+                The required format
+            </param>
+            <returns>
+                Representation of query in the desired format.
+            </returns>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.StructureQueryBuilderManager">
+            <summary>
+                Checks each StructureQueryFactory registered to the Spring beans framework asking each one in turn to
+                obtain a query builder.  The StructureQueryFactory to respond with a not null value, will be returned.
+            </summary>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.StructureQueryBuilderManager._structureQueryFactories">
+            <summary>
+                The _structure query factories
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.StructureQueryBuilderManager.#ctor(Org.Sdmxsource.Sdmx.Api.Factory.IStructureQueryFactory[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.StructureQueryBuilderManager" /> class.
+            </summary>
+            <param name="structureQueryFactories">The structure query factory.</param>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Manager.StructureQueryBuilderManager.BuildStructureQuery``1(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery,Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{``0})">
+            <summary>
+                Builds a structure query in the requested format
+            </summary>
+            <param name="structureQuery">
+                The query to build a representation of
+            </param>
+            <param name="structureQueryFormat">
+                The required format
+            </param>
+            <typeparam name="T">
+                Generic type parameter.
+            </typeparam>
+            <returns>
+                Representation of query in the desired format.
+            </returns>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Model.QueryMessageV2Format">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Model.RestQueryFormat">
+            <summary>
+                RestQueryFormat class
+            </summary>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Model.SdmxDataQueryFormat`1">
+            <summary>
+                SdmxDataQueryFormat class
+            </summary>
+            <typeparam name="T">
+                The type of the output
+            </typeparam>
+        </member>
+        <member name="F:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Model.SdmxDataQueryFormat`1._version">
+            <summary>
+                The _version
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Model.SdmxDataQueryFormat`1.#ctor(Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchema)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Model.SdmxDataQueryFormat`1" /> class.
+            </summary>
+            <param name="version">The version</param>
+            <exception cref="T:System.ArgumentNullException">the version exception</exception>
+        </member>
+        <member name="P:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Model.SdmxDataQueryFormat`1.Version">
+            <summary>
+                Gets the version
+            </summary>
+        </member>
+        <member name="M:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Model.SdmxDataQueryFormat`1.ToString">
+            <summary>
+                Get the version string
+            </summary>
+            <returns>
+                The version string
+            </returns>
+        </member>
+        <member name="T:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Org.Sdmxsource.Sdmx.SdmxQueryBuilder.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

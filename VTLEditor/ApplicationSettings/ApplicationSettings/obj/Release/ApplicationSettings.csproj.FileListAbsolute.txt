@@ -1,0 +1,5 @@
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Release\ApplicationSettings.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Release\ApplicationSettings.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Release\ApplicationSettings.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Release\ApplicationSettings.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Release\ApplicationSettings.csprojAssemblyReference.cache

@@ -1,0 +1,63 @@
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceLayer.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceLayer.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\ApplicationSettings.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\ApplicationSettings.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csproj.CopyComplete
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\Oracle.ManagedDataAccess.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceLayer.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceLayer.pdb
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ApplicationSettings.pdb
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.dll.config
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.pdb
+H:\SOURCE_CODE\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceLayer.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceLayer.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\ApplicationSettings.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.dll.config
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceLayer.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceLayer.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ApplicationSettings.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ApplicationSettings.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\WebServiceConnector.dll.config
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csprojAssemblyReference.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csproj.CoreCompileInputs.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.csproj.CopyComplete
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceLayer\WebServiceLayer\obj\Debug\WebServiceLayer.pdb

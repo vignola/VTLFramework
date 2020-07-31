@@ -1,0 +1,1497 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EstatSdmxSourceExtension.CustomRequests</name>
+    </assembly>
+    <members>
+        <member name="T:Estat.Sri.CustomRequests.Builder.IComplexDataQueryBuilder">
+            <summary>
+                Responsible for building a Complex Data Query
+                that can be used to query services external to the SdmxSource framework
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.IComplexDataQueryBuilder.BuildComplexDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery)">
+            <summary>
+                Builds a ComplexDataQuery that matches the passed in format
+            </summary>
+            <param name="query">The query.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.IComplexStructureQueryBuilder`1">
+            <summary>
+                Responsible for building a Complex Structure Query
+                that can be used to query services external to the SdmxSource framework
+            </summary>
+            <typeparam name="T">The type</typeparam>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.IComplexStructureQueryBuilder`1.BuildComplexStructureQuery(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQuery)">
+            <summary>
+                Builds a ComplexStructureQuery that matches the passed in format
+            </summary>
+            <param name="query">The query.</param>
+            <returns>The complex structure</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.CategorisationDocumentBuilder">
+            <summary>
+                CategorisationDocumentBuilder class
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.DocumentBuilder">
+            <summary>
+                DocumentBuilder class
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.DocumentBuilder.ConstructFor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQueryMetadata,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureReferenceObject)">
+            <summary>
+            For the specified complex structure query metadata.
+            </summary>
+            <param name="complexStructureQueryMetadata">The complex structure query metadata.</param>
+            <param name="complexStructureRef">The complex structure reference.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.DocumentBuilder.FillDataQueryDetails(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQueryMetadata,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.StructureReturnDetailsType)">
+            <summary>
+                Fills the data query details.
+            </summary>
+            <param name="structureQueryMetadata">The structure query metadata.</param>
+            <param name="returnDetailsType">Type of the return details.</param>
+            <exception cref="T:System.ArgumentNullException">
+                returnDetailsType
+                or
+                structureQueryMetadata
+            </exception>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.DocumentBuilder.BuildWhereType``1(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureReferenceObject)">
+            <summary>
+            Builds the WhereType.
+            </summary>
+            <typeparam name="TWhereType">The type of the where type. Must be based on MaintainableWhereType.</typeparam>
+            <param name="complexStructureRef">The complex structure preference.</param>
+            <returns>
+            THe where type
+            </returns>
+            <exception cref="T:System.ArgumentNullException">The exception</exception>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.DocumentBuilder.InitializeProperties(Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureType,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Common.MaintainableObjectTypeListType)">
+            <summary>
+            Initializes the properties.
+            </summary>
+            <param name="sdmxType">Type of the SDMX.</param>
+            <param name="objectTypeListType">Type of the object type list.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.CategorisationDocumentBuilder.ConstructFor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQueryMetadata,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureReferenceObject)">
+            <summary>
+                Construct For the specified complex structure query metadata.
+            </summary>
+            <param name="complexStructureQueryMetadata">The complex structure query metadata.</param>
+            <param name="complexStructureRef">The complex structure reference.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.CategorySchemeDocumentBuilder">
+            <summary>
+                CategorySchemeDocumentBuilder class
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.CategorySchemeDocumentBuilder.ConstructFor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQueryMetadata,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureReferenceObject)">
+            <summary>
+                For the specified complex structure query metadata.
+            </summary>
+            <param name="complexStructureQueryMetadata">The complex structure query metadata.</param>
+            <param name="complexStructureRef">The complex structure reference.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.CodeListDocumentBuilder">
+            <summary>
+                CodeListDocumentBuilder class
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.CodeListDocumentBuilder.ConstructFor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQueryMetadata,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureReferenceObject)">
+            <summary>
+                For the specified complex structure query metadata.
+            </summary>
+            <param name="complexStructureQueryMetadata">The complex structure query metadata.</param>
+            <param name="complexStructureRef">The complex structure reference.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21">
+            <summary>
+                ComplexDataQueryCoreBuilderV21 class
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.DefaultEqualOperator">
+            <summary>
+                The default equal operator
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.DefaultStructureId">
+            <summary>
+                The default structure unique identifier
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.FillDataQueryType(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataQueryType,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery)">
+            <summary>
+                Fills the type of the data query.
+            </summary>
+            <param name="queryType">Type of the query.</param>
+            <param name="complexDataQuery">The complex data query.</param>
+            <exception cref="T:Org.Sdmxsource.Sdmx.Api.Exception.SdmxException">
+                Too many Selection Groups in ComplexDataQuery max one
+                supported.
+            </exception>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.GetValueType(Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IComponent,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexComponentValue)">
+            <summary>
+                Gets the type of the value.
+            </summary>
+            <param name="component">The component.</param>
+            <param name="complexComponentValue">The complex component value.</param>
+            <returns>The value type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleDataflow(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersAndType)">
+            <summary>
+                Handles the dataflow.
+            </summary>
+            <param name="complexDataQuery">The complex data query.</param>
+            <param name="whereType">Type of the where.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleDataProvider(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersAndType)">
+            <summary>
+                Handles the data provider.
+            </summary>
+            <param name="complexDataQuery">The complex data query.</param>
+            <param name="whereType">Type of the where.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleExplicit(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataStructureRequestType)">
+            <summary>
+                Handles the explicit.
+            </summary>
+            <param name="complexDataQuery">The complex data query.</param>
+            <param name="structure">The structure.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleLastUpdatedTime(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersType)">
+            <summary>
+                Handles the last updated time.
+            </summary>
+            <param name="complexDataQuery">The complex data query.</param>
+            <param name="whereType">Type of the where.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandlePrimaryMeasure(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersType,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuerySelectionGroup,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery)">
+            <summary>
+                Handles the primary measure.
+            </summary>
+            <param name="whereType">Type of the where.</param>
+            <param name="complexDataQuerySelectionGroup">The complex data query selection group.</param>
+            <param name="complexDataQuery">The complex data query.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleProvisionAgreement(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersAndType)">
+            <summary>
+                Handles the provision agreement.
+            </summary>
+            <param name="complexDataQuery">The complex data query.</param>
+            <param name="whereType">Type of the where.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleSelectionGroups(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersAndType)">
+            <summary>
+                Handles the selection groups.
+            </summary>
+            <param name="complexDataQuery">The complex data query.</param>
+            <param name="whereType">Type of the where.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleSelections(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersAndType,System.Collections.Generic.IEnumerable{Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuerySelection},Estat.Sri.CustomRequests.Builder.QueryBuilder.IParameterBuilder)">
+            <summary>
+                Handles the selections.
+            </summary>
+            <param name="complexDataQuery">The complex data query.</param>
+            <param name="whereType">Type of the where.</param>
+            <param name="complexDataQuerySelections">The complex data query selections.</param>
+            <param name="builder">The builder.</param>
+            <exception cref="T:Org.Sdmxsource.Sdmx.Api.Exception.SdmxSemmanticException">Semantic exception</exception>
+            <exception cref="T:Org.Sdmxsource.Sdmx.Api.Exception.SdmxSemmanticException">Invalid structure type for component and</exception>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleStructure(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataReturnDetailsType)">
+            <summary>
+                Handles the structure request type
+            </summary>
+            <param name="complexDataQuery">The complex data query.</param>
+            <param name="dataReturnDetails">The data return details.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.HandleTime(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersType,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuerySelectionGroup)">
+            <summary>
+                Handles the time.
+            </summary>
+            <param name="whereType">Type of the where.</param>
+            <param name="complexDataQuerySelectionGroup">The complex data query selection group.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.SetNumericOperatorAndValue(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataStructureComponentValueQueryType,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexComponentValue)">
+            <summary>
+                Sets the numeric operator and value.
+            </summary>
+            <param name="rootObject">The root object.</param>
+            <param name="complexComponentValue">The complex component value.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.SetOperatorAndValue(Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IComponent,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexComponentValue,Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataStructureComponentValueQueryType)">
+            <summary>
+                Sets the operator and value.
+            </summary>
+            <param name="component">The component.</param>
+            <param name="complexComponentValue">The complex component value.</param>
+            <param name="dataStructureComponentValueQueryType">Type of the data structure component value query.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.SetSimpleOperatorAndValue(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataStructureComponentValueQueryType,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexComponentValue)">
+            <summary>
+                Sets the simple operator and value.
+            </summary>
+            <param name="rootObject">The root object.</param>
+            <param name="complexComponentValue">The complex component value.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.SetTextOperatorAndValue(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataStructureComponentValueQueryType,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexComponentValue)">
+            <summary>
+                Sets the simple operator and value.
+            </summary>
+            <param name="rootObject">The root object.</param>
+            <param name="complexComponentValue">The complex component value.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexDataQueryCoreBuilderV21.SetTimeOperatorAndValue(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataStructureComponentValueQueryType,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexComponentValue)">
+            <summary>
+                Sets the time operator and value.
+            </summary>
+            <param name="rootObject">The root object.</param>
+            <param name="complexComponentValue">The complex component value.</param>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexStructureQueryBuilderV21">
+            <summary>
+                Builder for StructureQueryRequest <code>org.w3c.dom.Document</code> in SDMX 2.1
+                rom <code>ComplexStructureQuery</code> object.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ComplexStructureQueryBuilderV21.BuildComplexStructureQuery(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQuery)">
+            <summary>
+                Builds a ComplexStructureQuery that matches the passed in format
+            </summary>
+            <param name="query">The query</param>
+            <returns>The document</returns>
+            <exception cref="T:Org.Sdmxsource.Sdmx.Api.Exception.SdmxException">At least type expected in the reference</exception>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.ConceptSchemeDocumentBuilder">
+            <summary>
+                ConceptSchemeDocumentBuilder class
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ConceptSchemeDocumentBuilder.ConstructFor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQueryMetadata,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureReferenceObject)">
+            <summary>
+                For the specified complex structure query metadata.
+            </summary>
+            <param name="complexStructureQueryMetadata">The complex structure query metadata.</param>
+            <param name="complexStructureRef">The complex structure reference.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.DataflowDocumentBuilder">
+            <summary>
+                DataflowDocumentBuilder class
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.DataflowDocumentBuilder.ConstructFor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQueryMetadata,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureReferenceObject)">
+            <summary>
+                For the specified complex structure query metadata.
+            </summary>
+            <param name="complexStructureQueryMetadata">The complex structure query metadata.</param>
+            <param name="complexStructureRef">The complex structure reference.</param>
+            <returns>the document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.DSDDocumentBuilder">
+            <summary>
+                DSDDocumentBuilder class
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.DSDDocumentBuilder.ConstructFor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQueryMetadata,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureReferenceObject)">
+            <summary>
+            For the specified complex structure query metadata.
+            </summary>
+            <param name="complexStructureQueryMetadata">The complex structure query metadata.</param>
+            <param name="complexStructureRef">The complex structure reference.</param>
+            <returns>
+            The document
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.GenericDataQueryBuilderV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.GenericDataQueryBuilderV21.BuildComplexDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery)">
+            <summary>
+                Builds a ComplexDataQuery that matches the passed in format
+            </summary>
+            <param name="query">The query.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.GenericTimeSeriesDataQueryBuilderV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.GenericTimeSeriesDataQueryBuilderV21.BuildComplexDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery)">
+            <summary>
+                Builds a ComplexDataQuery that matches the passed in format
+            </summary>
+            <param name="query">The query.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderAnd">
+            <summary>
+                The parameter builder for AND.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.IParameterBuilder">
+            <summary>
+                The builder model for Parameter types.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.IParameterBuilder.AddAttribute(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.AttributeValueType)">
+            <summary>
+                Adds the attribute.
+            </summary>
+            <param name="attributeValueType">Type of the attribute value.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.IParameterBuilder.AddDimension(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DimensionValueType)">
+            <summary>
+                Adds the dimension.
+            </summary>
+            <param name="dimension">The dimension.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.IParameterBuilder.PopulateAndParameter(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersAndType)">
+            <summary>
+                Populates the AND parameter.
+            </summary>
+            <param name="andParameter">The and parameter.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.IParameterBuilder.Reset">
+            <summary>
+                Resets this instance.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderAnd._attributes">
+            <summary>
+                The _attributes
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderAnd._dimensions">
+            <summary>
+                The _dimensions
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderAnd.AddAttribute(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.AttributeValueType)">
+            <summary>
+                Adds the attribute.
+            </summary>
+            <param name="attributeValueType">
+                Type of the attribute value.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderAnd.AddDimension(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DimensionValueType)">
+            <summary>
+                Adds the dimension.
+            </summary>
+            <param name="dimension">
+                The dimension.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderAnd.PopulateAndParameter(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersAndType)">
+            <summary>
+                Populates the and parameter.
+            </summary>
+            <param name="andParameter">
+                The and parameter.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderAnd.Reset">
+            <summary>
+                Resets this instance.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderOr">
+            <summary>
+                The parameter builder for OR.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderOr._dataParametersOrType">
+            <summary>
+                The _data parameters or type
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderOr.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderOr"/> class.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderOr.AddAttribute(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.AttributeValueType)">
+            <summary>
+                Adds the attribute.
+            </summary>
+            <param name="attributeValueType">
+                Type of the attribute value.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderOr.AddDimension(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DimensionValueType)">
+            <summary>
+                Adds the dimension.
+            </summary>
+            <param name="dimension">
+                The dimension.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderOr.PopulateAndParameter(Org.Sdmx.Resources.SdmxMl.Schemas.V21.Query.DataParametersAndType)">
+            <summary>
+                Populates the AND parameter.
+            </summary>
+            <param name="andParameter">
+                The and parameter.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ParameterBuilderOr.Reset">
+            <summary>
+                Resets this instance.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.StructSpecificDataQueryBuilderV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.StructSpecificDataQueryBuilderV21.BuildComplexDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery)">
+            <summary>
+                Builds a ComplexDataQuery that matches the passed in format
+            </summary>
+            <param name="query">The query.</param>
+            <returns>the document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.StructSpecificTimeSeriesQueryBuilderV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.StructSpecificTimeSeriesQueryBuilderV21.BuildComplexDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery)">
+            <summary>
+                Builds a ComplexDataQuery that matches the passed in format
+            </summary>
+            <param name="query">The query.</param>
+            <returns>the document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.ValueExtractor">
+            <summary>
+            valueExtractor class
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryBuilder.ValueExtractor.GetFor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IComponent,Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexComponentValue)">
+            <summary>
+            Gets for.
+            </summary>
+            <param name="component">The component.</param>
+            <param name="complexComponentValue">The complex component value.</param>
+            <returns>The document</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryBuilder.ValueType">
+            <summary>
+                Class that contain common implementation for DataSet Request:
+                GetGenericData, GetGenericTimeSeriesData, GetStructureSpecificData, GetStructureSpecificTimeSeriesData
+            </summary>
+            <summary>
+                The query component value type
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ValueType.NumericValue">
+            <summary>
+                The numeric value
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ValueType.TextValue">
+            <summary>
+                The text value
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ValueType.TimeValue">
+            <summary>
+                The time value
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryBuilder.ValueType.Value">
+            <summary>
+                The value
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.ReferenceTransform">
+            <summary>
+            ReferenceTransform class
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddCodelist(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.CodelistRefType})">
+            <summary>
+            Adds the codelist.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="codelistRefTypes">The codelist reference types.</param>
+            <returns>
+            The reference type
+            </returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddHierarchicalCodelist(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.HierarchicalCodelistRefType})">
+            <summary>
+            Adds the hierarchical codelist.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="hierarchicalCodelistRef">The hierarchical codelist reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddCategoryScheme(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.CategorySchemeRefType})">
+            <summary>
+            Adds the category scheme.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="categorySchemeRef">The category scheme reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddConceptScheme(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.ConceptSchemeRefType})">
+            <summary>
+            Adds the concept scheme.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="conceptSchemeRef">The concept scheme reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddKeyFamily(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.KeyFamilyRefType})">
+            <summary>
+            Adds the key family.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="keyFamilyRef">The key family reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddDataflow(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.DataflowRefType})">
+            <summary>
+            Adds the dataflow.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="dataflowRef">The dataflow reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddMetadataStructure(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.MetadataStructureRefType})">
+            <summary>
+            Adds the metadata structure.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="metadataStructureRef">The metadata structure reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddMetadataflow(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.MetadataflowRefType})">
+            <summary>
+            Adds the metadataflow.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="metadataflowRef">The metadataflow reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddProcess(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.ProcessRefType})">
+            <summary>
+            Adds the process.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="processRef">The process reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddStructureSet(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Collections.Generic.IList{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.StructureSetRefType})">
+            <summary>
+            Adds the structure set.
+            </summary>
+            <param name="structureQuery">The structure query.</param>
+            <param name="structureSetRef">The structure set reference.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ReferenceTransform.AddReference``1(System.Collections.Generic.ICollection{``0},Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Action{``0,System.String},System.Action{``0,System.String},System.Action{``0,System.String},System.Action{``0,System.Uri})">
+            <summary>
+            Adds the reference.
+            </summary>
+            <typeparam name="T">The generic type</typeparam>
+            <param name="output">The output.</param>
+            <param name="input">The input.</param>
+            <param name="setAgency">The set agency.</param>
+            <param name="setId">The set identifier.</param>
+            <param name="setVersion">The set version.</param>
+            <param name="setUrn">The set urn.</param>
+            <returns>The reference type</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Extension.ComplexDataQueryExtension">
+            <summary>
+                The complex data query extension.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Extension.ComplexDataQueryExtension.ShouldUseAnd(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuerySelection)">
+            <summary>
+                Gets a value to determine if we should use the AND operator.
+            </summary>
+            <param name="selection">The selection.</param>
+            <returns><c>true</c> if the values should be <c>AND'ed</c>; otherwise false</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Factory.ComplexDataQueryFactoryV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Factory.IComplexDataQueryFactory">
+            <summary>
+                A ComplexDataQueryFactory is responsible fore creating a DataQueryBuilder
+                that build a query that can be used for services external to the SdmxSource framework
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.IComplexDataQueryFactory.GetComplexDataQueryBuilder(Org.Sdmxsource.Sdmx.Api.Model.Format.IDataQueryFormat{System.Xml.Linq.XDocument})">
+            <summary>
+                Returns a ComplexDataQueryBuilder only if this factory understands the DataQueryFormat.
+                If the format is unknown, null will be returned
+            </summary>
+            <param name="format">The format</param>
+            <returns>IComplexDataQueryBuilder is this factory knows how to build this query format, or null if it doesn't</returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.ComplexDataQueryFactoryV21.GetComplexDataQueryBuilder(Org.Sdmxsource.Sdmx.Api.Model.Format.IDataQueryFormat{System.Xml.Linq.XDocument})">
+            <summary>
+                Returns a ComplexDataQueryBuilder only if this factory understands the DataQueryFormat.
+                If the format is unknown, null will be returned
+            </summary>
+            <param name="format">The format</param>
+            <returns>
+                IComplexDataQueryBuilder is this factory knows how to build this query format, or null if it doesn't
+            </returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.ComplexDataQueryFactoryV21.ExtractToolIndicator(Org.Sdmxsource.Sdmx.Api.Model.Format.IDataQueryFormat{System.Xml.Linq.XDocument})">
+            <summary>
+            Extracts the tool indicator.
+            </summary>
+            <param name="dataQueryFormat">
+            The data query format.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator"/>.
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Factory.ComplexStructureQueryFactoryV21">
+            <summary>
+            Complex Structure Query factory
+            </summary>
+            <seealso cref="T:Estat.Sri.CustomRequests.Factory.IComplexStructureQueryFactory`1"/>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Factory.IComplexStructureQueryFactory`1">
+            <summary>
+                A ComplexStructureQueryFactory is responsible fore creating a ComplexStructureQueryBuilder
+                that build a query that can be used for services external to the SdmxSource framework
+            </summary>
+            <typeparam name="T">The type</typeparam>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.IComplexStructureQueryFactory`1.GetComplexStructureQueryBuilder(Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{`0})">
+            <summary>
+                Returns a ComplexStructureQueryBuilder only if this factory understands the StructureQueryFormat.
+                If the format is unknown, null will be returned
+            </summary>
+            <param name="format">The format</param>
+            <returns>
+                ComplexStructureQueryBuilder is this factory knows how to build this query format, or null if it doesn't
+            </returns>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Factory.ComplexStructureQueryFactoryV21._toolIndicator">
+            <summary>
+            The tool indicator
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.ComplexStructureQueryFactoryV21.#ctor(Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Factory.ComplexStructureQueryFactoryV21"/> class.
+            </summary>
+            <param name="toolIndicator">The tool indicator.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.ComplexStructureQueryFactoryV21.GetComplexStructureQueryBuilder(Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{System.Xml.Linq.XDocument})">
+            <summary>
+                Returns a ComplexStructureQueryBuilder only if this factory understands the StructureQueryFormat.
+                If the format is unknown, null will be returned
+            </summary>
+            <param name="format">The format</param>
+            <returns>
+                ComplexStructureQueryBuilder is this factory knows how to build this query format, or null if it doesn't
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.CommentComplexDataQueryBuilder">
+            <summary>
+            The  Comment ComplexDataQueryBuilder
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.CommentComplexDataQueryBuilder._complexDataQueryBuilder">
+            <summary>
+            The _complex data query builder.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.CommentComplexDataQueryBuilder._toolIndicator">
+            <summary>
+            The _tool indicator.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.CommentComplexDataQueryBuilder.#ctor(Estat.Sri.CustomRequests.Builder.IComplexDataQueryBuilder,Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.CommentComplexDataQueryBuilder"/> class.
+            </summary>
+            <param name="complexDataQueryBuilder">
+            The complex data query builder.
+            </param>
+            <param name="toolIndicator">
+            The tool indicator.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.CommentComplexDataQueryBuilder.BuildComplexDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery)">
+            <summary>
+            Builds a ComplexDataQuery that matches the passed in format
+            </summary>
+            <param name="query">
+            The query.
+            </param>
+            <returns>
+            The document
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.CommentComplexStructureQueryBuilder">
+            <summary>
+            The Comment Complex Structure Query Builder
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.CommentComplexStructureQueryBuilder._complexStructureQueryBuilder">
+            <summary>
+            The _complex structure query builder.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.CommentComplexStructureQueryBuilder._toolIndicator">
+            <summary>
+            The _tool indicator.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.CommentComplexStructureQueryBuilder.#ctor(Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator,Estat.Sri.CustomRequests.Builder.IComplexStructureQueryBuilder{System.Xml.Linq.XDocument})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.CommentComplexStructureQueryBuilder"/> class. 
+            Initializes a new instance of the <see cref="T:System.Object"/> class.
+            </summary>
+            <param name="toolIndicator">
+            The tool Indicator.
+            </param>
+            <param name="complexStructureQueryBuilder">
+            The complex Structure Query Builder.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.CommentComplexStructureQueryBuilder.BuildComplexStructureQuery(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQuery)">
+            <summary>
+            Builds a ComplexStructureQuery that matches the passed in format
+            </summary>
+            <param name="query">
+            The query.
+            </param>
+            <returns>
+            The complex structure
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.CommentQueryStructureRequestBuilder">
+            <summary>
+            The Comment Query Structure Request Builder
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.IQueryStructureRequestBuilder`1">
+            <summary>
+                Responsible for building a Query Structure Request that can be used to query services external to the
+                <c>SdmxSource</c> framework
+            </summary>
+            <typeparam name="T">The output query type</typeparam>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.IQueryStructureRequestBuilder`1.BuildStructureQuery(System.Collections.Generic.IEnumerable{Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference},System.Boolean)">
+            <summary>
+                Builds a <c>QueryStructureRequest</c> that matches the passed in format
+            </summary>
+            <param name="queries">
+                The queries.
+            </param>
+            <param name="resolveReferences">
+                Set to <c>True</c> to resolve references.
+            </param>
+            <returns>
+                The <typeparamref name="T" /> from <paramref name="queries" />.
+            </returns>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.CommentQueryStructureRequestBuilder._queryStructureRequestBuilder">
+            <summary>
+            The _query structure request builder.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.CommentQueryStructureRequestBuilder._toolIndicator">
+            <summary>
+            The _tool indicator.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.CommentQueryStructureRequestBuilder.#ctor(Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator,Estat.Sri.CustomRequests.Builder.IQueryStructureRequestBuilder{System.Xml.Linq.XDocument})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.CommentQueryStructureRequestBuilder"/> class. 
+            Initializes a new instance of the <see cref="T:System.Object"/> class.
+            </summary>
+            <param name="toolIndicator">
+            The tool Indicator.
+            </param>
+            <param name="queryStructureRequestBuilder">
+            The query Structure Request Builder.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.CommentQueryStructureRequestBuilder.BuildStructureQuery(System.Collections.Generic.IEnumerable{Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference},System.Boolean)">
+            <summary>
+            Builds a <c>QueryStructureRequest</c> that matches the passed in format
+            </summary>
+            <param name="queries">
+            The queries.
+            </param>
+            <param name="resolveReferences">
+            Set to <c>True</c> to resolve references.
+            </param>
+            <returns>
+            The <see cref="T:System.Xml.Linq.XDocument"/> from <paramref name="queries"/>.
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.ComplexDataQueryBuilderManager">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.IComplexDataQueryBuilderManager">
+            <summary>
+                Builds a DataQuery in the required format
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.IComplexDataQueryBuilderManager.BuildComplexDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmxsource.Sdmx.Api.Model.Format.IDataQueryFormat{System.Xml.Linq.XDocument})">
+            <summary>
+            Builds a complex data query in the requested format
+            </summary>
+            <param name="complexDataQuery">The query to build a representation of</param>
+            <param name="dataQueryFormat">The required format</param>
+            <returns>
+            Query in the desired format
+            </returns>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.ComplexDataQueryBuilderManager._factory">
+            <summary>
+                The _factory
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.ComplexDataQueryBuilderManager.#ctor(Estat.Sri.CustomRequests.Factory.IComplexDataQueryFactory)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.ComplexDataQueryBuilderManager"/> class.
+            </summary>
+            <param name="factory">The factory.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.ComplexDataQueryBuilderManager.BuildComplexDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery,Org.Sdmxsource.Sdmx.Api.Model.Format.IDataQueryFormat{System.Xml.Linq.XDocument})">
+            <summary>
+                Builds a complex data query in the requested format
+            </summary>
+            <param name="complexDataQuery">The query to build a representation of</param>
+            <param name="dataQueryFormat">The required format</param>
+            <returns>
+                Query in the desired format
+            </returns>
+            <exception cref="T:Org.Sdmxsource.Sdmx.Api.Exception.SdmxUnauthorisedException">Unsupported ComplexDataQueryFormat:  + dataQueryFormat</exception>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.ComplexStructureQueryBuilderManager`1">
+            <summary>
+                Complex Structure Query Builder Manager
+            </summary>
+            <typeparam name="T">The type</typeparam>
+            <seealso cref="T:Estat.Sri.CustomRequests.Manager.IComplexStructureQueryBuilderManager`1"/>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.IComplexStructureQueryBuilderManager`1">
+            <summary>
+                Builds a StructureQuery in the required format
+            </summary>
+            <typeparam name="T">The type</typeparam>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.IComplexStructureQueryBuilderManager`1.BuildComplexStructureQuery(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQuery,Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{`0})">
+            <summary>
+                Builds a complex structure query in the requested format
+            </summary>
+            <param name="complexStructureQuery">complexStructureQuery the query to build a representation of</param>
+            <param name="structureQueryFormat">the required format</param>
+            <returns>
+                Representation of query in the desired format.
+            </returns>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.ComplexStructureQueryBuilderManager`1._factory">
+            <summary>
+                The _factory
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.ComplexStructureQueryBuilderManager`1.#ctor(Estat.Sri.CustomRequests.Factory.IComplexStructureQueryFactory{`0})">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.ComplexStructureQueryBuilderManager`1"/> class.
+                Checks each ComplexStructureQueryFactory registered to the Spring beans framework asking each one in turn to
+                obtain a complexStructureQuery builder.  The StructureQueryFactory to respond with a not null value, will be
+                returned
+            </summary>
+            <param name="factory">The factory.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.ComplexStructureQueryBuilderManager`1.BuildComplexStructureQuery(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.Complex.IComplexStructureQuery,Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{`0})">
+            <summary>
+                Builds the complex structure complexStructureQuery.
+            </summary>
+            <param name="complexStructureQuery">The complexStructureQuery.</param>
+            <param name="structureQueryFormat">The structure complexStructureQuery format.</param>
+            <returns>The complex structure</returns>
+            <exception cref="T:Org.Sdmxsource.Sdmx.Api.Exception.SdmxUnauthorisedException">Unsupported ComplexStructureQueryFormat:  + structureQueryFormat</exception>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.ConstrainQueryBuilderV2">
+            <summary>
+                Singleton factory pattern to build Version 2 reference beans from query types
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ConstrainQueryBuilderV2.BuildDataflowQuery(Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.DataflowRefType)">
+            <summary>
+                Build dataflow query. Override to alter the default behavior
+            </summary>
+            <param name="refType">
+                The Dataflow reference (SDMX v2.0
+            </param>
+            <returns>
+                The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference"/>.
+            </returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ConstrainQueryBuilderV2.AddDummyValuesForValidity(Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.DataflowRefType,Org.Sdmxsource.Sdmx.Api.Model.Mutable.Base.IMaintainableMutableObject)">
+            <summary>
+                Add dummy values for validity.
+            </summary>
+            <param name="dataflowRefType">
+                The dataflow ref type.
+            </param>
+            <param name="mutable">
+                The mutable.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ConstrainQueryBuilderV2.BuildConstraintObject(Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.DataflowRefType)">
+            <summary>
+                The build constraint object.
+            </summary>
+            <param name="dataflowRefType">
+                The dataflow ref type.
+            </param>
+            <returns>
+                The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject"/>.
+            </returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.ConstrainQueryBuilderV2.BuildCubeRegion(Org.Sdmx.Resources.SdmxMl.Schemas.V20.Common.CubeRegionType)">
+            <summary>
+                The build cube region.
+            </summary>
+            <param name="cubeRegionType">
+                The cube region type.
+            </param>
+            <returns>
+                The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Mutable.Registry.ICubeRegionMutableObject"/>.
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2">
+            <summary>
+                The queries structure request builder v 2.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.UnknownId">
+            <summary>
+                The unknown id.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2._referenceTransform">
+            <summary>
+            The _reference transform
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2._headerXmlBuilder">
+            <summary>
+                The _header xml builder.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2._header">
+            <summary>
+                The _header.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Header.IHeader)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2"/> class.
+            </summary>
+            <param name="header">
+                The header.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Header.IHeader,Org.Sdmxsource.Sdmx.Api.Builder.IBuilder{Org.Sdmx.Resources.SdmxMl.Schemas.V20.Message.HeaderType,Org.Sdmxsource.Sdmx.Api.Model.Header.IHeader})">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2"/> class.
+            </summary>
+            <param name="header">
+                The header.
+            </param>
+            <param name="headerXmlBuilder">
+                The header xml builder.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.BuildStructureQuery(System.Collections.Generic.IEnumerable{Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference},System.Boolean)">
+            <summary>
+                Builds a StructureQuery that matches the passed in format
+            </summary>
+            <param name="queries">
+                The list of Queries
+            </param>
+            <param name="resolveReferences">
+                Set to <c>True</c> to resolve references.
+            </param>
+            <returns>
+                The <see cref="T:Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.QueryStructureRequestType"/>.
+            </returns>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.BuildConstrainable(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.DataflowRefType)">
+            <summary>
+            Builds the constrainable.
+            </summary>
+            <param name="structureQuery">The structure queries.</param>
+            <param name="dataflowRefType">The dataflow ref type.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.BuildCubeRegion(Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.ICubeRegion,Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.DataflowRefType)">
+            <summary>
+                Build cube region from <paramref name="cubeRegionObject" /> and add it to <paramref name="dataflowRefType" />
+            </summary>
+            <param name="cubeRegionObject">
+                The cube Region Object.
+            </param>
+            <param name="dataflowRefType">
+                The dataflow ref type.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.BuildMember(Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IKeyValues,Org.Sdmx.Resources.SdmxMl.Schemas.V20.Common.CubeRegionType)">
+            <summary>
+                Build member from <paramref name="keyValuese" /> and add it to <paramref name="cubeRegion" />
+            </summary>
+            <param name="keyValuese">
+                The key values.
+            </param>
+            <param name="cubeRegion">
+                The cube region.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.BuildStructureQuery(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.QueryStructureRequestType)">
+            <summary>
+                The build structure queries.
+            </summary>
+            <param name="structureQuery">
+                The structure queries.
+            </param>
+            <param name="requestType">
+                The request type.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Builder.QueryStructureRequestBuilderV2.BuildRegistryInterface(Org.Sdmx.Resources.SdmxMl.Schemas.V20.Registry.QueryStructureRequestType)">
+            <summary>
+                The build registry interface.
+            </summary>
+            <param name="requestType">
+                The request type.
+            </param>
+            <returns>
+                The <see cref="T:System.Xml.Linq.XDocument"/>.
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Constants.SpecialValues">
+            <summary>
+                The special MemberValues.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Constants.SpecialValues.DummyMemberValue">
+            <summary>
+                The dummy member value. It is used for custom requests at the value-less member.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Factory.IQueryStructureRequestFactory">
+            <summary>
+                A  query structure request factory is a factory which is responsible fore creating a builder that can build
+                a <c>QueryStructureRequest</c> message in the format defined by the <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat`1"/>
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.IQueryStructureRequestFactory.GetStructureQueryBuilder``1(Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{``0})">
+            <summary>
+                Returns a <see cref="T:Estat.Sri.CustomRequests.Builder.IQueryStructureRequestBuilder`1"/> only if this factory understands the
+                <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat`1"/>.  If the format is unknown, null will be returned
+            </summary>
+            <typeparam name="T">generic type parameter</typeparam>
+            <param name="format">The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat`1"/>.</param>
+            <returns>
+                <see cref="T:Estat.Sri.CustomRequests.Builder.IQueryStructureRequestBuilder`1"/> if this factory knows how to build this query format, or null
+                if it doesn't
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Factory.QueryStructureRequestFactory">
+            <summary>
+                The query structure request factory.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Factory.QueryStructureRequestFactory._requestBuilder">
+            <summary>
+                The _request builder.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.QueryStructureRequestFactory.#ctor(Estat.Sri.CustomRequests.Builder.IQueryStructureRequestBuilder{System.Xml.Linq.XDocument})">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Factory.QueryStructureRequestFactory"/> class.
+            </summary>
+            <param name="requestBuilder">
+                The request builder.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Factory.QueryStructureRequestFactory.GetStructureQueryBuilder``1(Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{``0})">
+            <summary>
+                Returns a <see cref="T:Estat.Sri.CustomRequests.Builder.IQueryStructureRequestBuilder`1"/> only if this factory understands the
+                <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat`1"/>
+                .  If the format is unknown, null will be returned
+            </summary>
+            <typeparam name="T">
+                generic type parameter
+            </typeparam>
+            <param name="format">
+                The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat`1"/>.
+            </param>
+            <returns>
+                <see cref="T:Estat.Sri.CustomRequests.Builder.IQueryStructureRequestBuilder`1"/> if this factory knows how to build this query format, or null if it
+                doesn't
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.CustomQueryParseManager">
+            <summary>
+                A <c>QueryStructureRequest</c> and structure query parser. Supports Constraints in <c>Dataflow</c> references in
+                <c>SDMX</c> v2.0 <c>QueryStructureRequest</c>.
+            </summary>
+            <remarks>
+                This class extends <see cref="T:Org.Sdmxsource.Sdmx.Structureparser.Manager.Parsing.QueryParsingManager"/> and uses the <see cref="T:Estat.Sri.CustomRequests.Builder.ConstrainQueryBuilderV2"/> for SDMX
+                v2.0 Query Structure parsing.
+            </remarks>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.CustomQueryParseManager.#ctor(Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.CustomQueryParseManager"/> class.
+            </summary>
+            <param name="sdmxSchema">
+                The SDMX schema.
+            </param>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.IQueryStructureRequestBuilderManager">
+            <summary>
+                The Query Structure Request Builder Manager interface.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.IQueryStructureRequestBuilderManager.BuildStructureQuery``1(System.Collections.Generic.IEnumerable{Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference},Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{``0},System.Boolean)">
+            <summary>
+                Builds a query structure request in the requested format
+            </summary>
+            <param name="structureReferences">
+                The list of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference"/> to build a representation of
+                <c>QueryStructureRequest</c>
+            </param>
+            <param name="structureQueryFormat">The required format.</param>
+            <param name="resolveReferences">
+                Set to <c>True</c> to resolve references.
+            </param>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <returns>Representation of query in the desired format.</returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager">
+            <summary>
+                The query structure request builder manager.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager._factories">
+            <summary>
+                The factories.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager.#ctor(Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager"/> class.
+            </summary>
+            <param name="toolIndicator">The tool indicator.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Header.IHeader,Org.Sdmxsource.Sdmx.Structureparser.Model.IToolIndicator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager"/> class.
+            </summary>
+            <param name="header">The header.</param>
+            <param name="toolIndicator">The tool indicator.</param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager.#ctor(Estat.Sri.CustomRequests.Factory.IQueryStructureRequestFactory[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager"/> class.
+            </summary>
+            <param name="factories">
+                The factories.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Header.IHeader)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager"/> class.
+            </summary>
+            <param name="header">
+                The header.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Manager.QueryStructureRequestBuilderManager.BuildStructureQuery``1(System.Collections.Generic.IEnumerable{Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference},Org.Sdmxsource.Sdmx.Api.Model.Format.IStructureQueryFormat{``0},System.Boolean)">
+            <summary>
+                Builds a query structure request in the requested format
+            </summary>
+            <param name="structureReferences">
+                The list of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference"/> to build a representation of <c>QueryStructureRequest</c>
+            </param>
+            <param name="structureQueryFormat">
+                The required format.
+            </param>
+            <param name="resolveReferences">
+                Set to <c>True</c> to resolve references.
+            </param>
+            <typeparam name="T">
+                Generic type parameter.
+            </typeparam>
+            <returns>
+                Representation of query in the desired format.
+            </returns>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Model.ComplexQueryFormatV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference">
+            <summary>
+                The constrainable structure reference.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Model.IConstrainableStructureReference">
+            <summary>
+                A structure reference that can include a <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject"/>
+            </summary>
+        </member>
+        <member name="P:Estat.Sri.CustomRequests.Model.IConstrainableStructureReference.ConstraintObject">
+            <summary>
+                Gets the content constraint that this structure reference can hold.
+            </summary>
+        </member>
+        <member name="F:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference._constraint">
+            <summary>
+                The _constraint.
+            </summary>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.#ctor(System.Uri)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference"/> class.
+            </summary>
+            <param name="urn">
+                The urn.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.#ctor(System.Uri,Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference"/> class.
+            </summary>
+            <param name="urn">
+                The urn.
+            </param>
+            <param name="constraint">
+                The constraint.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.#ctor(System.String,Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference"/> class.
+            </summary>
+            <param name="urn">
+                The urn.
+            </param>
+            <param name="constraint">
+                The constraint.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference"/> class.
+            </summary>
+            <param name="structureReference">
+                The structure Reference.
+            </param>
+            <param name="constraint">
+                The constraint.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.#ctor(System.String,System.String,System.String,Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureType,Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject,System.String[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference"/> class.
+            </summary>
+            <param name="agencyId">
+                The agency id.
+            </param>
+            <param name="maintainableId">
+                The maintainable id.
+            </param>
+            <param name="version">
+                The version.
+            </param>
+            <param name="targetStructureEnum">
+                The target structure type.
+            </param>
+            <param name="constraint">
+                The constraint.
+            </param>
+            <param name="identfiableIds">
+                The identifiable ids.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.#ctor(System.String,System.String,System.String,Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureEnumType,Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject,System.String[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference"/> class.
+            </summary>
+            <param name="agencyId">
+                The agency id.
+            </param>
+            <param name="maintainableId">
+                The maintainable id.
+            </param>
+            <param name="version">
+                The version.
+            </param>
+            <param name="targetStructureEnum">
+                The target structure type.
+            </param>
+            <param name="constraint">
+                The constraint.
+            </param>
+            <param name="identfiableIds">
+                The identifiable ids.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureEnumType,Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference"/> class.
+            </summary>
+            <param name="crossReference">
+                The cross reference.
+            </param>
+            <param name="structureEnumType">
+                The structure type.
+            </param>
+            <param name="constraint">
+                The constraint.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.#ctor(System.String,System.String,System.String,Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureType,System.Collections.Generic.IList{System.String},Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference"/> class.
+            </summary>
+            <param name="agencyId">
+                The agency id.
+            </param>
+            <param name="maintainableId">
+                The maintainable id.
+            </param>
+            <param name="version">
+                The version.
+            </param>
+            <param name="targetStructureEnum">
+                The target structure type.
+            </param>
+            <param name="identfiableIds">
+                The identifiable ids.
+            </param>
+            <param name="constraint">
+                The constraint.
+            </param>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.Equals(System.Object)">
+            <summary>
+                Determines whether the specified <see cref="T:Org.Sdmxsource.Sdmx.Util.Objects.Reference.StructureReferenceImpl"/> is equal to the current
+                <see cref="T:Org.Sdmxsource.Sdmx.Util.Objects.Reference.StructureReferenceImpl"/>
+                .
+            </summary>
+            <returns>
+                true if the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:Org.Sdmxsource.Sdmx.Util.Objects.Reference.StructureReferenceImpl"/>
+                ; otherwise, false.
+            </returns>
+            <param name="obj">
+                The <see cref="T:System.Object"/> to compare with the current <see cref="T:Org.Sdmxsource.Sdmx.Util.Objects.Reference.StructureReferenceImpl"/> .
+            </param>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.GetHashCode">
+            <summary>
+                Serves as a hash function for a particular type.
+            </summary>
+            <returns>
+                A hash code for the current <see cref="T:Org.Sdmxsource.Sdmx.Util.Objects.Reference.StructureReferenceImpl"/> .
+            </returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.Equals(Estat.Sri.CustomRequests.Model.ConstrainableStructureReference)">
+            <summary>
+                The equals.
+            </summary>
+            <param name="other">
+                The other.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="P:Estat.Sri.CustomRequests.Model.ConstrainableStructureReference.ConstraintObject">
+            <summary>
+                Gets the content constraint that this structure reference can hold.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Model.GenericDataDocumentFormatV21">
+            <summary>
+            Format for Generic data queries
+            </summary>
+        </member>
+        <member name="P:Estat.Sri.CustomRequests.Model.GenericDataDocumentFormatV21.ToolIndicator">
+            <summary>
+            Gets or sets the tool indicator.
+            </summary>
+            <value>
+            The tool indicator.
+            </value>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Model.GenericTimeSeriesDataFormatV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Model.QueryStructureRequestFormat">
+            <summary>
+                The SDMX v2.0 Registry Interface <c>QueryStructureRequest</c> format.
+            </summary>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Model.StructSpecificDataFormatV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="P:Estat.Sri.CustomRequests.Model.StructSpecificDataFormatV21.ToolIndicator">
+            <summary>
+            Gets or sets the tool indicator.
+            </summary>
+            <value>
+            The tool indicator.
+            </value>
+        </member>
+        <member name="T:Estat.Sri.CustomRequests.Model.StructSpecificTimeSeriesDataFormatV21">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+    </members>
+</doc>

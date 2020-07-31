@@ -1,0 +1,46 @@
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLlib\VTLlib\bin\Debug\VTLlib.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLlib\VTLlib\bin\Debug\VTLlib.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLlib\VTLlib\bin\Debug\Antlr4.Runtime.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLlib\VTLlib\bin\Debug\Antlr4.Runtime.xml
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLlib\VTLlib\obj\Debug\VTLlib.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLlib\VTLlib\obj\Debug\VTLlib.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLlib\VTLlib\obj\Debug\VTLlib.csprojResolveAssemblyReference.cache
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\VTLlib\bin\Debug\VTLlib.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\VTLlib\bin\Debug\VTLlib.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\VTLlib\bin\Debug\Antlr4.Runtime.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\VTLlib\bin\Debug\Antlr4.Runtime.xml
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\VTLlib\obj\Debug\VTLlib.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\VTLlib\obj\Debug\VTLlib.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\VTLlib\bin\Debug\VTLlib.dll
+G:\SOURCE_CODE\VTL_GenLatVer\VTLlib\bin\Debug\VTLlib.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\VTLlib\obj\Debug\VTLlib.csprojResolveAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\VTLlib\obj\Debug\VTLlib.dll
+G:\SOURCE_CODE\VTL_GenLatVer\VTLlib\obj\Debug\VTLlib.pdb
+D:\SOFTWARE\Interno\ParserVTL\ultimo 05 04 2019\VTLEditor06042019\VTLlib\bin\Debug\VTLlib.dll
+D:\SOFTWARE\Interno\ParserVTL\ultimo 05 04 2019\VTLEditor06042019\VTLlib\bin\Debug\VTLlib.pdb
+D:\SOFTWARE\Interno\ParserVTL\ultimo 05 04 2019\VTLEditor06042019\VTLlib\obj\Debug\VTLlib.csprojResolveAssemblyReference.cache
+D:\SOFTWARE\Interno\ParserVTL\ultimo 05 04 2019\VTLEditor06042019\VTLlib\obj\Debug\VTLlib.dll
+D:\SOFTWARE\Interno\ParserVTL\ultimo 05 04 2019\VTLEditor06042019\VTLlib\obj\Debug\VTLlib.pdb
+H:\SOURCE_CODE\VTLEditor\VTLlib\bin\Debug\VTLlib.dll
+H:\SOURCE_CODE\VTLEditor\VTLlib\bin\Debug\VTLlib.pdb
+H:\SOURCE_CODE\VTLEditor\VTLlib\obj\Debug\VTLlib.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor\VTLlib\obj\Debug\VTLlib.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor\VTLlib\obj\Debug\VTLlib.dll
+H:\SOURCE_CODE\VTLEditor\VTLlib\obj\Debug\VTLlib.pdb
+H:\SOURCE_CODE\VTLEditor\VTLlib\obj\Debug\VTLlib.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\VTLlib\bin\Debug\VTLlib.dll
+H:\SOURCE_CODE\VTLEditor -GIT\VTLlib\bin\Debug\VTLlib.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\VTLlib\obj\Debug\VTLlib.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor -GIT\VTLlib\obj\Debug\VTLlib.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\VTLlib\obj\Debug\VTLlib.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor -GIT\VTLlib\obj\Debug\VTLlib.dll
+H:\SOURCE_CODE\VTLEditor -GIT\VTLlib\obj\Debug\VTLlib.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\obj\Debug\VTLlib.csproj.CoreCompileInputs.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\bin\Debug\VTLlib.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\bin\Debug\VTLlib.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\bin\Debug\Antlr4.Runtime.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\bin\Debug\Antlr4.Runtime.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\obj\Debug\VTLlib.csprojAssemblyReference.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\obj\Debug\VTLlib.csproj.CopyComplete
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\obj\Debug\VTLlib.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\VTLlib\obj\Debug\VTLlib.pdb

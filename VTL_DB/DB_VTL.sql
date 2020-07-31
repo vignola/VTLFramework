@@ -1,0 +1,1466 @@
+--------------------------------------------------------
+--  File created - venerdì-aprile-19-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Type MDT_BLOB
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TYPE "MDT_BLOB" AS OBJECT (blob_file blob, blob_filename VARCHAR ( 100 ))
+
+
+/
+
+--------------------------------------------------------
+--  DDL for Type MDT_COLLECT_TABLE
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TYPE "MDT_COLLECT_TABLE" AS TABLE OF VARCHAR (4000)
+
+
+/
+
+--------------------------------------------------------
+--  DDL for Type STRUCT_FLAG_COMBINATION
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TYPE "STRUCT_FLAG_COMBINATION" AS OBJECT (flag VARCHAR2(1 CHAR), related_flags TABLE_VARCHAR2, result_option VARCHAR2(1 CHAR))
+
+
+/
+
+--------------------------------------------------------
+--  DDL for Type TABLE_FLAG_COMBINATION
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TYPE "TABLE_FLAG_COMBINATION" AS TABLE OF STRUCT_FLAG_COMBINATION
+
+
+/
+
+--------------------------------------------------------
+--  DDL for Type TABLE_VARCHAR2
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TYPE "TABLE_VARCHAR2" AS TABLE OF VARCHAR2(200 CHAR)
+
+
+/
+
+--------------------------------------------------------
+--  DDL for Type TYP_AGGR_FLAGS
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TYPE "TYP_AGGR_FLAGS" AS OBJECT ( l_flags          VARCHAR2(200 CHAR),  l_flags_tbl      TABLE_VARCHAR2,  l_flags_counter  NUMBER,  static function ODCIAggregateInitialize (actx in out TYP_AGGR_FLAGS) return NUMBER,  member function ODCIAggregateIterate (self in out TYP_AGGR_FLAGS, val in VARCHAR2) return NUMBER,  member function ODCIAggregateTerminate (self in TYP_AGGR_FLAGS, returnValue out VARCHAR2, flags in NUMBER) return NUMBER,  member function ODCIAggregateMerge (self in out TYP_AGGR_FLAGS, ctx2 in TYP_AGGR_FLAGS) return NUMBER )
+/
+CREATE OR REPLACE EDITIONABLE TYPE BODY "TYP_AGGR_FLAGS" as static function ODCIAggregateInitialize (actx in out TYP_AGGR_FLAGS) return NUMBER IS  BEGIN  if (actx is null) then  actx := typ_aggr_flags('', table_varchar2(), 0);  else  actx.l_flags := '';  actx.l_flags_tbl.delete();  actx.l_flags_counter := 0;  end if;  return ODCIConst.Success;  END;  member function ODCIAggregateIterate (self in out TYP_AGGR_FLAGS, val in VARCHAR2) return NUMBER  IS  l_found boolean := false;  l_value VARCHAR2(200 char);  l_char  VARCHAR2(1 char);  BEGIN  if (val is not null) then  l_value := trim(val);  for k in 1..length(l_value)  loop  l_char := substr(l_value, k, 1);  for i in 1..self.l_flags_counter  loop  if (l_char = self.l_flags_tbl(i)) then  l_found := true;  exit;  end if;  end loop;  if (not l_found) then  self.l_flags_tbl.extend(1);  self.l_flags_counter := self.l_flags_counter + 1;  self.l_flags_tbl(self.l_flags_counter) := l_char;  end if;  l_found := false;  end loop;  end if;  return ODCIConst.Success;  END;  member function ODCIAggregateTerminate (self in TYP_AGGR_FLAGS, returnValue out VARCHAR2, flags in NUMBER) return NUMBER  IS  l_tbl  TABLE_VARCHAR2;  BEGIN  select a.column_value  bulk collect into l_tbl  from table(self.l_flags_tbl) a  order by 1;  returnValue := '';  for i in 1..l_tbl.count()  loop  returnValue := returnValue || l_tbl(i);  end loop;  return ODCIConst.Success;  END;  member function ODCIAggregateMerge (self in out TYP_AGGR_FLAGS, ctx2 in TYP_AGGR_FLAGS) return NUMBER IS  BEGIN  return ODCIConst.Success;  END; END;
+
+
+/
+
+--------------------------------------------------------
+--  DDL for Sequence ARTEFACT_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "ARTEFACT_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 40 START WITH 40 CACHE 20 NOORDER  NOCYCLE  NOPARTITION ;
+--------------------------------------------------------
+--  DDL for Sequence ITEM_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "ITEM_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 13690 CACHE 20 NOORDER  NOCYCLE  NOPARTITION ;
+--------------------------------------------------------
+--  DDL for Sequence LOCALISED_STRING_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "LOCALISED_STRING_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 13733 CACHE 20 NOORDER  NOCYCLE  NOPARTITION ;
+--------------------------------------------------------
+--  DDL for Sequence MDT_OBJECT_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "MDT_OBJECT_ID"  MINVALUE 2000 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 2020 CACHE 20 NOORDER  NOCYCLE  NOPARTITION ;
+--------------------------------------------------------
+--  DDL for Sequence MDT_RECYCLEBIN_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "MDT_RECYCLEBIN_ID"  MINVALUE 2000 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 2000 CACHE 20 NOORDER  NOCYCLE  NOPARTITION ;
+--------------------------------------------------------
+--  DDL for Sequence MDT_SESSION_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "MDT_SESSION_ID"  MINVALUE 2000 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 2040 CACHE 20 NOORDER  NOCYCLE  NOPARTITION ;
+--------------------------------------------------------
+--  DDL for Sequence MDT_UPDATE_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "MDT_UPDATE_ID"  MINVALUE 2000 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 2000 CACHE 20 NOORDER  NOCYCLE  NOPARTITION ;
+--------------------------------------------------------
+--  DDL for Sequence OPERATIONS_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "OPERATIONS_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE  NOPARTITION ;
+--------------------------------------------------------
+--  DDL for Table AGENCY
+--------------------------------------------------------
+
+  CREATE TABLE "AGENCY" 
+   (	"AGENCY_ID" VARCHAR2(50), 
+	"DESCRIPTION" VARCHAR2(200)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "AGENCY"  IS ' In this table are stored the agencies associated to the different artefacts. The localization for the Agency is not managed using the localized string. It is recommended to use an English Language ';
+--------------------------------------------------------
+--  DDL for Table ARTEFACT
+--------------------------------------------------------
+
+  CREATE TABLE "ARTEFACT" 
+   (	"ARTEFACT_SEQ_ID" NUMBER(10,0), 
+	"ARTEFACT_ID" VARCHAR2(150), 
+	"SDMX_ID" VARCHAR2(60), 
+	"SDMX_AGENCY" VARCHAR2(50), 
+	"SDMX_VERSION" VARCHAR2(10), 
+	"CREATION_TYPE" NUMBER(1,0) DEFAULT 0
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON COLUMN "ARTEFACT"."CREATION_TYPE" IS '0: web service download, 1: transformation result, 2: user defined ';
+   COMMENT ON TABLE "ARTEFACT"  IS 'The Artefact table contains all the Maintainable artefacts, that is the artefact having in SDMX id, agency and version. These are: Data Structure, Dataset, Value domain, 
+ Value domain subset, Transformation scheme, Operand ..........';
+--------------------------------------------------------
+--  DDL for Table CODE_ITEM_RELATION
+--------------------------------------------------------
+
+  CREATE TABLE "CODE_ITEM_RELATION" 
+   (	"COMPOSITION_ID" VARCHAR2(60), 
+	"VALUE_DOMAIN_SEQ_ID" NUMBER(10,0), 
+	"IS_SUBSET" NUMBER(10,0), 
+	"MEMBER1_SEQ_VALUE" NUMBER(10,0), 
+	"RELATION_TYPE" VARCHAR2(50), 
+	"DESCRIPTION" VARCHAR2(200)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "CODE_ITEM_RELATION"  IS 'Table in which is possible to store the first member of a relationship between  values of the same domain or the same value domain subset. The type of relation between the 
+first and the second member of the relationship can use: =, <, <=, >, >=. In this case the description is not in the localized string because it is recommended to use the English language';
+--------------------------------------------------------
+--  DDL for Table CODE_ITEM_RELATION_OPERAND
+--------------------------------------------------------
+
+  CREATE TABLE "CODE_ITEM_RELATION_OPERAND" 
+   (	"COMPOSITION_ID" VARCHAR2(60), 
+	"MEMBER2_SEQ_VALUE" NUMBER(10,0), 
+	"OPERATOR" VARCHAR2(20)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "CODE_ITEM_RELATION_OPERAND"  IS ' Table in which is possible to store second member of relationship between value of the same domain or the same value domain subset. The operator field represents 
+the operators that links the values of the second members and it can be + or -. For example IT+BE+LU ';
+--------------------------------------------------------
+--  DDL for Table COMPONENT
+--------------------------------------------------------
+
+  CREATE TABLE "COMPONENT" 
+   (	"COMPONENT_SEQ_ID" NUMBER(10,0), 
+	"DATA_STRUCTURE_SEQ_ID" NUMBER(10,0), 
+	"VALUE_DOMAIN_SEQ_ID" NUMBER(10,0), 
+	"ROLE" VARCHAR2(10)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON COLUMN "COMPONENT"."DATA_STRUCTURE_SEQ_ID" IS 'Is the reference to the data structure to wich the component belong ';
+   COMMENT ON COLUMN "COMPONENT"."ROLE" IS 'Role of the component in the dta structure';
+   COMMENT ON TABLE "COMPONENT"  IS 'The Component table contains all the components of a VTL Data Structure. The corresponding id of the values is in the ITEM table. The role of a component is constrained to assume value in the list.
+(Identifier, Mesaure and Attribute. The VALUE_DOMAIN_SEQ_ID is the id of the value domain associated to component for the Data structure';
+--------------------------------------------------------
+--  DDL for Table COMPONENT_DATASET
+--------------------------------------------------------
+
+  CREATE TABLE "COMPONENT_DATASET" 
+   (	"COMPONENT_SEQ_ID" NUMBER(10,0), 
+	"DATASET_SEQ_ID" NUMBER(10,0), 
+	"DOMAIN_VALUE_SEQ_ID" NUMBER(10,0), 
+	"IS_SUBSET" NUMBER(1,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON COLUMN "COMPONENT_DATASET"."COMPONENT_SEQ_ID" IS 'Id of the component';
+   COMMENT ON TABLE "COMPONENT_DATASET"  IS 'The Component_Dataset table is created to associate the coponent to a value domain subset inside a dataset context. It contains all the components of a VTL Data Structure associated to the value domain (IS_SUBSET =0) 
+or value domainsubset (IS_SUBSET= 1) related to the DataSet. All the components of the Data structure are in the COMPONENT_DATASET table, also those are associated to a value domain';
+--------------------------------------------------------
+--  DDL for Table DATASET
+--------------------------------------------------------
+
+  CREATE TABLE "DATASET" 
+   (	"DATASET_SEQ_ID" NUMBER(10,0), 
+	"DATA_STRUCTURE_SEQ_ID" NUMBER(10,0), 
+	"IS_COLLECTED" NUMBER(1,0) DEFAULT 0
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON COLUMN "DATASET"."DATA_STRUCTURE_SEQ_ID" IS 'Riferimento alla Data Structure su cui è definito il Data Set';
+   COMMENT ON COLUMN "DATASET"."IS_COLLECTED" IS '=0 se Data Set preso dall"esterno, =1 se è il risultato di una trasformazione';
+   COMMENT ON TABLE "DATASET"  IS 'The DataSet table contains all the VTL DataSets (SDMX Dataflows). the corresponding id of the value is in the ARTEFACT table. A dataset can be linked to the Data Structure with
+a relation on to many';
+--------------------------------------------------------
+--  DDL for Table DATA_STRUCTURE
+--------------------------------------------------------
+
+  CREATE TABLE "DATA_STRUCTURE" 
+   (	"DATA_STRUCTURE_SEQ_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "DATA_STRUCTURE"  IS ' The Data Structure table contains all the VTL Data Structure (SDMX Data Structure Definition). The corresponding id of the data structure is in the ARTEFACT table. 
+   For a Data Structure can exist one or many DataSets ';
+--------------------------------------------------------
+--  DDL for Table GROUPS
+--------------------------------------------------------
+
+  CREATE TABLE "GROUPS" 
+   (	"GROUP_ID" VARCHAR2(15), 
+	"DESCRIPTION" VARCHAR2(200)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "GROUPS"  IS ' In this table are stored all the authorized groups ';
+--------------------------------------------------------
+--  DDL for Table ITEM
+--------------------------------------------------------
+
+  CREATE TABLE "ITEM" 
+   (	"ITEM_SEQ_ID" NUMBER(10,0), 
+	"ITEM_ID" VARCHAR2(150)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "ITEM"  IS 'The Item  table contains all the artefacts, that is the artefact that are only identifiable, that is the artefact having only the id. These are: codes for Component, Value, 
+Transformation, Operand, Output ..........';
+--------------------------------------------------------
+--  DDL for Table LOCALISED_STRING
+--------------------------------------------------------
+
+  CREATE TABLE "LOCALISED_STRING" 
+   (	"LS_SEQ_ID" NUMBER(10,0), 
+	"LANGUAGE" VARCHAR2(2), 
+	"LABEL" VARCHAR2(500), 
+	"STRING_TYPE" VARCHAR2(50) DEFAULT 'Description', 
+	"ARTEFACT_SEQ_ID" NUMBER(10,0), 
+	"ITEM_SEQ_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "LOCALISED_STRING"  IS 'In questa tabella vengono memorizzate  tutte le descrizioni nelle lingue di riferimento.';
+--------------------------------------------------------
+--  DDL for Table MAP_HIERARCHY_RULE
+--------------------------------------------------------
+
+  CREATE TABLE "MAP_HIERARCHY_RULE" 
+   (	"RULE_ID" VARCHAR2(20), 
+	"RULE_DESC" VARCHAR2(100), 
+	"RULE_CLEAN" VARCHAR2(100), 
+	"LEFT_ITEM" VARCHAR2(20), 
+	"RIGHT_ITEM" VARCHAR2(100)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Table MODEL_EXAMPLE
+--------------------------------------------------------
+
+  CREATE TABLE "MODEL_EXAMPLE" 
+   (	"KEY" NUMBER, 
+	"GROUP_1" VARCHAR2(10), 
+	"GROUP_2" VARCHAR2(10), 
+	"DATE_VAL" DATE, 
+	"NUM_VAL" VARCHAR2(10)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Table OPERAND
+--------------------------------------------------------
+
+  CREATE TABLE "OPERAND" 
+   (	"TRANSFORMATION_SEQ_ID" NUMBER(10,0), 
+	"OPERAND_SEQ_ID" NUMBER(10,0), 
+	"OPERAND_TYPE" VARCHAR2(20)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "OPERAND"  IS 'This table contains the link between the transformations and their operand in input';
+--------------------------------------------------------
+--  DDL for Table OPERATIONS
+--------------------------------------------------------
+
+  CREATE TABLE "OPERATIONS" 
+   (	"OPERATIONS_SEQ_ID" NUMBER(10,0), 
+	"USERS_ID" VARCHAR2(50), 
+	"OPERATION_TYPE" VARCHAR2(50), 
+	"REFERENCE" VARCHAR2(150), 
+	"REF_TYPE" VARCHAR2(20)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON COLUMN "OPERATIONS"."OPERATION_TYPE" IS 'Tipo di operazione (modifica, creazione, cancellazione)';
+   COMMENT ON COLUMN "OPERATIONS"."REFERENCE" IS 'Corrisponde Id testuale artefatto creato o operatore  della trasformazione o del transformation Scheme';
+   COMMENT ON COLUMN "OPERATIONS"."REF_TYPE" IS 'Tipo di riferimento DS, DSet, VD, VDSet, NewOp, TS, TSC';
+   COMMENT ON TABLE "OPERATIONS"  IS '.............................';
+--------------------------------------------------------
+--  DDL for Table OUTPUT
+--------------------------------------------------------
+
+  CREATE TABLE "OUTPUT" 
+   (	"TRASFORMATION_SEQ_ID" NUMBER(10,0), 
+	"OUTPUT_SEQ_ID" NUMBER(10,0), 
+	"OUTPUT_TYPE" VARCHAR2(20)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "OUTPUT"  IS 'This table contains the link between the transformations and their outputs A transformations only on output ';
+--------------------------------------------------------
+--  DDL for Table SUBSET_LIST
+--------------------------------------------------------
+
+  CREATE TABLE "SUBSET_LIST" 
+   (	"SUBSET_SEQ_ID" NUMBER(10,0), 
+	"SUBSET_VALUE_SEQ_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "SUBSET_LIST"  IS 'The SUBSET_LIST is a table containing all the codes associated to a value domain subset. The corresponding of the value is in the ITEM table ';
+--------------------------------------------------------
+--  DDL for Table TRANSFORMATION
+--------------------------------------------------------
+
+  CREATE TABLE "TRANSFORMATION" 
+   (	"TRANSFORMATION_SEQ_ID" NUMBER(10,0), 
+	"GROUP_ID" VARCHAR2(15)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Table TRANSFORMATION_SCHEME
+--------------------------------------------------------
+
+  CREATE TABLE "TRANSFORMATION_SCHEME" 
+   (	"TRANSFORMATION_SCHEME_SEQ_ID" NUMBER(10,0), 
+	"TRANSFORMATION_SEQ_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "TRANSFORMATION_SCHEME"  IS '.................................';
+--------------------------------------------------------
+--  DDL for Table TRANSFORMATION_SCHEME_TEXT
+--------------------------------------------------------
+
+  CREATE TABLE "TRANSFORMATION_SCHEME_TEXT" 
+   (	"TRANSFORMATION_SCHEME_SEQ_ID" NUMBER(10,0), 
+	"TRANSFORMATION_SCHEME_TEXT" VARCHAR2(4000)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Table USER_DEFINE_OPERATORS
+--------------------------------------------------------
+
+  CREATE TABLE "USER_DEFINE_OPERATORS" 
+   (	"OPERATOR_ID" VARCHAR2(60), 
+	"DESCRIPTION" VARCHAR2(200), 
+	"OPERATOR_TYPE" VARCHAR2(20), 
+	"GROUP_ID" VARCHAR2(15), 
+	"OPERATOR_BODY" VARCHAR2(4000), 
+	"OPERATOR_SEQ_ID" NUMBER(*,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON COLUMN "USER_DEFINE_OPERATORS"."OPERATOR_TYPE" IS '0: operator, 1 datpoint ruleset, 2 hierarchical ruleset';
+   COMMENT ON TABLE "USER_DEFINE_OPERATORS"  IS 'In this table new operators are defined by the user using VTL. In this case the description is not in the localized string because it is not and artefact. It is 
+recommended to use the English language';
+--------------------------------------------------------
+--  DDL for Table USERS
+--------------------------------------------------------
+
+  CREATE TABLE "USERS" 
+   (	"USERS_ID" VARCHAR2(50), 
+	"USER_ROLE" VARCHAR2(15), 
+	"IS_ACTIVE" NUMBER(1,0) DEFAULT 1
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "USERS"  IS '.............................................. ';
+--------------------------------------------------------
+--  DDL for Table USERS_GROUPS
+--------------------------------------------------------
+
+  CREATE TABLE "USERS_GROUPS" 
+   (	"USERS_ID" VARCHAR2(50), 
+	"GROUP_ID" VARCHAR2(15)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Table VALUE
+--------------------------------------------------------
+
+  CREATE TABLE "VALUE" 
+   (	"VALUE_SEQ_ID" NUMBER(10,0), 
+	"VALUE_DOMAIN_SEQ_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON TABLE "VALUE"  IS 'The table Value contains the codes associated with the value Domain when this is enumerated type. The corresponding id of values is in the ITEM table ';
+--------------------------------------------------------
+--  DDL for Table VALUE_DOMAIN
+--------------------------------------------------------
+
+  CREATE TABLE "VALUE_DOMAIN" 
+   (	"VALUE_DOMAIN_SEQ_ID" NUMBER(10,0), 
+	"IS_ENUMERATED" NUMBER(1,0) DEFAULT 0, 
+	"DATA_TYPE" VARCHAR2(20), 
+	"VALUE_RESTRICTION" VARCHAR2(200)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON COLUMN "VALUE_DOMAIN"."IS_ENUMERATED" IS '1 if the Value Domain is associated to a list of codes, 0 if not';
+   COMMENT ON COLUMN "VALUE_DOMAIN"."DATA_TYPE" IS 'Data types among those allowed by VTL';
+   COMMENT ON COLUMN "VALUE_DOMAIN"."VALUE_RESTRICTION" IS 'Restriction to a data type that can be represented a regular expression or other restriction type';
+   COMMENT ON TABLE "VALUE_DOMAIN"  IS 'The table Value Domain contains all the Value Domains related to the components. The corresponding id of the value is in the ARTEFACT table. The Domain can be of 
+enumerated type is represented by list of code or not';
+--------------------------------------------------------
+--  DDL for Table VALUE_DOMAIN_SUBSET
+--------------------------------------------------------
+
+  CREATE TABLE "VALUE_DOMAIN_SUBSET" 
+   (	"SUBSET_VALUE_SEQ_ID" NUMBER(10,0), 
+	"VALUE_DOMAIN_SEQ_ID" NUMBER(10,0), 
+	"IS_ENUMERATED" NUMBER(1,0) DEFAULT 0, 
+	"SET_CRITERION_ID" VARCHAR2(200)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+   COMMENT ON COLUMN "VALUE_DOMAIN_SUBSET"."VALUE_DOMAIN_SEQ_ID" IS 'Id of the Value Domain to which the Value Domain Subset is associated';
+   COMMENT ON COLUMN "VALUE_DOMAIN_SUBSET"."IS_ENUMERATED" IS '1  if the Value Domain Subset is associated to a list of codes, 0 if not';
+   COMMENT ON TABLE "VALUE_DOMAIN_SUBSET"  IS 'The table Value Domain subset contains subsets of value domains. The corresponding id of the values is in the ARTEFACT table. A subset can be enumerated also if the corresponding value domain is not.';
+--------------------------------------------------------
+--  Constraints for Table TRANSFORMATION_SCHEME
+--------------------------------------------------------
+
+  ALTER TABLE "TRANSFORMATION_SCHEME" ADD CONSTRAINT "PK_TRASFORMATION_SCHEME" PRIMARY KEY ("TRANSFORMATION_SCHEME_SEQ_ID", "TRANSFORMATION_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "TRANSFORMATION_SCHEME" MODIFY ("TRANSFORMATION_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "TRANSFORMATION_SCHEME" MODIFY ("TRANSFORMATION_SCHEME_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table USERS
+--------------------------------------------------------
+
+  ALTER TABLE "USERS" ADD CONSTRAINT "PK_USERS" PRIMARY KEY ("USERS_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "USERS" ADD CONSTRAINT "CHK_IS_ACTIVE" CHECK (IS_ACTIVE IN (0,1)) ENABLE;
+  ALTER TABLE "USERS" ADD CONSTRAINT "CHK_USER_ROLE" CHECK (USER_ROLE IN ('Admin', 'Group_Admin', 'Guest')) ENABLE;
+  ALTER TABLE "USERS" MODIFY ("IS_ACTIVE" NOT NULL ENABLE);
+  ALTER TABLE "USERS" MODIFY ("USER_ROLE" NOT NULL ENABLE);
+  ALTER TABLE "USERS" MODIFY ("USERS_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMPONENT_DATASET
+--------------------------------------------------------
+
+  ALTER TABLE "COMPONENT_DATASET" ADD CONSTRAINT "PK_COMPONENT_DATASET" PRIMARY KEY ("COMPONENT_SEQ_ID", "DATASET_SEQ_ID", "DOMAIN_VALUE_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "COMPONENT_DATASET" MODIFY ("DATASET_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "COMPONENT_DATASET" MODIFY ("COMPONENT_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMPONENT
+--------------------------------------------------------
+
+  ALTER TABLE "COMPONENT" ADD CONSTRAINT "PK_COMPONENT" PRIMARY KEY ("COMPONENT_SEQ_ID", "DATA_STRUCTURE_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "COMPONENT" ADD CONSTRAINT "CHK_ROLE" CHECK (
+Role IN ('Identifier', 'Measure', 'Attribute')
+) ENABLE;
+  ALTER TABLE "COMPONENT" MODIFY ("ROLE" NOT NULL ENABLE);
+  ALTER TABLE "COMPONENT" MODIFY ("VALUE_DOMAIN_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "COMPONENT" MODIFY ("DATA_STRUCTURE_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "COMPONENT" MODIFY ("COMPONENT_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table VALUE_DOMAIN_SUBSET
+--------------------------------------------------------
+
+  ALTER TABLE "VALUE_DOMAIN_SUBSET" ADD CONSTRAINT "PK_VALUE_DOMAIN_SUBSET" PRIMARY KEY ("SUBSET_VALUE_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "VALUE_DOMAIN_SUBSET" ADD CONSTRAINT "CHK_IS_SENUMERATED_VDS" CHECK (IS_ENUMERATED  IN (0,1)) ENABLE;
+  ALTER TABLE "VALUE_DOMAIN_SUBSET" MODIFY ("IS_ENUMERATED" NOT NULL ENABLE);
+  ALTER TABLE "VALUE_DOMAIN_SUBSET" MODIFY ("VALUE_DOMAIN_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "VALUE_DOMAIN_SUBSET" MODIFY ("SUBSET_VALUE_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table CODE_ITEM_RELATION
+--------------------------------------------------------
+
+  ALTER TABLE "CODE_ITEM_RELATION" ADD CONSTRAINT "PK_CODE_ITEM_RELATION" PRIMARY KEY ("COMPOSITION_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "CODE_ITEM_RELATION" MODIFY ("RELATION_TYPE" NOT NULL ENABLE);
+  ALTER TABLE "CODE_ITEM_RELATION" MODIFY ("MEMBER1_SEQ_VALUE" NOT NULL ENABLE);
+  ALTER TABLE "CODE_ITEM_RELATION" MODIFY ("IS_SUBSET" NOT NULL ENABLE);
+  ALTER TABLE "CODE_ITEM_RELATION" MODIFY ("VALUE_DOMAIN_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "CODE_ITEM_RELATION" MODIFY ("COMPOSITION_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table MODEL_EXAMPLE
+--------------------------------------------------------
+
+  ALTER TABLE "MODEL_EXAMPLE" MODIFY ("KEY" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table SUBSET_LIST
+--------------------------------------------------------
+
+  ALTER TABLE "SUBSET_LIST" ADD CONSTRAINT "PK_SUBSET_LIST" PRIMARY KEY ("SUBSET_SEQ_ID", "SUBSET_VALUE_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "SUBSET_LIST" MODIFY ("SUBSET_VALUE_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "SUBSET_LIST" MODIFY ("SUBSET_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table TRANSFORMATION_SCHEME_TEXT
+--------------------------------------------------------
+
+  ALTER TABLE "TRANSFORMATION_SCHEME_TEXT" ADD CONSTRAINT "TRANSFORMATION_SCHEME_TEXT_PK" PRIMARY KEY ("TRANSFORMATION_SCHEME_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "TRANSFORMATION_SCHEME_TEXT" MODIFY ("TRANSFORMATION_SCHEME_TEXT" NOT NULL ENABLE);
+  ALTER TABLE "TRANSFORMATION_SCHEME_TEXT" MODIFY ("TRANSFORMATION_SCHEME_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table OUTPUT
+--------------------------------------------------------
+
+  ALTER TABLE "OUTPUT" ADD CONSTRAINT "PK_OUTPUT" PRIMARY KEY ("TRASFORMATION_SEQ_ID", "OUTPUT_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "OUTPUT" MODIFY ("OUTPUT_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "OUTPUT" MODIFY ("TRASFORMATION_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table AGENCY
+--------------------------------------------------------
+
+  ALTER TABLE "AGENCY" ADD CONSTRAINT "PK_AGENCY" PRIMARY KEY ("AGENCY_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "AGENCY" MODIFY ("DESCRIPTION" NOT NULL ENABLE);
+  ALTER TABLE "AGENCY" MODIFY ("AGENCY_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table GROUPS
+--------------------------------------------------------
+
+  ALTER TABLE "GROUPS" ADD CONSTRAINT "PK_GROUP" PRIMARY KEY ("GROUP_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "GROUPS" MODIFY ("DESCRIPTION" NOT NULL ENABLE);
+  ALTER TABLE "GROUPS" MODIFY ("GROUP_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table DATASET
+--------------------------------------------------------
+
+  ALTER TABLE "DATASET" ADD CONSTRAINT "PK_DATASET" PRIMARY KEY ("DATASET_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "DATASET" ADD CONSTRAINT "CHK_IS_COLLECTED_DSET" CHECK (IS_COLLECTED IN (0,1)) ENABLE;
+  ALTER TABLE "DATASET" MODIFY ("IS_COLLECTED" NOT NULL ENABLE);
+  ALTER TABLE "DATASET" MODIFY ("DATA_STRUCTURE_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "DATASET" MODIFY ("DATASET_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table OPERATIONS
+--------------------------------------------------------
+
+  ALTER TABLE "OPERATIONS" ADD CONSTRAINT "PK_OPERATIONS" PRIMARY KEY ("OPERATIONS_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "OPERATIONS" MODIFY ("REF_TYPE" NOT NULL ENABLE);
+  ALTER TABLE "OPERATIONS" MODIFY ("REFERENCE" NOT NULL ENABLE);
+  ALTER TABLE "OPERATIONS" MODIFY ("OPERATION_TYPE" NOT NULL ENABLE);
+  ALTER TABLE "OPERATIONS" MODIFY ("USERS_ID" NOT NULL ENABLE);
+  ALTER TABLE "OPERATIONS" MODIFY ("OPERATIONS_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table TRANSFORMATION
+--------------------------------------------------------
+
+  ALTER TABLE "TRANSFORMATION" ADD CONSTRAINT "PK_TRANSFORMATION" PRIMARY KEY ("TRANSFORMATION_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "TRANSFORMATION" MODIFY ("TRANSFORMATION_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table OPERAND
+--------------------------------------------------------
+
+  ALTER TABLE "OPERAND" ADD CONSTRAINT "PK_OPERAND" PRIMARY KEY ("TRANSFORMATION_SEQ_ID", "OPERAND_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "OPERAND" ADD CONSTRAINT "CHK_OPERAND" CHECK (OPERAND_TYPE  IN ('DS', 'DSET', 'VD','VDSET')) ENABLE;
+  ALTER TABLE "OPERAND" MODIFY ("OPERAND_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "OPERAND" MODIFY ("TRANSFORMATION_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table USER_DEFINE_OPERATORS
+--------------------------------------------------------
+
+  ALTER TABLE "USER_DEFINE_OPERATORS" ADD CONSTRAINT "PK_OPERATOR_SEQ_ID" PRIMARY KEY ("OPERATOR_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "USER_DEFINE_OPERATORS" MODIFY ("OPERATOR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table LOCALISED_STRING
+--------------------------------------------------------
+
+  ALTER TABLE "LOCALISED_STRING" ADD CONSTRAINT "PK_LOCALISED_STRING" PRIMARY KEY ("LS_SEQ_ID", "LANGUAGE")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "LOCALISED_STRING" MODIFY ("STRING_TYPE" NOT NULL ENABLE);
+  ALTER TABLE "LOCALISED_STRING" MODIFY ("LABEL" NOT NULL ENABLE);
+  ALTER TABLE "LOCALISED_STRING" MODIFY ("LANGUAGE" NOT NULL ENABLE);
+  ALTER TABLE "LOCALISED_STRING" MODIFY ("LS_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table ARTEFACT
+--------------------------------------------------------
+
+  ALTER TABLE "ARTEFACT" ADD CONSTRAINT "PK_ARTEFACT" PRIMARY KEY ("ARTEFACT_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "ARTEFACT" MODIFY ("CREATION_TYPE" NOT NULL ENABLE);
+  ALTER TABLE "ARTEFACT" MODIFY ("SDMX_VERSION" NOT NULL ENABLE);
+  ALTER TABLE "ARTEFACT" MODIFY ("SDMX_AGENCY" NOT NULL ENABLE);
+  ALTER TABLE "ARTEFACT" MODIFY ("SDMX_ID" NOT NULL ENABLE);
+  ALTER TABLE "ARTEFACT" MODIFY ("ARTEFACT_ID" NOT NULL ENABLE);
+  ALTER TABLE "ARTEFACT" MODIFY ("ARTEFACT_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table VALUE_DOMAIN
+--------------------------------------------------------
+
+  ALTER TABLE "VALUE_DOMAIN" ADD CONSTRAINT "PK_VALUE_DOMAIN" PRIMARY KEY ("VALUE_DOMAIN_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "VALUE_DOMAIN" ADD CONSTRAINT "CHK_IS_ENUMERATED_VD" CHECK (IS_ENUMERATED IN (0,1)) ENABLE;
+  ALTER TABLE "VALUE_DOMAIN" ADD CONSTRAINT "CHK_DATA_TYPE_VD" CHECK (DATA_TYPE  IN ('String', 'Number', 'Boolean','Date','Float','Integer') ) ENABLE;
+  ALTER TABLE "VALUE_DOMAIN" MODIFY ("IS_ENUMERATED" NOT NULL ENABLE);
+  ALTER TABLE "VALUE_DOMAIN" MODIFY ("VALUE_DOMAIN_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table CODE_ITEM_RELATION_OPERAND
+--------------------------------------------------------
+
+  ALTER TABLE "CODE_ITEM_RELATION_OPERAND" ADD CONSTRAINT "PK_CODE_ITEM_OPERAND" PRIMARY KEY ("COMPOSITION_ID", "MEMBER2_SEQ_VALUE")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "CODE_ITEM_RELATION_OPERAND" MODIFY ("MEMBER2_SEQ_VALUE" NOT NULL ENABLE);
+  ALTER TABLE "CODE_ITEM_RELATION_OPERAND" MODIFY ("COMPOSITION_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table USERS_GROUPS
+--------------------------------------------------------
+
+  ALTER TABLE "USERS_GROUPS" ADD CONSTRAINT "PK_USERS_GROUPS" PRIMARY KEY ("USERS_ID", "GROUP_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "USERS_GROUPS" MODIFY ("GROUP_ID" NOT NULL ENABLE);
+  ALTER TABLE "USERS_GROUPS" MODIFY ("USERS_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table DATA_STRUCTURE
+--------------------------------------------------------
+
+  ALTER TABLE "DATA_STRUCTURE" ADD CONSTRAINT "PK_DATA_STRUCTURE" PRIMARY KEY ("DATA_STRUCTURE_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "DATA_STRUCTURE" MODIFY ("DATA_STRUCTURE_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table MAP_HIERARCHY_RULE
+--------------------------------------------------------
+
+  ALTER TABLE "MAP_HIERARCHY_RULE" MODIFY ("RULE_DESC" NOT NULL ENABLE);
+  ALTER TABLE "MAP_HIERARCHY_RULE" MODIFY ("RULE_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table VALUE
+--------------------------------------------------------
+
+  ALTER TABLE "VALUE" ADD CONSTRAINT "PK_VALUE" PRIMARY KEY ("VALUE_SEQ_ID", "VALUE_DOMAIN_SEQ_ID")
+  USING INDEX (CREATE UNIQUE INDEX "PK_VALUE_ID" ON "VALUE" ("VALUE_SEQ_ID", "VALUE_DOMAIN_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" )  ENABLE;
+  ALTER TABLE "VALUE" MODIFY ("VALUE_DOMAIN_SEQ_ID" NOT NULL ENABLE);
+  ALTER TABLE "VALUE" MODIFY ("VALUE_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table ITEM
+--------------------------------------------------------
+
+  ALTER TABLE "ITEM" ADD CONSTRAINT "PK_ITEM" PRIMARY KEY ("ITEM_SEQ_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL"  ENABLE;
+  ALTER TABLE "ITEM" MODIFY ("ITEM_ID" NOT NULL ENABLE);
+  ALTER TABLE "ITEM" MODIFY ("ITEM_SEQ_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  DDL for Index PK_ARTEFACT
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_ARTEFACT" ON "ARTEFACT" ("ARTEFACT_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_CODE_ITEM_OPERAND
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_CODE_ITEM_OPERAND" ON "CODE_ITEM_RELATION_OPERAND" ("COMPOSITION_ID", "MEMBER2_SEQ_VALUE") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_OUTPUT
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_OUTPUT" ON "OUTPUT" ("TRASFORMATION_SEQ_ID", "OUTPUT_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index TRANSFORMATION_SCHEME_TEXT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TRANSFORMATION_SCHEME_TEXT_PK" ON "TRANSFORMATION_SCHEME_TEXT" ("TRANSFORMATION_SCHEME_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_SUBSET_LIST
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_SUBSET_LIST" ON "SUBSET_LIST" ("SUBSET_SEQ_ID", "SUBSET_VALUE_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_OPERATIONS
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_OPERATIONS" ON "OPERATIONS" ("OPERATIONS_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_COMPONENT
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_COMPONENT" ON "COMPONENT" ("COMPONENT_SEQ_ID", "DATA_STRUCTURE_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_CODE_ITEM_RELATION
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_CODE_ITEM_RELATION" ON "CODE_ITEM_RELATION" ("COMPOSITION_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_OPERAND
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_OPERAND" ON "OPERAND" ("TRANSFORMATION_SEQ_ID", "OPERAND_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_LOCALISED_STRING
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_LOCALISED_STRING" ON "LOCALISED_STRING" ("LS_SEQ_ID", "LANGUAGE") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_AGENCY
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_AGENCY" ON "AGENCY" ("AGENCY_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_VALUE_DOMAIN
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_VALUE_DOMAIN" ON "VALUE_DOMAIN" ("VALUE_DOMAIN_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_DATASET
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_DATASET" ON "DATASET" ("DATASET_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_TRASFORMATION_SCHEME
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_TRASFORMATION_SCHEME" ON "TRANSFORMATION_SCHEME" ("TRANSFORMATION_SCHEME_SEQ_ID", "TRANSFORMATION_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_TRANSFORMATION
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_TRANSFORMATION" ON "TRANSFORMATION" ("TRANSFORMATION_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_ITEM
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_ITEM" ON "ITEM" ("ITEM_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_VALUE_ID
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_VALUE_ID" ON "VALUE" ("VALUE_SEQ_ID", "VALUE_DOMAIN_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_VALUE_DOMAIN_SUBSET
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_VALUE_DOMAIN_SUBSET" ON "VALUE_DOMAIN_SUBSET" ("SUBSET_VALUE_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_OPERATOR_SEQ_ID
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_OPERATOR_SEQ_ID" ON "USER_DEFINE_OPERATORS" ("OPERATOR_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_COMPONENT_DATASET
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_COMPONENT_DATASET" ON "COMPONENT_DATASET" ("COMPONENT_SEQ_ID", "DATASET_SEQ_ID", "DOMAIN_VALUE_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_USERS
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_USERS" ON "USERS" ("USERS_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_GROUP
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_GROUP" ON "GROUPS" ("GROUP_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_DATA_STRUCTURE
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_DATA_STRUCTURE" ON "DATA_STRUCTURE" ("DATA_STRUCTURE_SEQ_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+--------------------------------------------------------
+--  DDL for Index PK_USERS_GROUPS
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "PK_USERS_GROUPS" ON "USERS_GROUPS" ("USERS_ID", "GROUP_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DATI_SV_VTL" ;
+
+
+--------------------------------------------------------
+--  Ref Constraints for Table CODE_ITEM_RELATION
+--------------------------------------------------------
+
+  ALTER TABLE "CODE_ITEM_RELATION" ADD CONSTRAINT "FK_ITEM_RELATION" FOREIGN KEY ("MEMBER1_SEQ_VALUE")
+	  REFERENCES "ITEM" ("ITEM_SEQ_ID") ENABLE;
+  ALTER TABLE "CODE_ITEM_RELATION" ADD CONSTRAINT "FK_VALUE_DOMAIN_CIR" FOREIGN KEY ("VALUE_DOMAIN_SEQ_ID")
+	  REFERENCES "VALUE_DOMAIN" ("VALUE_DOMAIN_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CODE_ITEM_RELATION_OPERAND
+--------------------------------------------------------
+
+  ALTER TABLE "CODE_ITEM_RELATION_OPERAND" ADD CONSTRAINT "FK_CODE_ITEM_RELATION" FOREIGN KEY ("COMPOSITION_ID")
+	  REFERENCES "CODE_ITEM_RELATION" ("COMPOSITION_ID") ENABLE;
+  ALTER TABLE "CODE_ITEM_RELATION_OPERAND" ADD CONSTRAINT "FK_ITEM_RELATION_OPERAND" FOREIGN KEY ("MEMBER2_SEQ_VALUE")
+	  REFERENCES "ITEM" ("ITEM_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMPONENT
+--------------------------------------------------------
+
+  ALTER TABLE "COMPONENT" ADD CONSTRAINT "FK_DATA_STRUCTURE_CMP" FOREIGN KEY ("DATA_STRUCTURE_SEQ_ID")
+	  REFERENCES "DATA_STRUCTURE" ("DATA_STRUCTURE_SEQ_ID") ENABLE;
+  ALTER TABLE "COMPONENT" ADD CONSTRAINT "FK_ITEM_CMP" FOREIGN KEY ("COMPONENT_SEQ_ID")
+	  REFERENCES "ITEM" ("ITEM_SEQ_ID") ENABLE;
+  ALTER TABLE "COMPONENT" ADD CONSTRAINT "FK_VALUE_DOMAIN_CMP" FOREIGN KEY ("VALUE_DOMAIN_SEQ_ID")
+	  REFERENCES "VALUE_DOMAIN" ("VALUE_DOMAIN_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMPONENT_DATASET
+--------------------------------------------------------
+
+  ALTER TABLE "COMPONENT_DATASET" ADD CONSTRAINT "FK_DATASET" FOREIGN KEY ("DATASET_SEQ_ID")
+	  REFERENCES "DATASET" ("DATASET_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table DATASET
+--------------------------------------------------------
+
+  ALTER TABLE "DATASET" ADD CONSTRAINT "FK_ARTEFACT_DSET" FOREIGN KEY ("DATASET_SEQ_ID")
+	  REFERENCES "ARTEFACT" ("ARTEFACT_SEQ_ID") ENABLE;
+  ALTER TABLE "DATASET" ADD CONSTRAINT "FK_DATA_STRUCTURE_DSET" FOREIGN KEY ("DATA_STRUCTURE_SEQ_ID")
+	  REFERENCES "DATA_STRUCTURE" ("DATA_STRUCTURE_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table DATA_STRUCTURE
+--------------------------------------------------------
+
+  ALTER TABLE "DATA_STRUCTURE" ADD CONSTRAINT "FK_ARTEFACT_DS" FOREIGN KEY ("DATA_STRUCTURE_SEQ_ID")
+	  REFERENCES "ARTEFACT" ("ARTEFACT_SEQ_ID") ENABLE;
+
+
+--------------------------------------------------------
+--  Ref Constraints for Table LOCALISED_STRING
+--------------------------------------------------------
+
+  ALTER TABLE "LOCALISED_STRING" ADD CONSTRAINT "FK_ARTEFACT_LS" FOREIGN KEY ("ARTEFACT_SEQ_ID")
+	  REFERENCES "ARTEFACT" ("ARTEFACT_SEQ_ID") ENABLE;
+  ALTER TABLE "LOCALISED_STRING" ADD CONSTRAINT "FK_ITEM_LS" FOREIGN KEY ("ITEM_SEQ_ID")
+	  REFERENCES "ITEM" ("ITEM_SEQ_ID") ENABLE;
+
+
+
+--------------------------------------------------------
+--  Ref Constraints for Table OPERATIONS
+--------------------------------------------------------
+
+  ALTER TABLE "OPERATIONS" ADD CONSTRAINT "FK_USERS_ID_OPERATIONS" FOREIGN KEY ("USERS_ID")
+	  REFERENCES "USERS" ("USERS_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table OUTPUT
+--------------------------------------------------------
+
+  ALTER TABLE "OUTPUT" ADD CONSTRAINT "FK_ITEM_OUTPUT" FOREIGN KEY ("OUTPUT_SEQ_ID")
+	  REFERENCES "ITEM" ("ITEM_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table SUBSET_LIST
+--------------------------------------------------------
+
+  ALTER TABLE "SUBSET_LIST" ADD CONSTRAINT "FK_ITEM_SLIST" FOREIGN KEY ("SUBSET_SEQ_ID")
+	  REFERENCES "ITEM" ("ITEM_SEQ_ID") ENABLE;
+  ALTER TABLE "SUBSET_LIST" ADD CONSTRAINT "FK_VALUE_DOMAIN_SUBSET_LIST" FOREIGN KEY ("SUBSET_SEQ_ID")
+	  REFERENCES "VALUE_DOMAIN_SUBSET" ("SUBSET_VALUE_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table TRANSFORMATION
+--------------------------------------------------------
+
+  ALTER TABLE "TRANSFORMATION" ADD CONSTRAINT "FK_GROUP_TS" FOREIGN KEY ("GROUP_ID")
+	  REFERENCES "GROUPS" ("GROUP_ID") ENABLE;
+  ALTER TABLE "TRANSFORMATION" ADD CONSTRAINT "FK_ITEM_TS" FOREIGN KEY ("TRANSFORMATION_SEQ_ID")
+	  REFERENCES "ITEM" ("ITEM_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table TRANSFORMATION_SCHEME
+--------------------------------------------------------
+
+  ALTER TABLE "TRANSFORMATION_SCHEME" ADD CONSTRAINT "FK_ARTEFACT_TSC" FOREIGN KEY ("TRANSFORMATION_SCHEME_SEQ_ID")
+	  REFERENCES "ARTEFACT" ("ARTEFACT_SEQ_ID") ENABLE;
+
+--------------------------------------------------------
+--  Ref Constraints for Table USER_DEFINE_OPERATORS
+--------------------------------------------------------
+
+  ALTER TABLE "USER_DEFINE_OPERATORS" ADD CONSTRAINT "FK_GROUP_USER_DEFINE_OPERATORS" FOREIGN KEY ("GROUP_ID")
+	  REFERENCES "GROUPS" ("GROUP_ID") ENABLE;
+
+--------------------------------------------------------
+--  Ref Constraints for Table USERS_GROUPS
+--------------------------------------------------------
+
+  ALTER TABLE "USERS_GROUPS" ADD CONSTRAINT "FK_GROUP_USERS" FOREIGN KEY ("GROUP_ID")
+	  REFERENCES "GROUPS" ("GROUP_ID") ENABLE;
+  ALTER TABLE "USERS_GROUPS" ADD CONSTRAINT "FK_USERS_ID" FOREIGN KEY ("USERS_ID")
+	  REFERENCES "USERS" ("USERS_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VALUE
+--------------------------------------------------------
+
+  ALTER TABLE "VALUE" ADD CONSTRAINT "FK_ITEM_VL" FOREIGN KEY ("VALUE_SEQ_ID")
+	  REFERENCES "ITEM" ("ITEM_SEQ_ID") ENABLE;
+  ALTER TABLE "VALUE" ADD CONSTRAINT "FK_VALUE_DOMAIN_VL" FOREIGN KEY ("VALUE_DOMAIN_SEQ_ID")
+	  REFERENCES "VALUE_DOMAIN" ("VALUE_DOMAIN_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VALUE_DOMAIN
+--------------------------------------------------------
+
+  ALTER TABLE "VALUE_DOMAIN" ADD CONSTRAINT "FK_ARTEFACT_VD" FOREIGN KEY ("VALUE_DOMAIN_SEQ_ID")
+	  REFERENCES "ARTEFACT" ("ARTEFACT_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VALUE_DOMAIN_SUBSET
+--------------------------------------------------------
+
+  ALTER TABLE "VALUE_DOMAIN_SUBSET" ADD CONSTRAINT "FK_ARTEFACT_VDS" FOREIGN KEY ("SUBSET_VALUE_SEQ_ID")
+	  REFERENCES "ARTEFACT" ("ARTEFACT_SEQ_ID") ENABLE;
+  ALTER TABLE "VALUE_DOMAIN_SUBSET" ADD CONSTRAINT "FK_VALUE_DOMAIN_VDS" FOREIGN KEY ("VALUE_DOMAIN_SEQ_ID")
+	  REFERENCES "VALUE_DOMAIN" ("VALUE_DOMAIN_SEQ_ID") ENABLE;
+--------------------------------------------------------
+--  DDL for View WW_COMPONENT_DATASET
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE VIEW "WW_COMPONENT_DATASET" ("ARTEFACT_SEQ_ID", "ARTEFACT_ID", "COMPONENTID", "COMPONENTTYPE", "CODELISTREF", "NAME", "LANGUAGE") AS 
+  SELECT
+
+ART.ARTEFACT_SEQ_ID,
+ART.ARTEFACT_ID,
+IT.ITEM_ID AS COMPONENTID,
+CMP.ROLE AS COMPONENTTYPE,
+CASE WHEN CMPDSET.IS_SUBSET  = 0
+THEN 
+ARTVD.ARTEFACT_ID
+ELSE
+ARTVDSUBSET.ARTEFACT_ID
+END 
+AS CODELISTREF,
+LS.LABEL AS NAME,
+LS.LANGUAGE
+
+FROM DATASET  DSET,
+ARTEFACT ART,
+COMPONENT_DATASET CMPDSET,
+ITEM IT,
+COMPONENT CMP,
+LOCALISED_STRING LS,
+VALUE_DOMAIN VD,
+VALUE_DOMAIN_SUBSET VDSUBSET,
+ARTEFACT ARTVD,
+ARTEFACT ARTVDSUBSET
+
+WHERE
+DSET.DATASET_SEQ_ID = ART.ARTEFACT_SEQ_ID
+AND CMPDSET.DATASET_SEQ_ID = ART.ARTEFACT_SEQ_ID
+AND CMPDSET.COMPONENT_SEQ_ID = IT.ITEM_SEQ_ID
+AND IT.ITEM_SEQ_ID = LS.ITEM_SEQ_ID
+AND IT.ITEM_SEQ_ID = CMP.COMPONENT_SEQ_ID
+
+AND CMPDSET.DOMAIN_VALUE_SEQ_ID = VD.VALUE_DOMAIN_SEQ_ID (+)
+AND CMPDSET.DOMAIN_VALUE_SEQ_ID  = VDSUBSET.SUBSET_VALUE_SEQ_ID  (+)
+AND ARTVD.ARTEFACT_SEQ_ID (+) =  VD.VALUE_DOMAIN_SEQ_ID 
+AND ARTVDSUBSET.ARTEFACT_SEQ_ID (+)  = VDSUBSET.SUBSET_VALUE_SEQ_ID
+
+ORDER BY ART.ARTEFACT_ID,  IT.ITEM_ID;
+--------------------------------------------------------
+--  DDL for View WW_COMPONENT_DATA_STRUCTURE
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE VIEW "WW_COMPONENT_DATA_STRUCTURE" ("ARTEFACT_SEQ_ID", "ARTEFACT_ID", "COMPONENTID", "COMPONENTTYPE", "CODELISTREF", "NAME", "LANGUAGE") AS 
+  SELECT
+ART.ARTEFACT_SEQ_ID,
+ART.ARTEFACT_ID,
+IT.ITEM_ID AS COMPONENTID,
+
+CMP.ROLE AS COMPONENTTYPE,
+ARTVD.ARTEFACT_ID AS CODELISTREF,
+LS.LABEL AS NAME,
+LS.LANGUAGE
+
+FROM DATA_STRUCTURE DS,
+ITEM IT,
+COMPONENT CMP,
+ARTEFACT ARTVD,
+ARTEFACT ART,
+LOCALISED_STRING LS
+
+WHERE
+DS.DATA_STRUCTURE_SEQ_ID = ART.ARTEFACT_SEQ_ID
+AND DS.DATA_STRUCTURE_SEQ_ID = CMP.DATA_STRUCTURE_SEQ_ID
+AND IT.ITEM_SEQ_ID = CMP.COMPONENT_SEQ_ID
+AND LS.ITEM_SEQ_ID =  CMP.COMPONENT_SEQ_ID
+and CMP.VALUE_DOMAIN_SEQ_ID = ARTVD.ARTEFACT_SEQ_ID
+
+
+ORDER BY ARTEFACT_ID, IT.ITEM_ID;
+--------------------------------------------------------
+--  DDL for View WW_DATASET
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE VIEW "WW_DATASET" ("ARTEFACT_SEQ_ID", "ARTEFACT_ID", "SDMX_ID", "SDMX_AGENCY", "SDMX_VERSION", "NAME", "LANGUAGE", "IS_COLLECTED", "DATA_STRUCTURE_ID", "CREATION_TYPE") AS 
+  SELECT
+ART.ARTEFACT_SEQ_ID,
+ART.ARTEFACT_ID,
+ART.SDMX_ID,
+ART.SDMX_AGENCY,
+ART.SDMX_VERSION,
+LS.LABEL AS NAME,
+LS.LANGUAGE,
+DS.IS_COLLECTED,
+ART2.ARTEFACT_ID AS DATA_STRUCTURE_ID,
+ART.CREATION_TYPE
+
+FROM DATASET DS,
+ARTEFACT ART,
+LOCALISED_STRING LS,
+ARTEFACT ART2
+WHERE
+DS.DATASET_SEQ_ID = ART.ARTEFACT_SEQ_ID
+AND LS.ARTEFACT_SEQ_ID = ART.ARTEFACT_SEQ_ID 
+AND ART2.ARTEFACT_SEQ_ID = DS.DATA_STRUCTURE_SEQ_ID
+ORDER BY ART.ARTEFACT_ID;
+--------------------------------------------------------
+--  DDL for View WW_DATASET_INFO
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE VIEW "WW_DATASET_INFO" ("DATASETID", "COMPONENTID", "DATATYPE", "COMPONENT_ROLE", "VALUEDOMAIN", "VALUEDOMAIN_PARENT") AS 
+  SELECT DISTINCT
+
+ART.ARTEFACT_ID AS DATASETID,
+IT.ITEM_ID AS COMPONENTID,
+VD.DATA_TYPE AS DATATYPE,
+CMP.ROLE AS COMPONENT_ROLE,
+--ARTVDSUBSET.ARTEFACT_ID AS VALUEDOMAIN,
+ARTVD.ARTEFACT_ID AS VALUEDOMAIN,
+ARTVD.ARTEFACT_ID AS VALUEDOMAIN_PARENT
+
+FROM DATASET  DSET,
+ARTEFACT ART,
+COMPONENT_DATASET CMPDSET,
+ITEM IT,
+COMPONENT CMP,
+LOCALISED_STRING LS,
+VALUE_DOMAIN VD,
+VALUE_DOMAIN_SUBSET VDSUBSET,
+ARTEFACT ARTVD,
+ARTEFACT ARTVDSUBSET
+
+WHERE
+DSET.DATASET_SEQ_ID = ART.ARTEFACT_SEQ_ID
+AND CMPDSET.DATASET_SEQ_ID = ART.ARTEFACT_SEQ_ID
+AND CMPDSET.COMPONENT_SEQ_ID = IT.ITEM_SEQ_ID
+AND IT.ITEM_SEQ_ID = LS.ITEM_SEQ_ID
+AND IT.ITEM_SEQ_ID = CMP.COMPONENT_SEQ_ID
+
+AND CMPDSET.DOMAIN_VALUE_SEQ_ID = VD.VALUE_DOMAIN_SEQ_ID (+)
+AND CMPDSET.DOMAIN_VALUE_SEQ_ID  = VDSUBSET.SUBSET_VALUE_SEQ_ID  (+)
+AND ARTVD.ARTEFACT_SEQ_ID (+) =  VD.VALUE_DOMAIN_SEQ_ID 
+AND ARTVDSUBSET.ARTEFACT_SEQ_ID (+)  = VDSUBSET.SUBSET_VALUE_SEQ_ID
+
+ORDER BY ART.ARTEFACT_ID,  IT.ITEM_ID;
+--------------------------------------------------------
+--  DDL for View WW_DATA_STRUCTURE
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE VIEW "WW_DATA_STRUCTURE" ("ARTEFACT_SEQ_ID", "ARTEFACT_ID", "SDMX_ID", "SDMX_AGENCY", "SDMX_VERSION", "CREATION_TYPE", "NAME", "LANGUAGE") AS 
+  SELECT ART.ARTEFACT_SEQ_ID,
+ART.ARTEFACT_ID,
+ART.SDMX_ID,
+ART.SDMX_AGENCY,
+ART.SDMX_VERSION,
+ART.CREATION_TYPE,
+LS.LABEL AS NAME,
+LS.LANGUAGE
+
+FROM DATA_STRUCTURE DS,
+          ARTEFACT ART,
+         LOCALISED_STRING LS
+WHERE
+DS.DATA_STRUCTURE_SEQ_ID = ART.ARTEFACT_SEQ_ID
+AND LS.ARTEFACT_SEQ_ID = ART.ARTEFACT_SEQ_ID 
+ORDER BY ART.ARTEFACT_ID, LS.LANGUAGE;
+--------------------------------------------------------
+--  DDL for View WW_VALUE_DOMAIN
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE VIEW "WW_VALUE_DOMAIN" ("ARTEFACT_SEQ_ID", "ARTEFACT_ID", "SDMX_ID", "SDMX_AGENCY", "SDMX_VERSION", "CREATION_TYPE", "NAME", "LANGUAGE", "DATA_TYPE", "IS_ENUMERATED", "VALUE_RESTRICTION") AS 
+  SELECT
+ART.ARTEFACT_SEQ_ID,
+ART.ARTEFACT_ID,
+ART.SDMX_ID,
+ART.SDMX_AGENCY,
+ART.SDMX_VERSION,
+ART.CREATION_TYPE,
+LS.LABEL AS NAME,
+LS.LANGUAGE, 
+VD.DATA_TYPE, 
+VD.IS_ENUMERATED, 
+VD.VALUE_RESTRICTION
+
+FROM VALUE_DOMAIN VD,
+ARTEFACT ART,
+LOCALISED_STRING LS
+WHERE
+VD.VALUE_DOMAIN_SEQ_ID = ART.ARTEFACT_SEQ_ID
+AND LS.ARTEFACT_SEQ_ID = ART.ARTEFACT_SEQ_ID 
+
+ORDER BY ART.SDMX_ID, ART.SDMX_AGENCY, ART.SDMX_VERSION;
+--------------------------------------------------------
+--  DDL for View WW_VALUE_DOMAIN_CODE
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE VIEW "WW_VALUE_DOMAIN_CODE" ("ITEM_ID", "ITEM_SEQ_ID", "VALUE_DOMAIN_SEQ_ID", "NAME", "LANGUAGE", "VD_REF_ID") AS 
+  SELECT i.item_id,   i.ITEM_SEQ_ID,   v.VALUE_DOMAIN_SEQ_ID,   ls.LABEL as Name,   ls.language, a.artefact_id as VD_REF_ID FROM ARTEFACT a, VALUE v ,      ITEM i,      LOCALISED_STRING LS WHERE i.ITEM_SEQ_ID = v.VALUE_SEQ_ID   AND ls.ITEM_SEQ_ID  = i.ITEM_SEQ_ID AND a.artefact_seq_id = v.value_domain_seq_id;
+--------------------------------------------------------
+--  DDL for View WW_VD_SUBSET
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE VIEW "WW_VD_SUBSET" ("ARTEFACT_SEQ_ID", "ARTEFACT_ID", "SDMX_ID", "SDMX_AGENCY", "SDMX_VERSION", "IS_ENUMERATED", "SET_CRITERION_ID", "NAME", "LANGUAGE", "VALUE_DOMAIN_SEQ_ID", "VD_ID_REF", "CREATION_TYPE") AS 
+  select a.artefact_seq_id, a.artefact_id, a.sdmx_id, a.sdmx_agency, a.sdmx_version, vds.is_enumerated, vds.set_criterion_id,  ls.label as NAME, ls.language, vds.value_domain_seq_id,  a2.artefact_id as VD_ID_REF, a.creation_type 
+  from artefact a, value_domain_subset vds, artefact a2, localised_string ls
+  where vds.subset_value_seq_id= a.artefact_seq_id and ls.artefact_seq_id= a.artefact_seq_id  and a2.artefact_seq_id= vds.value_domain_seq_id;

@@ -1,0 +1,10 @@
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\bin\Release\WebServiceConnector.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\bin\Release\WebServiceConnector.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\bin\Release\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Release\WebServiceConnector.Resource.resources
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Release\WebServiceConnector.csproj.GenerateResource.Cache
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Release\WebServiceConnector.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Release\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\bin\Release\Microsoft.Web.XmlTransform.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Release\WebServiceConnector.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Release\WebServiceConnector.csproj.CopyComplete

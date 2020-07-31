@@ -1,0 +1,476 @@
+ <AutoCompleteVocabulary>
+  
+  <!-- to add: check_datapoint, hierarchy, check_hierarchy, join, eval -->
+   
+   <operators>
+	    <operator ID="sum">
+		    <method>sum(^)</method>
+		    <description>sum(operand)</description>
+		    <help>The operator returns the sum of the input values.</help>
+	    </operator>
+	    <operator ID="avg">
+		    <method>avg(^)</method>
+		    <description>avg(operand)</description>
+		    <help>The operator returns the average of the input values.</help>
+	    </operator>
+	    <operator ID="count">
+		    <method>count(^)</method>
+		    <description>count(operand)</description>
+		    <help>The operator returns the number of the input Data Points.</help>
+	    </operator>
+	    <operator ID="median">
+		    <method>median(^)</method>
+		    <description>median(operand)</description>
+		    <help>The operator returns the median value of the input values.</help>
+	    </operator>
+	    <operator ID="min">
+		    <method>min(^)</method>
+		    <description>min(operand)</description>
+		    <help>The operator returns the minimum value of the input values.</help>
+	    </operator>
+	    <operator ID="max">
+		    <method>max(^)</method>
+		    <description>max(operand)</description>
+		    <help>The operator returns the maximum of the input values.</help>
+	    </operator>
+	    <operator ID="stddev_pop">
+		    <method>stddev_pop(^)</method>
+		    <description>stddev_pop(operand)</description>
+		    <help>The operator returns the “population standard deviation” of the input values.</help>
+	    </operator>
+	    <operator ID="stddev_samp">
+		    <method>stddev_samp(^)</method>
+		    <description>stddev_samp(operand)</description>
+		    <help>The operator returns the “sample standard deviation” of the input values.</help>
+	    </operator>
+	    <operator ID="var_pop">
+		    <method>var_pop(^)</method>
+		    <description>var_pop(operand)</description>
+		    <help>The operator returns the “population variance” of the input values.</help>
+	    </operator>
+	    <operator ID="var_samp">
+		    <method>median(^)</method>
+		    <description>median(operand)</description>
+		    <help>The operator returns the sample variance of the input values.</help>
+	    </operator>	
+		<operator ID="first_value">
+		    <method>first_value(^)</method>
+		    <description>first_value(operand)</description>
+		    <help>The operator returns the first value (in the value order) of the set of Data Points that belong to the same analytic window as the current Data Point.</help>
+	    </operator>		
+		<operator ID="last_value">
+		    <method>last_value(^)</method>
+		    <description>last_value(operand)</description>
+		    <help>The operator returns the last value (in the value order) of the set of Data Points that belong to the same analytic window as the current Data Point. When invoked at Data Set level, it returns the last value for each Measure of the input Data Set. The last value of different Measures can result from different Data Points. When invoked at Component level, it returns the last value of the speficied Component.</help>
+	    </operator>	
+		<operator ID="lead">
+		    <method>lead(^)</method>
+		    <description>lead(operand)</description>
+		    <help>In the ordered set of Data Points of the current partition, the operator returns the value(s) taken from the Data Point at the specified physical offset beyond the current Data Point. If defaultValue is not specified, then the value returned when the offset goes outside the partition is NULL.</help>
+	    </operator>		
+		<operator ID="rank">
+		    <method>rank(over(^))</method>
+		    <description>rank( over ( { partitionClause } orderClause ))</description>
+		    <help>The operator returns an order number (rank) for each Data Point, starting from the number 1 and following the order specified in the orderClause. If some Data Points are in the same order according to the specified orderClause, the same order number (rank) is assigned and a gap appears in the sequence of the assigned ranks (for example, if four Data Points have the same rank 5, the following assigned rank would be 9).</help>
+	    </operator>
+		<operator ID="ratio_to_report">
+		    <method>ratio_to_report(^ over(partitionClause))</method>
+		    <description>ratio_to_report( dataset|component over(partitionClause))</description>
+		    <help>The operator returns the ratio between the value of the current Data Point and the sum of the values of the partition which the current Data Point belongs to.</help>
+	    </operator>
+		<operator ID="nvl">
+		    <method>nvl(^, operand2)</method>
+		    <description>nvl(operand1, operand2)</description>
+		    <help>The operator nvl returns operand2 when operand1 is null, otherwise operand1.</help>
+	    </operator>
+		<operator ID="power">
+		    <method>power(^, exponent)</method>
+		    <description>power(base, exponent)</description>
+		    <help>The operator power raises a number (the base) to another one (the exponent).
+			</help>
+	    </operator>
+		<operator ID="log">
+		    <method>log(^, number_to_apply)</method>
+		    <description>log(logharitm_base, number_to_apply)</description>
+		    <help>The operator log calculates the logarithm of number_to_apply base logharitm_base.
+			</help>
+	    </operator>
+		<operator ID="sqrt">
+		    <method>sqrt(^)</method>
+		    <description>sqrt(operand)</description>
+		    <help>The operator sqrt calculates the square root of a number.
+			</help>
+	    </operator>
+		<operator ID="cast">
+		    <method>cast(^, scalarType)</method>
+		    <description>cast(operand, scalarType{, mask})</description>
+		    <help>This operator converts the scalar type of op to the scalar type specified by scalarType. It returns a copy of operand converted to the specified scalarType.
+			</help>
+	    </operator>
+		<operator ID="trim">
+		    <method>trim(^)</method>
+		    <description>trim(operand)</description>
+		    <help>Removes trailing or/and leading whitespace from a string.
+			</help>
+	    </operator>
+		<operator ID="ltrim">
+		    <method>ltrim(^)</method>
+		    <description>ltrim(operand)</description>
+		    <help>Removes trailing or/and leading whitespace from a string.
+			</help>
+	    </operator>
+		<operator ID="rtrim">
+		    <method>rtrim(^)</method>
+		    <description>rtrim(operand)</description>
+		    <help>Removes trailing or/and leading whitespace from a string.
+			</help>
+	    </operator>
+		<operator ID="substr">
+		    <method>substr(^, substr_start, substr_length)</method>
+		    <description>substr(operand, substr_start, substr_length)</description>
+		    <help>The operator extracts a substring from op, which must be string type. The substring starts from the startth character of the input string and has a number of characters equal to the length parameter.
+			- If start is omitted, the substring starts from the 1st position.
+			- If length is omitted or overcomes the length of the input string, the substring ends at the end of the input string.
+			- If start is greater than the length of the input string, an empty string is extracted.
+			</help>
+	    </operator>
+		<operator ID="replace">
+		    <method>replace(^, pattern1, pattern2)</method>
+		    <description>replace (operand , pattern1, pattern2 )</description>
+		    <help>Replaces all the occurrences of a specified string-pattern (pattern1) with another one (pattern2). If pattern2 is omitted then all occurrences of pattern1 are removed.
+			</help>
+	    </operator>
+		<operator ID="instr">
+		    <method>instr(^, pattern, str_start, str_occurrence )</method>
+		    <description>instr(operand, pattern, str_start, str_occurrence )</description>
+		    <help>The operator returns the position in the input string of a specified string (pattern). The search starts from the start character of the input string and finds the n-th-occurrence of the pattern, returning the position of its first character.
+			- If start is omitted, the search starts from the 1st position.
+			- If nthoccurrence is omitted, the value is 1.
+			If the n-th-occurrence of the string-pattern after the startth character is not found in the input string, the returned value is 0.
+			</help>
+	    </operator>
+		<operator ID="length">
+		    <method>length(^)</method>
+		    <description>length(operand)</description>
+		    <help>Returns the length of a string. For the empty string “” the value 0 is returned
+			</help>
+	    </operator>
+		<operator ID="mod">
+		    <method>mod(^, operand2)</method>
+		    <description>mod(operand1, operand2)</description>
+		    <help>The operator mod returns the remainder of op1 divided by op2. It returns op1 if divisor op2 is 0.
+			</help>
+	    </operator>
+		<operator ID="round">
+		    <method>round(^, numDigit)</method>
+		    <description>round(operand, numDigit)</description>
+		    <help>The operator round rounds the operand to a number of positions at the right of the decimal point equal to the numDigit parameter. The decimal point is assumed to be at position 0. If numDigit is negative, the rouding happens at the left of the decimal point.
+			</help>
+	    </operator>
+		<operator ID="trunc">
+		    <method>trunc(^, numDigit)</method>
+		    <description>trunc(operand, numDigit)</description>
+		    <help>The operator trunc truncates the operand to a number of positions at the right of the decimal point equal to the numDigit parameter. The decimal point is assumed to be at position 0. If numDigit is negative, the truncation happens at the left of the decimal point. The truncation operation leaves the numDigit position unchanged. All the positions greater than numDigit are eliminated. The basic scalar type of the result is integer if numDigit is omitted, number otherwise.
+			</help>
+	    </operator>
+		<operator ID="ceil">
+		    <method>ceil(^)</method>
+		    <description>ceil(operand)</description>
+		    <help>The operator ceil returns the smallest integer greater than or equal to operand.
+			</help>
+	    </operator>
+		<operator ID="floor">
+		    <method>floor(^)</method>
+		    <description>floor(operand)</description>
+		    <help>The operator floor returns the greatest integer which is smaller than or equal to op.
+			</help>
+	    </operator>
+		<operator ID="abs">
+		    <method>abs(^)</method>
+		    <description>abs(operand)</description>
+		    <help>The operator abs calculates the absolute value of a number.
+			</help>
+	    </operator>
+		<operator ID="exp">
+		    <method>exp(^)</method>
+		    <description>exp(operand)</description>
+		    <help>The operator exp returns e (base of the natural logarithm) raised to the op-th power.
+			</help>
+	    </operator>
+		<operator ID="ln">
+		    <method>ln(^)</method>
+		    <description>ln(operand)</description>
+		    <help>The operator ln calculates the natural logarithm of a number.
+			</help>
+	    </operator>
+		<operator ID="between">
+		    <method>between(^, between_from, between_to )</method>
+		    <description>between(operand, between_from, between_to )</description>
+		    <help>The operator returns TRUE if op is greater than or equal to from and lower than or equal to to. In other terms, it is a shortcut for the following: 
+			op &gt;= from and op &lt;= to
+			The types of op, from and to must be compatible scalar types
+			</help>
+	    </operator>
+		<operator ID="match_characters">
+		    <method>match_characters(^, pattern_match)</method>
+		    <description>match_characters(operand, pattern_match)</description>
+		    <help>match_characters returns TRUE if op matches the regular expression regexp, FALSE otherwise. The string regexp is an Extended Regular Expression as described in the POSIX standard. Different implementations of VTL may implement different versions of the POSIX standard therefore it is possible that match_characters may behave in slightly different ways.
+			</help>
+	    </operator>
+		<operator ID="isnull">
+		    <method>isnull(^)</method>
+		    <description>isnull(operand)</description>
+		    <help>The operator returns TRUE if the value of the operand is NULL, FALSE otherwise.
+			</help>
+	    </operator>
+		<operator ID="exists_in">
+		    <method>exists_in(^, operand2, true_false_all)</method>
+		    <description>exists_in( operand1, operand2 { , true|false|all } )</description>
+		    <help>The operator takes under consideration the common Identifiers of operand1 and operand2 and checks if the combinations of values of these Identifiers which are in operand1 also exist in operand2.
+			</help>
+	    </operator>
+		<operator ID="period_indicator">
+		    <method>period_indicator(^)</method>
+		    <description>period_indicator(operand)</description>
+		    <help>period_indicator returns the period indicator of a time_period value. The period indicator is the part of the time_period value which denotes the duration of the time period (e.g. day, week, month …).
+			</help>
+	    </operator>
+		<operator ID="fill_time_series">
+		    <method>fill_time_series(^, single_all)</method>
+		    <description>fill_time_series(operand {, single|all} )</description>
+		    <help>The operator fills the possibly missing Data Points of all the time series belonging to the operand op within the time limits automatically determined by applying the limit_method.
+			</help>
+	    </operator>
+		<operator ID="flow_to_stock">
+		    <method>flow_to_stock(^)</method>
+		    <description>flow_to_stock(operand)</description>
+		    <help>This operator takes in input a Data Set which are interpreted as flows and calculates the change of the 4659 corresponding stock since the beginning of each time series by summing the relevant flows. In other words, the operator perform the cumulative sum from the first Data Point of each time series to each other following Data Point of the same time series.
+			</help>
+	    </operator>
+		<operator ID="stock_to_flow">
+		    <method>stock_to_flow(^)</method>
+		    <description>stock_to_flow(operand)</description>
+		    <help>This operator takes in input a Data Set of time series which is interpreted as stock data and, for each time series, calculates the corresponding flow data by subtracting from the measure values of each regular period the corresponding measure values of the previous one.
+			</help>
+	    </operator>
+		<operator ID="timeshift">
+		    <method>timeshift(^, shiftNumber)</method>
+		    <description>timeshift(operand, shiftNumber )</description>
+		    <help>This operator takes in input a Data Set of time series and, for each time series of the Data Set, shifts the reference time Identifier of a number of periods (of the time series) equal to the shift_number parameter. If shift_number is negative, the shift is in the past, otherwise in the future. For example, if the period of the time series is month and shift_number is -1 the reference time Identifier is shifted of two months in the past.
+			</help>
+	    </operator>
+		<operator ID="current_date">
+		    <method>current_date()</method>
+		    <description>current_date()^</description>
+		    <help>The operator current_date returns the current time as a date type.
+			</help>
+	    </operator>
+		<operator ID="union">
+		    <method>union(^)</method>
+		    <description>union( dataset_ {, dataset_}* )</description>
+		    <help>The union operator implements the union of functions (i.e., Data Sets). The resulting Data Set has the same Identifier, Measure and Attribute Components of the operand Data Sets specified in the dsList, and contains the Data Points belonging to any of the operand Data Sets
+			</help>
+	    </operator>
+		<operator ID="intersect">
+		    <method>intersect(^)</method>
+		    <description>intersect( dataset_ {, dataset_}* )</description>
+		    <help>The intersect operator implements the intersection of functions (i.e., Data Sets). The resulting Data Set has the same Identifier, Measure and Attribute Components of the operand Data Sets specified in the dsList, and contains the Data Points belonging to all the operand Data Sets.
+			</help>
+	    </operator>
+		<operator ID="setdiff">
+		    <method>setdiff(^, dataset_2)</method>
+		    <description>setdiff( dataset_1, dataset_2 )</description>
+		    <help>The operator implements the set difference of functions (i.e. Data Sets), interpreting the Data Points of the input Data Sets as the elements belonging to the operand sets, the minuend and the subtrahend, respectively. The operator returns one single Data Set, with the same Identifier, Measure and Attribute Components as the operand Data Sets, containing the Data Points that appear in the first Data Set but not in the second.
+			</help>
+	    </operator>
+		<operator ID="symdiff">
+		    <method>symdiff(^, dataset_2)</method>
+		    <description>symdiff( dataset_1, dataset_2 )</description>
+		    <help>The operator implements the symmetric set difference between functions (i.e. Data Sets), interpreting the Data Points of the input Data Sets as the elements in the operand Sets. The operator returns one Data Set, with the same Identifier, Measure and Attribute Components as the operand Data Sets, containing the Data Points that appear in the first Data Set but not in the second and the Data Points that appear in the second Data Set but not in the first one.
+			</help>
+	    </operator>		
+    </operators>
+
+    <keywords>
+     <key>aggr</key>
+     <key>aggregates</key>
+     <key>all</key>
+     <key>all_measures</key>
+     <key>alterDataset</key>
+     <key>always</key>
+     <key>always_null</key>
+     <key>always_zero</key>
+     <key>and</key>
+     <key>any</key>
+     <key>apply</key>
+     <key>as</key>
+     <key>asc</key>
+     <key>attrcalc</key>
+     <key>attribute</key>
+     <key>boolean</key>
+     <key>BOOLEAN_CONSTANT</key>
+     <key>by</key>
+     <key>calc</key>
+     <key>check</key>
+     <key>check_datapoint</key>
+     <key>check_hierarchy</key>
+     <key>component</key>
+     <key>componentRole</key>
+     <key>components</key>
+     <key>computed</key>
+     <key>condition</key>
+     <key>conditioned</key>
+     <key>cross_join</key>
+     <key>current</key>
+     <key>data</key>
+     <key>datapoint</key>
+     <key>datapoint_on_valuedomains</key>
+     <key>datapoint_on_variables</key>
+     <key>dataset</key>
+     <key>dataset_priority</key>
+     <key>date</key>
+     <key>DATE_FORMAT</key>
+     <key>DAY</key>
+     <key>dd</key>
+     <key>default</key>
+     <key>define</key>
+     <key>desc</key>
+     <key>diff</key>
+     <key>DIGITS0_9</key>
+     <key>drop</key>
+     <key>duration</key>
+     <key>else</key>
+     <key>end</key>
+     <key>errorcode</key>
+     <key>errorlevel</key>
+     <key>eval</key>
+     <key>ex</key>
+     <key>except</key>
+     <key>filter</key>
+     <key>first</key>
+     <key>float</key>
+     <key>FLOAT_CONSTANT</key>
+     <key>following</key>
+     <key>FREQUENCY</key>
+     <key>from</key>
+     <key>full_join</key>
+     <key>group</key>
+     <key>having</key>
+     <key>hierarchical</key>
+     <key>hierarchical_on_valuedomains</key>
+     <key>hierarchical_on_variables</key>
+     <key>hierarchy</key>
+     <key>HOURS</key>
+     <key>identifier</key>
+     <key>IDENTIFIER</key>
+     <key>if</key>
+     <key>imbalance</key>
+     <key>in</key>
+     <key>indexof</key>
+     <key>inner_join</key>
+     <key>input</key>
+     <key>intday</key>
+     <key>integer</key>
+     <key>INTEGER_CONSTANT</key>
+     <key>intmonth</key>
+     <key>intyear</key>
+     <key>invalid</key>
+     <key>is</key>
+     <key>keep</key>
+     <key>key</key>
+     <key>keys</key>
+     <key>language</key>
+     <key>last</key>
+     <key>left_join</key>
+     <key>list</key>
+     <key>lower</key>
+     <key>map_from</key>
+     <key>map_to</key>
+     <key>maps_from</key>
+     <key>maps_to</key>
+     <key>maxLength</key>
+     <key>measure</key>
+     <key>measures</key>
+     <key>merge</key>
+     <key>MINUTES</key>
+     <key>ML_COMMENT</key>
+     <key>mm</key>
+     <key>MONTH</key>
+     <key>NEGATIVE_CONSTANT</key>
+     <key>no_measures</key>
+     <key>non_null</key>
+     <key>non_zero</key>
+     <key>not</key>
+     <key>not_in</key>
+     <key>null</key>
+     <key>number</key>
+     <key>on</key>
+     <key>operator</key>
+     <key>or</key>
+     <key>order</key>
+     <key>output</key>
+     <key>over</key>
+     <key>partial</key>
+     <key>partial_null</key>
+     <key>partial_zero</key>
+     <key>partition</key>
+     <key>pivot</key>
+     <key>point</key>
+     <key>points</key>
+     <key>POSITIVE_CONSTANT</key>
+     <key>preceding</key>
+     <key>range</key>
+     <key>record</key>
+     <key>regexp</key>
+     <key>rename</key>
+     <key>restrict</key>
+     <key>return</key>
+     <key>returns</key>
+     <key>rows</key>
+     <key>rule</key>
+     <key>rule_priority</key>
+     <key>ruleset</key>
+     <key>scalar</key>
+     <key>SECONDS</key>
+     <key>set</key>
+     <key>single</key>
+     <key>SL_COMMENT</key>
+     <key>string</key>
+     <key>STRING_CONSTANT</key>
+     <key>structure</key>
+     <key>sub</key>
+     <key>then</key>
+     <key>TIME</key>
+     <key>time_agg</key>
+     <key>TIME_FORMAT</key>
+     <key>time_period</key>
+     <key>TIME_UNIT</key>
+     <key>to</key>
+     <key>total</key>
+     <key>type</key>
+     <key>unbounded</key>
+     <key>unit</key>
+     <key>unpivot</key>
+     <key>upper</key>
+     <key>using</key>
+     <key>valid</key>
+     <key>Value</key>
+     <key>valuedomain</key>
+     <key>valuedomains</key>
+     <key>variable</key>
+     <key>variables</key>
+     <key>viral</key>
+     <key>WEEK</key>
+     <key>when</key>
+     <key>with</key>
+     <key>WS</key>
+     <key>xor</key>
+     <key>YEAR</key>
+     <key>yyyy</key>
+    </keywords>
+ 
+   <declarations>  
+	  <declaration>if ^ then thenOperand else elseOperand</declaration>
+   </declarations>
+ 
+ </AutoCompleteVocabulary>

@@ -1,0 +1,174 @@
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\ArtefactInfo.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\ArtefactInfo.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\CsvHelper.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\log4net.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Newtonsoft.Json.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxApi.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxDataParser.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxEdiParser.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxObjects.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxParseBase.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxQueryBuilder.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxSourceUtil.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureMutableParser.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureParser.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureRetrieval.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxXmlConstants.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\TabularWriters.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Xml.Schema.Linq.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\CsvHelper.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\log4net.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Newtonsoft.Json.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxApi.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxDataParser.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxEdiParser.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxObjects.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxParseBase.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxQueryBuilder.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxSourceUtil.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureMutableParser.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureParser.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureRetrieval.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\TabularWriters.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\bin\Debug\Xml.Schema.Linq.xml
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csproj.CopyComplete
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.pdb
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\ArtefactInfo.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\ArtefactInfo.pdb
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\CsvHelper.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\log4net.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Newtonsoft.Json.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxApi.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxDataParser.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxEdiParser.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxObjects.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxParseBase.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxQueryBuilder.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxSourceUtil.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureMutableParser.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureParser.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureRetrieval.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxXmlConstants.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\TabularWriters.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Xml.Schema.Linq.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\CsvHelper.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\log4net.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Newtonsoft.Json.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxApi.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxDataParser.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxEdiParser.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxObjects.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxParseBase.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxQueryBuilder.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxSourceUtil.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureMutableParser.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureParser.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureRetrieval.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\TabularWriters.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Xml.Schema.Linq.xml
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.dll
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.pdb
+H:\SOURCE_CODE\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\ArtefactInfo.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\ArtefactInfo.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\CsvHelper.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\log4net.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Newtonsoft.Json.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxApi.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxDataParser.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxEdiParser.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxObjects.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxParseBase.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxQueryBuilder.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxSourceUtil.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureMutableParser.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureParser.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureRetrieval.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxXmlConstants.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\TabularWriters.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Xml.Schema.Linq.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\CsvHelper.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\log4net.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Newtonsoft.Json.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxApi.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxDataParser.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxEdiParser.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxObjects.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxParseBase.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxQueryBuilder.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxSourceUtil.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureMutableParser.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureParser.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureRetrieval.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\TabularWriters.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\bin\Debug\Xml.Schema.Linq.xml
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.dll
+H:\SOURCE_CODE\VTLEditor -GIT\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\ArtefactInfo.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\ArtefactInfo.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\CsvHelper.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\log4net.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Newtonsoft.Json.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxApi.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxDataParser.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxEdiParser.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxObjects.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxParseBase.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxQueryBuilder.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxSourceUtil.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureMutableParser.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureParser.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureRetrieval.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxXmlConstants.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\TabularWriters.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Xml.Schema.Linq.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\CsvHelper.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\log4net.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Newtonsoft.Json.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxApi.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxDataParser.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxEdiParser.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxObjects.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxParseBase.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxQueryBuilder.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxSourceUtil.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureMutableParser.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureParser.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\SdmxStructureRetrieval.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\TabularWriters.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\bin\Debug\Xml.Schema.Linq.xml
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csproj.CoreCompileInputs.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csproj.CopyComplete
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.pdb

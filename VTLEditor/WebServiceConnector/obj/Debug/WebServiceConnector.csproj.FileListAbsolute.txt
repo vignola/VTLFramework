@@ -1,0 +1,72 @@
+G:\SOURCE_CODE\ExcelGetSDMXData_26_1\WebServiceConnector\bin\Debug\WebServiceConnector.dll.config
+G:\SOURCE_CODE\ExcelGetSDMXData_26_1\WebServiceConnector\bin\Debug\WebServiceConnector.dll
+G:\SOURCE_CODE\ExcelGetSDMXData_26_1\WebServiceConnector\bin\Debug\WebServiceConnector.pdb
+G:\SOURCE_CODE\ExcelGetSDMXData_26_1\WebServiceConnector\obj\Debug\WebServiceConnector.Resource.resources
+G:\SOURCE_CODE\ExcelGetSDMXData_26_1\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.GenerateResource.Cache
+G:\SOURCE_CODE\ExcelGetSDMXData_26_1\WebServiceConnector\obj\Debug\WebServiceConnector.dll
+G:\SOURCE_CODE\ExcelGetSDMXData_26_1\WebServiceConnector\obj\Debug\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTLGenProj\WebServiceConnector\bin\Debug\WebServiceConnector.dll.config
+G:\SOURCE_CODE\VTLGenProj\WebServiceConnector\bin\Debug\WebServiceConnector.dll
+G:\SOURCE_CODE\VTLGenProj\WebServiceConnector\bin\Debug\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.Resource.resources
+G:\SOURCE_CODE\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.GenerateResource.Cache
+G:\SOURCE_CODE\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.dll
+G:\SOURCE_CODE\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.csprojResolveAssemblyReference.cache
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\WebServiceConnector\bin\Debug\WebServiceConnector.dll.config
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\WebServiceConnector\bin\Debug\WebServiceConnector.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\WebServiceConnector\bin\Debug\WebServiceConnector.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.Resource.resources
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.GenerateResource.Cache
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLGenComplete\VTLGenProj\WebServiceConnector\obj\Debug\WebServiceConnector.csprojResolveAssemblyReference.cache
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.dll.config
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.pdb
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.Resource.resources
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.GenerateResource.Cache
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.dll
+G:\SOFTWARE\SW INTERNO\ParserVTL\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\bin\Debug\WebServiceConnector.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\bin\Debug\WebServiceConnector.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\bin\Debug\WebServiceConnector.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\bin\Debug\Microsoft.Web.XmlTransform.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Debug\WebServiceConnector.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Debug\WebServiceConnector.Resource.resources
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.GenerateResource.cache
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.CopyComplete
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Debug\WebServiceConnector.dll
+G:\SOURCE_CODE\VTL_GenLatVer\WebServiceConnector\obj\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.dll.config
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\bin\Debug\Microsoft.Web.XmlTransform.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.Resource.resources
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.GenerateResource.cache
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\bin\Debug\WebServiceConnector.dll.config
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\bin\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\bin\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\bin\Debug\Microsoft.Web.XmlTransform.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\obj\Debug\WebServiceConnector.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\obj\Debug\WebServiceConnector.Resource.resources
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.GenerateResource.cache
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.CopyComplete
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\obj\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTLEditor -GIT\WebServiceConnector\obj\Debug\WebServiceConnector.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.dll.config
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\bin\Debug\WebServiceConnector.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\bin\Debug\Microsoft.Web.XmlTransform.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.Resource.resources
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.GenerateResource.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.CoreCompileInputs.cache
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.CopyComplete
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.dll
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.pdb

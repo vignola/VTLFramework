@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" />
+  <xs:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ArtefactInfo.VTL" />
+  <xs:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="TestDatabaseConnection">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestDatabaseConnectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestDatabaseConnectionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataStructureComp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DataStuctureID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataStructureCompResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetDataStructureCompResult" nillable="true" type="q1:ArrayOfDataStructureComponentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueDomainValues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValueDomainID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueDomainValuesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetValueDomainValuesResult" nillable="true" type="q2:ArrayOfBaseComponentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataSets">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataSetsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetDataSetsResult" nillable="true" type="q3:ArrayOfDataSetInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataSetComp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DataSetID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataSetCompResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetDataSetCompResult" nillable="true" type="q4:ArrayOfDataStructureComponentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataStructures">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataStructuresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetDataStructuresResult" nillable="true" type="q5:ArrayOfBaseArtefactInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueDomains">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueDomainsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetValueDomainsResult" nillable="true" type="q6:ArrayOfValueDomainInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueDomainSubset">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueDomainSubsetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetValueDomainSubsetResult" nillable="true" type="q7:ArrayOfValueDomainSubsetInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubSetList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValueDomainSubsetID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubSetListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetSubSetListResult" nillable="true" type="q8:ArrayOfBaseComponentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransformationID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTransformationResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransformationList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransformationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetTransformationListResult" nillable="true" type="q9:ArrayOfBaseArtefactInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDefinedOperatorsList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDefinedOperatorsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="GetUserDefinedOperatorsListResult" nillable="true" type="q10:ArrayOfBaseUserDefinedOperator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueDomain_seq_id">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="valueDomainId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueDomain_seq_idResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="GetValueDomain_seq_idResult" nillable="true" type="q11:ArrayOfKeyValuePairOfintstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTransformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trasformationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trasformationText" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="clearedAndOrderedStatements" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTransformationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveTransformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trasName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveTransformationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserDefinedOperator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Operator_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="body" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="operator_type" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserDefinedOperatorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUserDefinedOperatorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertValueDomain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValueDomainID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainAgency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainVersion" nillable="true" type="xs:string" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="names" nillable="true" type="q12:ArrayOfLocalizedValue" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="valueList" nillable="true" type="q13:ArrayOfBaseArtefactInfo" />
+        <xs:element minOccurs="0" name="check_presence" type="xs:boolean" />
+        <xs:element minOccurs="0" name="creationType" type="xs:int" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/ArtefactInfo.VTL" minOccurs="0" name="data_type" type="q14:VTL_Model.VTL_DATATYPE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertValueDomainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertValueDomainResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertValueDomainDescribed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValueDomainID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainAgency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainVersion" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="names" nillable="true" type="q15:ArrayOfLocalizedValue" />
+        <xs:element minOccurs="0" name="valueRestriction" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="check_presence" type="xs:boolean" />
+        <xs:element minOccurs="0" name="creationType" type="xs:int" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/ArtefactInfo.VTL" minOccurs="0" name="data_type" type="q16:VTL_Model.VTL_DATATYPE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertValueDomainDescribedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertValueDomainDescribedResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveValueDomain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValueDomainID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainAgency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainVersion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveValueDomainResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertValueDomainSubsetDescribed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValueDomainSubsetID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainSubsetAgency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainSubsetVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ref_ValueDomainID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ref_ValueDomainAgency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ref_ValueDomainVersion" nillable="true" type="xs:string" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="names" nillable="true" type="q17:ArrayOfLocalizedValue" />
+        <xs:element minOccurs="0" name="valueRestriction" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="creationType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertValueDomainSubsetDescribedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertValueDomainSubsetDescribedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertValueDomainSubset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValueDomainSubsetID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainSubsetAgency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainSubsetVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ref_ValueDomainID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ref_ValueDomainAgency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ref_ValueDomainVersion" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="names" nillable="true" type="q18:ArrayOfLocalizedValue" />
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="valueList" nillable="true" type="q19:ArrayOfint" />
+        <xs:element minOccurs="0" name="creationType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertValueDomainSubsetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertValueDomainSubsetResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveValueDomainSubset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValueDomainSubsetID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainSubsetAgency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ValueDomainSubsetVersion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveValueDomainSubsetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDataStructure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dsd_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dsd_Agency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dsd_Version" nillable="true" type="xs:string" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="dsd_names" nillable="true" type="q20:ArrayOfLocalizedValue" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="dsd_componentList" nillable="true" type="q21:ArrayOfBaseComponentInfo" />
+        <xs:element minOccurs="0" name="creationType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDataStructureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertDataStructureResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDataSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ref_dsd_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ref_dsd_Agency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ref_dsd_Version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataset_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataset_agency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataset_version" nillable="true" type="xs:string" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="dataset_names" nillable="true" type="q22:ArrayOfLocalizedValue" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" minOccurs="0" name="dsd_componentList" nillable="true" type="q23:ArrayOfBaseComponentInfo" />
+        <xs:element minOccurs="0" name="creationType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDataSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertDataSetResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveDataSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dataset_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataset_Agency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataset_Version" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveDataSetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveUserDefinedOperator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="operatorName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveUserDefinedOperatorResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

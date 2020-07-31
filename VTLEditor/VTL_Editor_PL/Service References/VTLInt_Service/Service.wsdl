@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ArtefactInfo.model" />
+      <xsd:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+      <xsd:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ArtefactInfo.VTL" />
+      <xsd:import schemaLocation="http://localhost:2997/VTLInt_WS.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_TestDatabaseConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestDatabaseConnection" />
+  </wsdl:message>
+  <wsdl:message name="IService_TestDatabaseConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestDatabaseConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDataStructureComp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataStructureComp" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDataStructureComp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataStructureCompResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetValueDomainValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueDomainValues" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetValueDomainValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueDomainValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDataSets_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataSets" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDataSets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataSetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDataSetComp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataSetComp" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDataSetComp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataSetCompResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDataStructures_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataStructures" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDataStructures_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataStructuresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetValueDomains_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueDomains" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetValueDomains_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueDomainsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetValueDomainSubset_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueDomainSubset" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetValueDomainSubset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueDomainSubsetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSubSetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubSetList" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSubSetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubSetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetTransformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransformation" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetTransformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetTransformationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransformationList" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetTransformationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransformationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetUserDefinedOperatorsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDefinedOperatorsList" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetUserDefinedOperatorsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDefinedOperatorsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetValueDomain_seq_id_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueDomain_seq_id" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetValueDomain_seq_id_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueDomain_seq_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertTransformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransformation" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertTransformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveTransformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTransformation" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveTransformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTransformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertUserDefinedOperator_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserDefinedOperator" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertUserDefinedOperator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserDefinedOperatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertValueDomain_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertValueDomain" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertValueDomain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertValueDomainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertValueDomainDescribed_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertValueDomainDescribed" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertValueDomainDescribed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertValueDomainDescribedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveValueDomain_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveValueDomain" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveValueDomain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveValueDomainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertValueDomainSubsetDescribed_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertValueDomainSubsetDescribed" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertValueDomainSubsetDescribed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertValueDomainSubsetDescribedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertValueDomainSubset_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertValueDomainSubset" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertValueDomainSubset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertValueDomainSubsetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveValueDomainSubset_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveValueDomainSubset" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveValueDomainSubset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveValueDomainSubsetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertDataStructure_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDataStructure" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertDataStructure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDataStructureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertDataSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDataSet" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertDataSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveDataSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveDataSet" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveDataSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveUserDefinedOperator_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUserDefinedOperator" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemoveUserDefinedOperator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUserDefinedOperatorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="TestDatabaseConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/TestDatabaseConnection" message="tns:IService_TestDatabaseConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/TestDatabaseConnectionResponse" message="tns:IService_TestDatabaseConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataStructureComp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetDataStructureComp" message="tns:IService_GetDataStructureComp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDataStructureCompResponse" message="tns:IService_GetDataStructureComp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValueDomainValues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetValueDomainValues" message="tns:IService_GetValueDomainValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetValueDomainValuesResponse" message="tns:IService_GetValueDomainValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetDataSets" message="tns:IService_GetDataSets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDataSetsResponse" message="tns:IService_GetDataSets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSetComp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetDataSetComp" message="tns:IService_GetDataSetComp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDataSetCompResponse" message="tns:IService_GetDataSetComp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataStructures">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetDataStructures" message="tns:IService_GetDataStructures_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDataStructuresResponse" message="tns:IService_GetDataStructures_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValueDomains">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetValueDomains" message="tns:IService_GetValueDomains_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetValueDomainsResponse" message="tns:IService_GetValueDomains_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValueDomainSubset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetValueDomainSubset" message="tns:IService_GetValueDomainSubset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetValueDomainSubsetResponse" message="tns:IService_GetValueDomainSubset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubSetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetSubSetList" message="tns:IService_GetSubSetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetSubSetListResponse" message="tns:IService_GetSubSetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetTransformation" message="tns:IService_GetTransformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetTransformationResponse" message="tns:IService_GetTransformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransformationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetTransformationList" message="tns:IService_GetTransformationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetTransformationListResponse" message="tns:IService_GetTransformationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDefinedOperatorsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetUserDefinedOperatorsList" message="tns:IService_GetUserDefinedOperatorsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetUserDefinedOperatorsListResponse" message="tns:IService_GetUserDefinedOperatorsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValueDomain_seq_id">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetValueDomain_seq_id" message="tns:IService_GetValueDomain_seq_id_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetValueDomain_seq_idResponse" message="tns:IService_GetValueDomain_seq_id_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertTransformation" message="tns:IService_InsertTransformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertTransformationResponse" message="tns:IService_InsertTransformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTransformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/RemoveTransformation" message="tns:IService_RemoveTransformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/RemoveTransformationResponse" message="tns:IService_RemoveTransformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserDefinedOperator">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertUserDefinedOperator" message="tns:IService_InsertUserDefinedOperator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertUserDefinedOperatorResponse" message="tns:IService_InsertUserDefinedOperator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertValueDomain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertValueDomain" message="tns:IService_InsertValueDomain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertValueDomainResponse" message="tns:IService_InsertValueDomain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertValueDomainDescribed">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertValueDomainDescribed" message="tns:IService_InsertValueDomainDescribed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertValueDomainDescribedResponse" message="tns:IService_InsertValueDomainDescribed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveValueDomain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/RemoveValueDomain" message="tns:IService_RemoveValueDomain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/RemoveValueDomainResponse" message="tns:IService_RemoveValueDomain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertValueDomainSubsetDescribed">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertValueDomainSubsetDescribed" message="tns:IService_InsertValueDomainSubsetDescribed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertValueDomainSubsetDescribedResponse" message="tns:IService_InsertValueDomainSubsetDescribed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertValueDomainSubset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertValueDomainSubset" message="tns:IService_InsertValueDomainSubset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertValueDomainSubsetResponse" message="tns:IService_InsertValueDomainSubset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveValueDomainSubset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/RemoveValueDomainSubset" message="tns:IService_RemoveValueDomainSubset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/RemoveValueDomainSubsetResponse" message="tns:IService_RemoveValueDomainSubset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDataStructure">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertDataStructure" message="tns:IService_InsertDataStructure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertDataStructureResponse" message="tns:IService_InsertDataStructure_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDataSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertDataSet" message="tns:IService_InsertDataSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertDataSetResponse" message="tns:IService_InsertDataSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveDataSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/RemoveDataSet" message="tns:IService_RemoveDataSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/RemoveDataSetResponse" message="tns:IService_RemoveDataSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserDefinedOperator">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/RemoveUserDefinedOperator" message="tns:IService_RemoveUserDefinedOperator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/RemoveUserDefinedOperatorResponse" message="tns:IService_RemoveUserDefinedOperator_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestDatabaseConnection">
+      <soap:operation soapAction="http://tempuri.org/IService/TestDatabaseConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataStructureComp">
+      <soap:operation soapAction="http://tempuri.org/IService/GetDataStructureComp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValueDomainValues">
+      <soap:operation soapAction="http://tempuri.org/IService/GetValueDomainValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSets">
+      <soap:operation soapAction="http://tempuri.org/IService/GetDataSets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSetComp">
+      <soap:operation soapAction="http://tempuri.org/IService/GetDataSetComp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataStructures">
+      <soap:operation soapAction="http://tempuri.org/IService/GetDataStructures" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValueDomains">
+      <soap:operation soapAction="http://tempuri.org/IService/GetValueDomains" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValueDomainSubset">
+      <soap:operation soapAction="http://tempuri.org/IService/GetValueDomainSubset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubSetList">
+      <soap:operation soapAction="http://tempuri.org/IService/GetSubSetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransformation">
+      <soap:operation soapAction="http://tempuri.org/IService/GetTransformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransformationList">
+      <soap:operation soapAction="http://tempuri.org/IService/GetTransformationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDefinedOperatorsList">
+      <soap:operation soapAction="http://tempuri.org/IService/GetUserDefinedOperatorsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValueDomain_seq_id">
+      <soap:operation soapAction="http://tempuri.org/IService/GetValueDomain_seq_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransformation">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertTransformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTransformation">
+      <soap:operation soapAction="http://tempuri.org/IService/RemoveTransformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserDefinedOperator">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertUserDefinedOperator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertValueDomain">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertValueDomain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertValueDomainDescribed">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertValueDomainDescribed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveValueDomain">
+      <soap:operation soapAction="http://tempuri.org/IService/RemoveValueDomain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertValueDomainSubsetDescribed">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertValueDomainSubsetDescribed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertValueDomainSubset">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertValueDomainSubset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveValueDomainSubset">
+      <soap:operation soapAction="http://tempuri.org/IService/RemoveValueDomainSubset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDataStructure">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertDataStructure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDataSet">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveDataSet">
+      <soap:operation soapAction="http://tempuri.org/IService/RemoveDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserDefinedOperator">
+      <soap:operation soapAction="http://tempuri.org/IService/RemoveUserDefinedOperator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost:2997/VTLInt_WS.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

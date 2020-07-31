@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="44e35c50-2326-44b8-ba11-09e418dfe764" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2997/VTLInt_WS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VTLInt_WS.disco" MetadataType="Disco" ID="86746a02-66cf-491f-b2c2-007114152824" SourceId="1" SourceUrl="http://localhost:2997/VTLInt_WS.svc?disco" />
+    <MetadataFile FileName="VTLInt_WS5.xsd" MetadataType="Schema" ID="d77a06b5-c4ab-4df2-ac8a-4979cf1a46a7" SourceId="1" SourceUrl="http://localhost:2997/VTLInt_WS.svc?xsd=xsd5" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="1563b672-126e-409c-8060-9ac335747652" SourceId="1" SourceUrl="http://localhost:2997/VTLInt_WS.svc?wsdl" />
+    <MetadataFile FileName="VTLInt_WS3.xsd" MetadataType="Schema" ID="6adf84f4-4c9b-4834-9ad1-d31217ac30a0" SourceId="1" SourceUrl="http://localhost:2997/VTLInt_WS.svc?xsd=xsd3" />
+    <MetadataFile FileName="VTLInt_WS.xsd" MetadataType="Schema" ID="5c38413c-9069-452c-b94d-806ddfb11dd8" SourceId="1" SourceUrl="http://localhost:2997/VTLInt_WS.svc?xsd=xsd0" />
+    <MetadataFile FileName="VTLInt_WS2.xsd" MetadataType="Schema" ID="dd3d685d-5452-4351-8228-0a82cca15914" SourceId="1" SourceUrl="http://localhost:2997/VTLInt_WS.svc?xsd=xsd1" />
+    <MetadataFile FileName="VTLInt_WS4.xsd" MetadataType="Schema" ID="16579e12-93a1-4b0b-a10e-cc24afbb29c9" SourceId="1" SourceUrl="http://localhost:2997/VTLInt_WS.svc?xsd=xsd4" />
+    <MetadataFile FileName="VTLInt_WS1.xsd" MetadataType="Schema" ID="969b0304-0608-428e-a2dd-2480c120aa10" SourceId="1" SourceUrl="http://localhost:2997/VTLInt_WS.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
