@@ -26,4 +26,9 @@ VTL Framework is composed of four parts:
 
 - **VTLDB** (Oracle DB) to store the structural metadata using the VTL-IM
 
+## Usage and documentation
+
+Usage info, documentation are available at the
+[project site](https://vtlframeworkdevelopment.github.io/VTLFramework/).
+
 ![](RackMultipart20200729-4-151tw08_html_dfedecc1f599f215.png)
