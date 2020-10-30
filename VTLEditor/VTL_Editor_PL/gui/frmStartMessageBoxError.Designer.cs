@@ -34,8 +34,8 @@
             this.TitleLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ErrorMessagesListBox = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ErrorMessagesListBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -109,14 +109,6 @@
             this.panel1.Size = new System.Drawing.Size(528, 51);
             this.panel1.TabIndex = 7;
             // 
-            // ErrorMessagesListBox
-            // 
-            this.ErrorMessagesListBox.FormattingEnabled = true;
-            this.ErrorMessagesListBox.Location = new System.Drawing.Point(5, 62);
-            this.ErrorMessagesListBox.Name = "ErrorMessagesListBox";
-            this.ErrorMessagesListBox.Size = new System.Drawing.Size(528, 238);
-            this.ErrorMessagesListBox.TabIndex = 8;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -129,6 +121,15 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // ErrorMessagesListBox
+            // 
+            this.ErrorMessagesListBox.FormattingEnabled = true;
+            this.ErrorMessagesListBox.HorizontalScrollbar = true;
+            this.ErrorMessagesListBox.Location = new System.Drawing.Point(5, 62);
+            this.ErrorMessagesListBox.Name = "ErrorMessagesListBox";
+            this.ErrorMessagesListBox.Size = new System.Drawing.Size(528, 238);
+            this.ErrorMessagesListBox.TabIndex = 8;
             // 
             // frmStartMessageBoxError
             // 

@@ -29,10 +29,17 @@ namespace VTL_Editor_PL.gui
             InitializeComponent();
         }
 
-        public bool DetailImplementationVisible 
+        public bool DetailImplementationVisible
         {
             get { return this.DetailImplementationPanel.Visible; }
             set { DetailImplementationPanel.Visible = value; }
+
+        }
+
+        public bool TestConnectionVisible
+        {
+            get { return this.TestConnectionButton.Visible; }
+            set { TestConnectionButton.Visible = value; }
         }
 
         private void frmAddWebService_Load(object sender, EventArgs e)

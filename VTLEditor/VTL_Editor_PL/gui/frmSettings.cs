@@ -1,6 +1,7 @@
 ﻿using ISTAT_DB_DAL;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using VTL_Editor_PL.classes.common;
 using VTL_Editor_PL.classes.config;
@@ -9,7 +10,8 @@ namespace VTL_Editor_PL.gui
 {
     public partial class frmSettings : Form
     {
-        private MainApplicationSettings _tmp_settings;       
+        private MainApplicationSettings _tmp_settings;
+        private bool _newDbConnection;
 
         public frmSettings()
         {
@@ -23,6 +25,8 @@ namespace VTL_Editor_PL.gui
             {
                 frmAddWebService frmAdd = new frmAddWebService();
                 frmAdd.DetailImplementationVisible = true;
+                frmAdd.TestConnectionVisible = true;
+
                 if (frmAdd.ShowDialog() == DialogResult.OK)
                 {
 
@@ -112,7 +116,7 @@ namespace VTL_Editor_PL.gui
                 _tmp_settings = new MainApplicationSettings();
                 _tmp_settings.WebServices = new List<MainApplicationSettings.WebServiceInfo>();
 
-                if (_tmp_settings.LoadSettings(false) == ApplicationSettings.classes.common.CommonConst.Loading_Status.NOT_FOUND)
+                if (_tmp_settings.LoadSettings(false)[0] == ApplicationSettings.classes.common.CommonConst.Loading_Status.NOT_FOUND)
                     return;
                 
                 if (_tmp_settings.WebServices.Count > 0) { 
@@ -130,38 +134,53 @@ namespace VTL_Editor_PL.gui
                     this.WebServiceReturnDetailImplementationLabel.Text = tmpWs.WebService_ReturnDetail.ToString();
                 }
 
-                if (_tmp_settings.DBConnections.Count > 0)
-                {
-                    this.DBConnectionsComboBox.Items.Clear();
-                    foreach (MainApplicationSettings.DBInfo dbInfo in _tmp_settings.DBConnections) 
+                SaveDBConnButton.Enabled = false;
+                RemoveDBConnButton.Enabled = false;
+                _newDbConnection = false;
+
+                if (_tmp_settings.DBConnections != null) 
+                { 
+                    if (_tmp_settings.DBConnections.Count > 0)
                     {
-                        this.DBConnectionsComboBox.Items.Add(dbInfo.DBConnectionName);
+                        this.DBConnectionsComboBox.Items.Clear();
+                        foreach (MainApplicationSettings.DBInfo dbInfo in _tmp_settings.DBConnections) 
+                        {
+                            this.DBConnectionsComboBox.Items.Add(dbInfo.DBConnectionName);
+                        }
+                        this.DBConnectionsComboBox.SelectedIndex = 0;
+                        this.DBConnectionNameTextBox.Text = _tmp_settings.DBConnections[0].DBConnectionName;
+                        this.DbTypeComboBox.SelectedIndex = DbTypeComboBox.FindStringExact(_tmp_settings.DBConnections[0].DBType.ToString());
+                        this.DBUserNameTextBox.Text = _tmp_settings.DBConnections[0].UserName;
+                        this.DBPasswordTextBox.Text = _tmp_settings.DBConnections[0].Pwd;
+                        this.OracleTNSTextBox.Text = _tmp_settings.DBConnections[0].TSNName;
+                        RemoveDBConnButton.Enabled = true;
                     }
-                    this.DBConnectionsComboBox.SelectedIndex = 0;
-                    this.DBConnectionNameTextBox.Text = _tmp_settings.DBConnections[0].DBConnectionName;
-                    this.DbTypeComboBox.SelectedIndex = DbTypeComboBox.FindStringExact(_tmp_settings.DBConnections[0].DBType.ToString());
-                    this.DBUserNameTextBox.Text = _tmp_settings.DBConnections[0].UserName;
-                    this.DBPasswordTextBox.Text = _tmp_settings.DBConnections[0].Pwd;
-                    this.OracleTNSTextBox.Text = _tmp_settings.DBConnections[0].TSNName;
                 }
 
-                this.IntWSlabelName.Text=_tmp_settings.InteractionWebService.WebService_Name;
-                this.IntWSlabelDescr.Text = _tmp_settings.InteractionWebService.WebService_Description;
-                this.IntWSlabelUrl.Text = _tmp_settings.InteractionWebService.WebService_public_URL;
-                this.IntWSlabelUser.Text = _tmp_settings.InteractionWebService.WebService_UserName;
-                this.IntWSlabelPwd.Text = _tmp_settings.InteractionWebService.WebService_Password;
+                if (_tmp_settings.InteractionWebService != null) 
+                { 
+                    this.IntWSlabelName.Text=_tmp_settings.InteractionWebService.WebService_Name;
+                    this.IntWSlabelDescr.Text = _tmp_settings.InteractionWebService.WebService_Description;
+                    this.IntWSlabelUrl.Text = _tmp_settings.InteractionWebService.WebService_public_URL;
+                    this.IntWSlabelUser.Text = _tmp_settings.InteractionWebService.WebService_UserName;
+                    this.IntWSlabelPwd.Text = _tmp_settings.InteractionWebService.WebService_Password;
+                }
 
-                this.ValWSlabelName.Text = _tmp_settings.ValidationWebService.WebService_Name;
-                this.ValWSlabelDescription.Text = _tmp_settings.ValidationWebService.WebService_Description;
-                this.ValWSlabelWSUrl.Text = _tmp_settings.ValidationWebService.WebService_public_URL;
-                this.ValWSlabelUser.Text = _tmp_settings.ValidationWebService.WebService_UserName;
-                this.ValWSlabelPwd.Text = _tmp_settings.ValidationWebService.WebService_Password;
+                if (_tmp_settings.ValidationWebService != null) 
+                {
+                    this.ValWSlabelName.Text = _tmp_settings.ValidationWebService.WebService_Name;
+                    this.ValWSlabelDescription.Text = _tmp_settings.ValidationWebService.WebService_Description;
+                    this.ValWSlabelWSUrl.Text = _tmp_settings.ValidationWebService.WebService_public_URL;
+                    this.ValWSlabelUser.Text = _tmp_settings.ValidationWebService.WebService_UserName;
+                    this.ValWSlabelPwd.Text = _tmp_settings.ValidationWebService.WebService_Password;
+                }
 
                 this.TIME_PERIODTextBox.Text = _tmp_settings.TIME_PERIOD_default_valueDomainID;
                 this.OBS_VALUEtextBox.Text = _tmp_settings.OBS_default_valueDomainID;
-                
+
                 //Initialize provider
                 //InitializeProviders();
+                
             }
              catch (Exception ex)
              {
@@ -182,6 +201,12 @@ namespace VTL_Editor_PL.gui
                 tmpIntWs.WebService_Password = this.IntWSlabelPwd.Text;
                 tmpIntWs.WebService_Crypted = false;                
 
+                if (String.IsNullOrEmpty(tmpIntWs.WebService_public_URL.Replace("-","")) || String.IsNullOrEmpty(tmpIntWs.WebService_Name.Replace("-", ""))) 
+                { 
+                    if (MessageBox.Show("Interaction web service has not been set. If you continue the system will return some errors. Do you want to proceed without it? ", "Interaction ws", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)                    
+                        return;                    
+                }
+
                 _tmp_settings.InteractionWebService = tmpIntWs;
 
                 MainApplicationSettings.WebServiceInfo tmpValWs = new ApplicationSettings.classes.services.ApplicationSettings.WebServiceInfo();
@@ -195,7 +220,14 @@ namespace VTL_Editor_PL.gui
                 _tmp_settings.OBS_default_valueDomainID = this.OBS_VALUEtextBox.Text;
                 _tmp_settings.TIME_PERIOD_default_valueDomainID = this.TIME_PERIODTextBox.Text;
 
+                if (String.IsNullOrEmpty(tmpValWs.WebService_public_URL.Replace("-", "")) || String.IsNullOrEmpty(tmpValWs.WebService_Name.Replace("-", "")))
+                {
+                    if (MessageBox.Show("Validation web service has not been set. If you continue you will not able to validate and translate your VTL statements. Do you want to proceed without it? ", "Validatrion ws", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                        return;
+                }
+
                 _tmp_settings.ValidationWebService = tmpValWs;
+                           
 
                 _tmp_settings.ReplaceSettings();
 
@@ -234,6 +266,7 @@ namespace VTL_Editor_PL.gui
             {
                 frmAddWebService frmAdd = new frmAddWebService();
                 frmAdd.DetailImplementationVisible = false;
+                frmAdd.TestConnectionVisible = true;
 
                 if (frmAdd.ShowDialog() == DialogResult.OK)
                 {
@@ -244,12 +277,7 @@ namespace VTL_Editor_PL.gui
                     IntWSlabelDescr.Text = _tmp_settings.InteractionWebService.WebService_Description;
                     IntWSlabelUrl.Text = _tmp_settings.InteractionWebService.WebService_public_URL;
                     IntWSlabelUser.Text = _tmp_settings.InteractionWebService.WebService_UserName;
-                    IntWSlabelPwd.Text = _tmp_settings.InteractionWebService.WebService_Password;
-
-                    if (_tmp_settings.WebServices.Count == 1)
-                    {
-                        WebServiceNameComboBox.SelectedIndex = 0;
-                    }
+                    IntWSlabelPwd.Text = _tmp_settings.InteractionWebService.WebService_Password;                   
 
                 }
             }
@@ -293,15 +321,10 @@ namespace VTL_Editor_PL.gui
         private void ValWSbuttonAdd_Click(object sender, EventArgs e)
         {
             try
-            {
-                MainApplicationSettings.WebServiceInfo tmp = new ApplicationSettings.classes.services.ApplicationSettings.WebServiceInfo();
-                tmp = _tmp_settings.InteractionWebService;
-
-                if (tmp != null)
-                {
+            {                
                     frmAddWebService frmMod = new frmAddWebService();
                     frmMod.DetailImplementationVisible = false;
-                    frmMod.WSInfo = tmp;
+                    frmMod.TestConnectionVisible = false;                    
 
                     if (frmMod.ShowDialog() == DialogResult.OK)
                     {
@@ -311,8 +334,7 @@ namespace VTL_Editor_PL.gui
                         ValWSlabelWSUrl.Text = _tmp_settings.ValidationWebService.WebService_public_URL;
                         ValWSlabelUser.Text = _tmp_settings.ValidationWebService.WebService_UserName;
                         ValWSlabelPwd.Text = _tmp_settings.ValidationWebService.WebService_Password;
-                    }
-                }
+                    }                
             }
             catch (Exception ex)
             {
@@ -407,7 +429,8 @@ namespace VTL_Editor_PL.gui
             DBConnectionNameTextBox.Clear();
             DBUserNameTextBox.Clear();
             DBPasswordTextBox.Clear();
-            OracleTNSTextBox.Clear();            
+            OracleTNSTextBox.Clear();
+            _newDbConnection = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -415,8 +438,20 @@ namespace VTL_Editor_PL.gui
             try 
             { 
                 MainApplicationSettings.DBInfo dbInfo = new MainApplicationSettings.DBInfo();
-                if (DBConnectionNameTextBox.Text.Trim()!="")
+                if (DBConnectionNameTextBox.Text.Trim() != "") {
+                    if (_tmp_settings.DBConnections.Count > 0) 
+                    { 
+                        var existingDbNames = from dbnames in _tmp_settings.DBConnections
+                                              where dbnames.DBConnectionName == DBConnectionNameTextBox.Text
+                                              select dbnames;
+                        if (existingDbNames.Count() >0 && _newDbConnection) 
+                        {
+                            MessageBox.Show("Sorry, a DB connection " + DBConnectionNameTextBox.Text + " already exist.", "Database connection name", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+                    }
                     dbInfo.DBConnectionName = DBConnectionNameTextBox.Text;
+                }
                 else 
                 {
                     MessageBox.Show("Please, insert a Database connection name", "Database connection name", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -430,6 +465,9 @@ namespace VTL_Editor_PL.gui
                 dbInfo.ID = dbInfo.DBConnectionName.GetHashCode();
 
                 _tmp_settings.DBConnections.Add(dbInfo);
+                SaveDBConnButton.Enabled = false;
+                _newDbConnection = false;
+                MessageBox.Show("DBConnection added. Please, to apply this change permanently, click main Save button to close this Settings module", "Removed", MessageBoxButtons.OK); 
             }
             catch (Exception ex)
             {
@@ -460,5 +498,88 @@ namespace VTL_Editor_PL.gui
                 CommonItem.ErrManger.ErrorManagement(ex, false, this);
             }
 }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            try 
+            {
+                
+                if (MessageBox.Show("Do you want to remove the selected DBConnection?", "Remove", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    for (int i = 0; i < _tmp_settings.DBConnections.Count; i++)
+                    {
+                        if (_tmp_settings.DBConnections[i].DBConnectionName == DBConnectionNameTextBox.Text)
+                        {
+                            _tmp_settings.DBConnections.RemoveAt(i);
+                            DBConnectionNameTextBox.Clear();
+                            DBUserNameTextBox.Clear();
+                            DBPasswordTextBox.Clear();
+                            OracleTNSTextBox.Clear();
+                            DBConnectionsComboBox.Items.RemoveAt(i);
+                            DBConnectionsComboBox.Text = "";
+                            RemoveDBConnButton.Enabled = false;
+                            MessageBox.Show("DBConnection removed. Please, to apply this change permanently, click main Save button to close this Settings module", "Removed", MessageBoxButtons.OK);
+                            break;
+                        }
+                    }
+
+
+                }
+             }
+             catch (Exception ex)
+             {
+                CommonItem.ErrManger.ErrorManagement(ex, false, this);
+             }
+        }
+
+        private void DBConnectionsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try { 
+                for (int i = 0; i < _tmp_settings.DBConnections.Count; i++)
+                {
+                    if (_tmp_settings.DBConnections[i].DBConnectionName == DBConnectionsComboBox.SelectedItem.ToString())
+                    {
+                        this.DBConnectionsComboBox.SelectedIndex = i;
+                        this.DBConnectionNameTextBox.Text = _tmp_settings.DBConnections[i].DBConnectionName;
+                        this.DbTypeComboBox.SelectedIndex = DbTypeComboBox.FindStringExact(_tmp_settings.DBConnections[i].DBType.ToString());
+                        this.DBUserNameTextBox.Text = _tmp_settings.DBConnections[i].UserName;
+                        this.DBPasswordTextBox.Text = _tmp_settings.DBConnections[i].Pwd;
+                        this.OracleTNSTextBox.Text = _tmp_settings.DBConnections[i].TSNName;
+                        RemoveDBConnButton.Enabled = true;
+                        _newDbConnection = false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                CommonItem.ErrManger.ErrorManagement(ex, false, this);
+            }
+        }
+
+        private void DBConnectionNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SaveDBConnButton.Enabled = true;
+        }
+
+        private void DbTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SaveDBConnButton.Enabled = true;
+        }
+
+        private void DBUserNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SaveDBConnButton.Enabled = true;
+        }
+
+        private void DBPasswordTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SaveDBConnButton.Enabled = true;
+        }
+
+        private void OracleTNSTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SaveDBConnButton.Enabled = true;
+        }
+        
     }
 }

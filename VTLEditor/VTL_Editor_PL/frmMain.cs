@@ -10,7 +10,7 @@ using VTL_Editor_PL.classes.common;
 using VTL_Editor_PL.classes.net;
 using VTL_Editor_PL.classes.tool;
 using VTL_Editor_PL.gui;
-//using VTLlib;
+using VTLlib;
 
 
 namespace VTL_Editor_PL
@@ -156,16 +156,16 @@ namespace VTL_Editor_PL
                 if (e.Node.Parent != null && (e.Node.Parent.Text == "Standard VTL operators"))
                 {
                     treeView2.Nodes.Clear();
-                    //Operators operators = new Operators();
-                    //List<String[]> opList = new List<String[]>();
-                    //opList = operators.GetOperatorList(e.Node.Text);
+                    Operators operators = new Operators();
+                    List<String[]> opList = new List<String[]>();
+                    opList = operators.GetOperatorList(e.Node.Text);
 
-                    //for (int i = 0; i < opList.Count; i++)
-                    //{
-                    //    Operator VTLoperator = new Operator();
-                    //    treeView2.Nodes.Add(opList[i][1].ToString());
-                    //    treeView2.Nodes[i].ToolTipText = VTLoperator.GetOperatorProperty(VTLOperatorProperty.Description, opList[i][1].ToString());
-                    //}
+                    for (int i = 0; i < opList.Count; i++)
+                    {
+                        Operator VTLoperator = new Operator();
+                        treeView2.Nodes.Add(opList[i][1].ToString());
+                        treeView2.Nodes[i].ToolTipText = VTLoperator.GetOperatorProperty(VTLOperatorProperty.Description, opList[i][1].ToString());
+                    }
                 }
 
                 switchTreeView2.Visible = false;
@@ -634,14 +634,14 @@ namespace VTL_Editor_PL
                 //Operators_Node.ImageIndex = 0;
                 //Operators_Node.SelectedImageIndex = 0;
                 
-                TreeNode DML_Node = Operators_Node.Nodes.Add("Standard VTL operators");
+               // TreeNode DML_Node = Operators_Node.Nodes.Add("Standard VTL operators");
                 TreeNode UserDefinedOperator_Node = Operators_Node.Nodes.Add("User defined operators");
                 TreeNode UserDefinedRuleset_Node = Operators_Node.Nodes.Add("User defined rulesets");
                 
                 //Gestione operatori
                 //Operators operators = new VTLlib.Operators();
 
-                List<String> grpList = new List<String>();
+                //List<String> grpList = new List<String>();
                 //grpList = operators.GetGroups();
                 //for (int i = 0; i < grpList.Count; i++)
                 //{
@@ -1004,8 +1004,8 @@ namespace VTL_Editor_PL
         public string GetSyntax(string nodeName)
         {
             string syntax = "";
-           // Operator VTLoperator = new Operator();
-           // syntax = VTLoperator.GetOperatorProperty(VTLOperatorProperty.Syntax, nodeName);
+            Operator VTLoperator = new Operator();
+            syntax = VTLoperator.GetOperatorProperty(VTLOperatorProperty.Syntax, nodeName);
             return syntax;
 
         }    
@@ -1111,8 +1111,9 @@ namespace VTL_Editor_PL
                 if (frmSet.ShowDialog() == DialogResult.OK) 
                 {
                     Form1_Load(null, null);
-                    CommonConst.Loading_Status settingResult = CommonItem.CurrentSettings.LoadSettings(false);
-                    if (CommonItem.CurrentSettings.LoadSettings(false) != CommonConst.Loading_Status.LOADED)
+                    List<CommonConst.Loading_Status> settingResult = CommonItem.CurrentSettings.LoadSettings(false);
+
+                    if (settingResult[0] != CommonConst.Loading_Status.LOADED)
                     {
                         throw new Exception(" - Error loading settings, please fix them through the Settings module and restart the application! \n \n" + settingResult.ToString());
                     }
@@ -1412,21 +1413,16 @@ namespace VTL_Editor_PL
 
         private void redoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            codeTextBox1.TextUndo();
+            codeTextBox1.TextRedo();
         }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {           
-            codeTextBox1.TextRedo();
+             codeTextBox1.TextUndo();
         }
-
        
-        private void provaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
                 
-                private void closeDefineModeXToolStripMenuItem_Click(object sender, EventArgs e)
+        private void closeDefineModeXToolStripMenuItem_Click(object sender, EventArgs e)
         {
             defineModeOff();            
         }

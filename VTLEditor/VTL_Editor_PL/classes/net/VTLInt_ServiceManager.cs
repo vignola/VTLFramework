@@ -15,25 +15,32 @@ namespace VTL_Editor_PL.classes.net
 
         public static VTLInt_Service.ServiceClient GetClient(ApplicationSettings.classes.services.ApplicationSettings.WebServiceInfo WSInfo)
         {
-            _address = WSInfo.WebService_public_URL;           
-            _baseAddress = new Uri(_address.Substring(0, _address.LastIndexOf('/')+1));
+            try
+            {
+                _address = WSInfo.WebService_public_URL;
+                _baseAddress = new Uri(_address.Substring(0, _address.LastIndexOf('/') + 1));
 
-            BasicHttpBinding binding = new BasicHttpBinding();
-            binding.MaxReceivedMessageSize = 20000000;
-            binding.MaxBufferSize = 20000000;
-            binding.MaxBufferPoolSize = 20000000;
-            binding.AllowCookies = true;
-            XmlDictionaryReaderQuotas readerQuotas = new XmlDictionaryReaderQuotas();
-            readerQuotas.MaxArrayLength = 20000000;
-            readerQuotas.MaxStringContentLength = 20000000;
-            readerQuotas.MaxDepth = 32;
-            binding.ReaderQuotas = readerQuotas;
-            if (_baseAddress.Scheme.ToLower() == "https")
-                binding.Security.Mode = BasicHttpSecurityMode.Transport;
+                BasicHttpBinding binding = new BasicHttpBinding();
+                binding.MaxReceivedMessageSize = 20000000;
+                binding.MaxBufferSize = 20000000;
+                binding.MaxBufferPoolSize = 20000000;
+                binding.AllowCookies = true;
+                XmlDictionaryReaderQuotas readerQuotas = new XmlDictionaryReaderQuotas();
+                readerQuotas.MaxArrayLength = 20000000;
+                readerQuotas.MaxStringContentLength = 20000000;
+                readerQuotas.MaxDepth = 32;
+                binding.ReaderQuotas = readerQuotas;
+                if (_baseAddress.Scheme.ToLower() == "https")
+                    binding.Security.Mode = BasicHttpSecurityMode.Transport;
 
-            VTLInt_Service.ServiceClient client = new VTLInt_Service.ServiceClient(binding, new EndpointAddress(_address));            
+                VTLInt_Service.ServiceClient client = new VTLInt_Service.ServiceClient(binding, new EndpointAddress(_address));
 
-            return client;
+                return client;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
     }

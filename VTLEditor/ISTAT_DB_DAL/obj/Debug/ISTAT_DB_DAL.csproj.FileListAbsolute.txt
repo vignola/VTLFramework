@@ -46,3 +46,4 @@ H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.C
 H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csproj.CopyComplete
 H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.dll
 H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ISTAT_DB_DAL\obj\Debug\ISTAT_DB_DAL.csprojAssemblyReference.cache

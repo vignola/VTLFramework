@@ -588,8 +588,7 @@
             this.provaToolStripMenuItem.Name = "provaToolStripMenuItem";
             this.provaToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.provaToolStripMenuItem.Text = "Prova";
-            this.provaToolStripMenuItem.Visible = false;
-            this.provaToolStripMenuItem.Click += new System.EventHandler(this.provaToolStripMenuItem_Click);
+            this.provaToolStripMenuItem.Visible = false;            
             // 
             // closeDefineModeXToolStripMenuItem
             // 

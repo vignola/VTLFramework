@@ -70,3 +70,4 @@ H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConn
 H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csproj.CopyComplete
 H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.dll
 H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\WebServiceConnector\obj\Debug\WebServiceConnector.csprojAssemblyReference.cache

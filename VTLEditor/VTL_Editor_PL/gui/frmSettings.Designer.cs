@@ -41,7 +41,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.IntWSlabelUser = new System.Windows.Forms.Label();
             this.IntWSbuttonAdd = new System.Windows.Forms.Button();
-            this.IntWSbuttonRemove = new System.Windows.Forms.Button();
             this.IntWSbuttonModify = new System.Windows.Forms.Button();
             this.tabPgValWebService = new System.Windows.Forms.TabPage();
             this.ValWSlabelName = new System.Windows.Forms.Label();
@@ -55,7 +54,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.ValWSlabelUser = new System.Windows.Forms.Label();
             this.ValWSbuttonAdd = new System.Windows.Forms.Button();
-            this.ValWSbuttonRemove = new System.Windows.Forms.Button();
             this.ValWSbuttonModify = new System.Windows.Forms.Button();
             this.tabPgWebServices = new System.Windows.Forms.TabPage();
             this.WebServiceReturnDetailImplementationLabel = new System.Windows.Forms.Label();
@@ -74,13 +72,13 @@
             this.WebServiceModifyButton = new System.Windows.Forms.Button();
             this.WebServiceNameComboBox = new System.Windows.Forms.ComboBox();
             this.tabPgDBConnection = new System.Windows.Forms.TabPage();
-            this.TestConnectionButton = new System.Windows.Forms.Button();
             this.ConnectionNameLabel = new System.Windows.Forms.Label();
             this.DBConnectionNameTextBox = new System.Windows.Forms.TextBox();
-            this.NewButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.AddDBConnectionButton = new System.Windows.Forms.Button();
+            this.RemoveDBConnButton = new System.Windows.Forms.Button();
+            this.SaveDBConnButton = new System.Windows.Forms.Button();
             this.OracleDBPanel = new System.Windows.Forms.Panel();
+            this.TestConnectionButton = new System.Windows.Forms.Button();
             this.OracleTNSTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -149,7 +147,6 @@
             this.tabPgInteractionWebService.Controls.Add(this.label26);
             this.tabPgInteractionWebService.Controls.Add(this.IntWSlabelUser);
             this.tabPgInteractionWebService.Controls.Add(this.IntWSbuttonAdd);
-            this.tabPgInteractionWebService.Controls.Add(this.IntWSbuttonRemove);
             this.tabPgInteractionWebService.Controls.Add(this.IntWSbuttonModify);
             this.tabPgInteractionWebService.Location = new System.Drawing.Point(4, 22);
             this.tabPgInteractionWebService.Name = "tabPgInteractionWebService";
@@ -255,26 +252,17 @@
             // 
             // IntWSbuttonAdd
             // 
-            this.IntWSbuttonAdd.Location = new System.Drawing.Point(171, 252);
+            this.IntWSbuttonAdd.Location = new System.Drawing.Point(210, 259);
             this.IntWSbuttonAdd.Name = "IntWSbuttonAdd";
             this.IntWSbuttonAdd.Size = new System.Drawing.Size(68, 23);
             this.IntWSbuttonAdd.TabIndex = 69;
-            this.IntWSbuttonAdd.Text = "Add";
+            this.IntWSbuttonAdd.Text = "New";
             this.IntWSbuttonAdd.UseVisualStyleBackColor = true;
             this.IntWSbuttonAdd.Click += new System.EventHandler(this.button2_Click);
             // 
-            // IntWSbuttonRemove
-            // 
-            this.IntWSbuttonRemove.Location = new System.Drawing.Point(318, 252);
-            this.IntWSbuttonRemove.Name = "IntWSbuttonRemove";
-            this.IntWSbuttonRemove.Size = new System.Drawing.Size(68, 23);
-            this.IntWSbuttonRemove.TabIndex = 68;
-            this.IntWSbuttonRemove.Text = "Remove";
-            this.IntWSbuttonRemove.UseVisualStyleBackColor = true;
-            // 
             // IntWSbuttonModify
             // 
-            this.IntWSbuttonModify.Location = new System.Drawing.Point(244, 252);
+            this.IntWSbuttonModify.Location = new System.Drawing.Point(284, 259);
             this.IntWSbuttonModify.Name = "IntWSbuttonModify";
             this.IntWSbuttonModify.Size = new System.Drawing.Size(68, 23);
             this.IntWSbuttonModify.TabIndex = 67;
@@ -295,7 +283,6 @@
             this.tabPgValWebService.Controls.Add(this.label32);
             this.tabPgValWebService.Controls.Add(this.ValWSlabelUser);
             this.tabPgValWebService.Controls.Add(this.ValWSbuttonAdd);
-            this.tabPgValWebService.Controls.Add(this.ValWSbuttonRemove);
             this.tabPgValWebService.Controls.Add(this.ValWSbuttonModify);
             this.tabPgValWebService.Location = new System.Drawing.Point(4, 22);
             this.tabPgValWebService.Name = "tabPgValWebService";
@@ -400,26 +387,17 @@
             // 
             // ValWSbuttonAdd
             // 
-            this.ValWSbuttonAdd.Location = new System.Drawing.Point(171, 252);
+            this.ValWSbuttonAdd.Location = new System.Drawing.Point(210, 259);
             this.ValWSbuttonAdd.Name = "ValWSbuttonAdd";
             this.ValWSbuttonAdd.Size = new System.Drawing.Size(68, 23);
             this.ValWSbuttonAdd.TabIndex = 84;
-            this.ValWSbuttonAdd.Text = "Add";
+            this.ValWSbuttonAdd.Text = "New";
             this.ValWSbuttonAdd.UseVisualStyleBackColor = true;
             this.ValWSbuttonAdd.Click += new System.EventHandler(this.ValWSbuttonAdd_Click);
             // 
-            // ValWSbuttonRemove
-            // 
-            this.ValWSbuttonRemove.Location = new System.Drawing.Point(318, 252);
-            this.ValWSbuttonRemove.Name = "ValWSbuttonRemove";
-            this.ValWSbuttonRemove.Size = new System.Drawing.Size(68, 23);
-            this.ValWSbuttonRemove.TabIndex = 83;
-            this.ValWSbuttonRemove.Text = "Remove";
-            this.ValWSbuttonRemove.UseVisualStyleBackColor = true;
-            // 
             // ValWSbuttonModify
             // 
-            this.ValWSbuttonModify.Location = new System.Drawing.Point(244, 252);
+            this.ValWSbuttonModify.Location = new System.Drawing.Point(284, 259);
             this.ValWSbuttonModify.Name = "ValWSbuttonModify";
             this.ValWSbuttonModify.Size = new System.Drawing.Size(68, 23);
             this.ValWSbuttonModify.TabIndex = 82;
@@ -596,12 +574,11 @@
             // 
             // tabPgDBConnection
             // 
-            this.tabPgDBConnection.Controls.Add(this.TestConnectionButton);
             this.tabPgDBConnection.Controls.Add(this.ConnectionNameLabel);
             this.tabPgDBConnection.Controls.Add(this.DBConnectionNameTextBox);
-            this.tabPgDBConnection.Controls.Add(this.NewButton);
-            this.tabPgDBConnection.Controls.Add(this.button2);
-            this.tabPgDBConnection.Controls.Add(this.button3);
+            this.tabPgDBConnection.Controls.Add(this.AddDBConnectionButton);
+            this.tabPgDBConnection.Controls.Add(this.RemoveDBConnButton);
+            this.tabPgDBConnection.Controls.Add(this.SaveDBConnButton);
             this.tabPgDBConnection.Controls.Add(this.OracleDBPanel);
             this.tabPgDBConnection.Controls.Add(this.label16);
             this.tabPgDBConnection.Controls.Add(this.DbTypeComboBox);
@@ -619,16 +596,6 @@
             this.tabPgDBConnection.Text = "DB Connection";
             this.tabPgDBConnection.UseVisualStyleBackColor = true;
             // 
-            // TestConnectionButton
-            // 
-            this.TestConnectionButton.Location = new System.Drawing.Point(200, 287);
-            this.TestConnectionButton.Name = "TestConnectionButton";
-            this.TestConnectionButton.Size = new System.Drawing.Size(99, 23);
-            this.TestConnectionButton.TabIndex = 90;
-            this.TestConnectionButton.Text = "Test connection";
-            this.TestConnectionButton.UseVisualStyleBackColor = true;
-            this.TestConnectionButton.Click += new System.EventHandler(this.TestConnectionButton_Click_1);
-            // 
             // ConnectionNameLabel
             // 
             this.ConnectionNameLabel.AutoSize = true;
@@ -644,39 +611,42 @@
             this.DBConnectionNameTextBox.Name = "DBConnectionNameTextBox";
             this.DBConnectionNameTextBox.Size = new System.Drawing.Size(194, 20);
             this.DBConnectionNameTextBox.TabIndex = 88;
+            this.DBConnectionNameTextBox.TextChanged += new System.EventHandler(this.DBConnectionNameTextBox_TextChanged);
             // 
-            // NewButton
+            // AddDBConnectionButton
             // 
-            this.NewButton.Location = new System.Drawing.Point(126, 287);
-            this.NewButton.Name = "NewButton";
-            this.NewButton.Size = new System.Drawing.Size(68, 23);
-            this.NewButton.TabIndex = 87;
-            this.NewButton.Text = "New";
-            this.NewButton.UseVisualStyleBackColor = true;
-            this.NewButton.Click += new System.EventHandler(this.NewButton_Click);
+            this.AddDBConnectionButton.Location = new System.Drawing.Point(110, 287);
+            this.AddDBConnectionButton.Name = "AddDBConnectionButton";
+            this.AddDBConnectionButton.Size = new System.Drawing.Size(68, 23);
+            this.AddDBConnectionButton.TabIndex = 87;
+            this.AddDBConnectionButton.Text = "Add";
+            this.AddDBConnectionButton.UseVisualStyleBackColor = true;
+            this.AddDBConnectionButton.Click += new System.EventHandler(this.NewButton_Click);
             // 
-            // button2
+            // RemoveDBConnButton
             // 
-            this.button2.Location = new System.Drawing.Point(379, 287);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 23);
-            this.button2.TabIndex = 86;
-            this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = true;
+            this.RemoveDBConnButton.Location = new System.Drawing.Point(336, 287);
+            this.RemoveDBConnButton.Name = "RemoveDBConnButton";
+            this.RemoveDBConnButton.Size = new System.Drawing.Size(149, 23);
+            this.RemoveDBConnButton.TabIndex = 86;
+            this.RemoveDBConnButton.Text = "Remove DB Connection";
+            this.RemoveDBConnButton.UseVisualStyleBackColor = true;
+            this.RemoveDBConnButton.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // button3
+            // SaveDBConnButton
             // 
-            this.button3.Location = new System.Drawing.Point(305, 287);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(68, 23);
-            this.button3.TabIndex = 85;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.SaveDBConnButton.Location = new System.Drawing.Point(184, 287);
+            this.SaveDBConnButton.Name = "SaveDBConnButton";
+            this.SaveDBConnButton.Size = new System.Drawing.Size(146, 23);
+            this.SaveDBConnButton.TabIndex = 85;
+            this.SaveDBConnButton.Text = "Save DB Connection";
+            this.SaveDBConnButton.UseVisualStyleBackColor = true;
+            this.SaveDBConnButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // OracleDBPanel
             // 
             this.OracleDBPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OracleDBPanel.Controls.Add(this.TestConnectionButton);
             this.OracleDBPanel.Controls.Add(this.OracleTNSTextBox);
             this.OracleDBPanel.Controls.Add(this.label7);
             this.OracleDBPanel.Location = new System.Drawing.Point(10, 190);
@@ -684,12 +654,23 @@
             this.OracleDBPanel.Size = new System.Drawing.Size(536, 74);
             this.OracleDBPanel.TabIndex = 11;
             // 
+            // TestConnectionButton
+            // 
+            this.TestConnectionButton.Location = new System.Drawing.Point(422, 10);
+            this.TestConnectionButton.Name = "TestConnectionButton";
+            this.TestConnectionButton.Size = new System.Drawing.Size(99, 23);
+            this.TestConnectionButton.TabIndex = 90;
+            this.TestConnectionButton.Text = "Test connection";
+            this.TestConnectionButton.UseVisualStyleBackColor = true;
+            this.TestConnectionButton.Click += new System.EventHandler(this.TestConnectionButton_Click_1);
+            // 
             // OracleTNSTextBox
             // 
             this.OracleTNSTextBox.Location = new System.Drawing.Point(76, 13);
             this.OracleTNSTextBox.Name = "OracleTNSTextBox";
             this.OracleTNSTextBox.Size = new System.Drawing.Size(194, 20);
             this.OracleTNSTextBox.TabIndex = 4;
+            this.OracleTNSTextBox.TextChanged += new System.EventHandler(this.OracleTNSTextBox_TextChanged);
             // 
             // label7
             // 
@@ -721,6 +702,7 @@
             this.DbTypeComboBox.Name = "DbTypeComboBox";
             this.DbTypeComboBox.Size = new System.Drawing.Size(194, 21);
             this.DbTypeComboBox.TabIndex = 9;
+            this.DbTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.DbTypeComboBox_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -747,6 +729,7 @@
             this.DBPasswordTextBox.PasswordChar = '*';
             this.DBPasswordTextBox.Size = new System.Drawing.Size(194, 20);
             this.DBPasswordTextBox.TabIndex = 3;
+            this.DBPasswordTextBox.TextChanged += new System.EventHandler(this.DBPasswordTextBox_TextChanged);
             // 
             // DBUserNameTextBox
             // 
@@ -754,6 +737,7 @@
             this.DBUserNameTextBox.Name = "DBUserNameTextBox";
             this.DBUserNameTextBox.Size = new System.Drawing.Size(194, 20);
             this.DBUserNameTextBox.TabIndex = 2;
+            this.DBUserNameTextBox.TextChanged += new System.EventHandler(this.DBUserNameTextBox_TextChanged);
             // 
             // label6
             // 
@@ -771,6 +755,7 @@
             this.DBConnectionsComboBox.Name = "DBConnectionsComboBox";
             this.DBConnectionsComboBox.Size = new System.Drawing.Size(457, 21);
             this.DBConnectionsComboBox.TabIndex = 0;
+            this.DBConnectionsComboBox.SelectedIndexChanged += new System.EventHandler(this.DBConnectionsComboBox_SelectedIndexChanged);
             // 
             // tabPgFolders
             // 
@@ -1026,7 +1011,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label IntWSlabelUser;
         private System.Windows.Forms.Button IntWSbuttonAdd;
-        private System.Windows.Forms.Button IntWSbuttonRemove;
         private System.Windows.Forms.Button IntWSbuttonModify;
         private System.Windows.Forms.TabPage tabPgValWebService;
         private System.Windows.Forms.Label ValWSlabelName;
@@ -1040,7 +1024,6 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label ValWSlabelUser;
         private System.Windows.Forms.Button ValWSbuttonAdd;
-        private System.Windows.Forms.Button ValWSbuttonRemove;
         private System.Windows.Forms.Button ValWSbuttonModify;
         private System.Windows.Forms.Label WebServiceReturnDetailImplementationLabel;
         private System.Windows.Forms.Label label2;
@@ -1065,9 +1048,9 @@
         private System.Windows.Forms.TextBox DBUserNameTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox DBConnectionsComboBox;
-        private System.Windows.Forms.Button NewButton;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button AddDBConnectionButton;
+        private System.Windows.Forms.Button RemoveDBConnButton;
+        private System.Windows.Forms.Button SaveDBConnButton;
         private System.Windows.Forms.Panel OracleDBPanel;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label ConnectionNameLabel;

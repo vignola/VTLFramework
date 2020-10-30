@@ -172,3 +172,4 @@ H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\Artefact
 H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csproj.CopyComplete
 H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.dll
 H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.pdb
+H:\ISTAT\VTLFramework_GIT\VTLEditor\ArtefactInfo\ArtefactInfo\obj\Debug\ArtefactInfo.csprojAssemblyReference.cache

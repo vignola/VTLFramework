@@ -115,396 +115,103 @@ G:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Oracle.ManagedDataAccess.dl
 G:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.pdb
 G:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll.config
 G:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ScintillaNET.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\Codelist.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\CodelistCodes.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\ConvertFromGeneric.xslt
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\Dataflow.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataQueryMessage.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructure.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructureComponent.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructureDetailed.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getCategorySchema.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getConstrainedDimensionMember.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getDataFlows.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getInfo.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStartEndTimePeriods.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStructure.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStructureWithReference.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\PredefinedWS.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\StructureHeader.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\xmlAutoComplete.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.config
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.manifest
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.application
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\ApplicationSettings.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\ArtefactInfo.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\FastColoredTextBox.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Oracle.ManagedDataAccess.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\ScintillaNET.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceLayer.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\ApplicationSettings.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\ArtefactInfo.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll.config
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll.config
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceLayer.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\FastColoredTextBox.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\log4net.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Newtonsoft.Json.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxApi.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxDataParser.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxEdiParser.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxObjects.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxParseBase.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxQueryBuilder.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxSourceUtil.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxStructureMutableParser.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxStructureParser.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxStructureRetrieval.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\TabularWriters.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\Xml.Schema.Linq.xml
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csprojAssemblyReference.cache
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.ResolveComReference.cache
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmMain.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmStart.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.fastCodeTextBox.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.FindForm.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDataExecution.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMedataImportFile.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmOpenTrasformation.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveOperator.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSQLViewer.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmStartMessageBoxError.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.ReplaceForm.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainSubsetPanel.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataSetPanel.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddText.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactDescription.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactManager.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddWebService.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineDatapointRule.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineHierarchicalRule.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineOperator.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.classes.gui.frmErrorDetails.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMetadataImport.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveTrasformation.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSelectValueDomain.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSettings.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.Switch.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataStructurePanel.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainPanel.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.Properties.Resources.resources
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.GenerateResource.cache
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe.manifest
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.application
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CopyComplete
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\VTLlib.dll
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\bin\Debug\VTLlib.pdb
-H:\SOURCE_CODE\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CoreCompileInputs.cache
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\Codelist.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\CodelistCodes.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\ConvertFromGeneric.xslt
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\Dataflow.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\DataQueryMessage.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\DataStructure.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\DataStructureComponent.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\DataStructureDetailed.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\getCategorySchema.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\getConstrainedDimensionMember.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\getDataFlows.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\getInfo.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\getStartEndTimePeriods.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\getStructure.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\getStructureWithReference.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\PredefinedWS.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\StructureHeader.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Resources\xmlAutoComplete.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.config
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.manifest
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.application
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.pdb
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\ApplicationSettings.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\ArtefactInfo.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\FastColoredTextBox.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Oracle.ManagedDataAccess.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\ScintillaNET.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\VTLlib.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\WebServiceLayer.dll
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\ApplicationSettings.pdb
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\ArtefactInfo.pdb
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.pdb
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll.config
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.pdb
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\VTLlib.pdb
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\WebServiceConnector.pdb
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll.config
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\WebServiceLayer.pdb
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\FastColoredTextBox.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\log4net.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Newtonsoft.Json.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxApi.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxDataParser.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxEdiParser.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxObjects.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxParseBase.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxQueryBuilder.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxSourceUtil.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxStructureMutableParser.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxStructureParser.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\SdmxStructureRetrieval.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\TabularWriters.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\bin\Debug\Xml.Schema.Linq.xml
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csprojAssemblyReference.cache
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.ResolveComReference.cache
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmMain.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmStart.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.fastCodeTextBox.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.FindForm.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDataExecution.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMedataImportFile.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmOpenTrasformation.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveOperator.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSQLViewer.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmStartMessageBoxError.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.ReplaceForm.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainSubsetPanel.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataSetPanel.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddText.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactDescription.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactManager.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddWebService.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineDatapointRule.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineHierarchicalRule.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineOperator.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.classes.gui.frmErrorDetails.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMetadataImport.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveTrasformation.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSelectValueDomain.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSettings.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.Switch.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataStructurePanel.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainPanel.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.Properties.Resources.resources
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.GenerateResource.cache
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CoreCompileInputs.cache
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe.manifest
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.application
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CopyComplete
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe
-H:\SOURCE_CODE\VTLEditor -GIT\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\Codelist.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\CodelistCodes.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\ConvertFromGeneric.xslt
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\Dataflow.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataQueryMessage.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructure.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructureComponent.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructureDetailed.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getCategorySchema.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getConstrainedDimensionMember.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getDataFlows.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getInfo.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStartEndTimePeriods.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStructure.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStructureWithReference.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\PredefinedWS.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\StructureHeader.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\xmlAutoComplete.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.config
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.manifest
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.application
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ApplicationSettings.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ArtefactInfo.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\FastColoredTextBox.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Oracle.ManagedDataAccess.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ScintillaNET.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTLlib.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceLayer.dll
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ApplicationSettings.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ArtefactInfo.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll.config
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTLlib.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll.config
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceLayer.pdb
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\FastColoredTextBox.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\log4net.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Newtonsoft.Json.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxApi.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxDataParser.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxEdiParser.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxObjects.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxParseBase.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxQueryBuilder.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxSourceUtil.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxStructureMutableParser.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxStructureParser.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SdmxStructureRetrieval.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\TabularWriters.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Xml.Schema.Linq.xml
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csprojAssemblyReference.cache
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.ResolveComReference.cache
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmMain.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmStart.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.fastCodeTextBox.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.FindForm.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDataExecution.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMedataImportFile.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmOpenTrasformation.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveOperator.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSQLViewer.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmStartMessageBoxError.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.ReplaceForm.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainSubsetPanel.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataSetPanel.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddText.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactDescription.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactManager.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddWebService.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineDatapointRule.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineHierarchicalRule.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineOperator.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.classes.gui.frmErrorDetails.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMetadataImport.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveTrasformation.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSelectValueDomain.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSettings.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.Switch.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataStructurePanel.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainPanel.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.Properties.Resources.resources
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.GenerateResource.cache
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CoreCompileInputs.cache
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe.manifest
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.application
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CopyComplete
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe
-H:\ISTAT\VTLFramwork-GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csprojAssemblyReference.cache
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.ResolveComReference.cache
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmMain.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmStart.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.fastCodeTextBox.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.FindForm.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDataExecution.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMedataImportFile.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmOpenTrasformation.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveOperator.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSQLViewer.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmStartMessageBoxError.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.ReplaceForm.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainSubsetPanel.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataSetPanel.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddText.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactDescription.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactManager.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddWebService.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineDatapointRule.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineHierarchicalRule.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineOperator.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.classes.gui.frmErrorDetails.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMetadataImport.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveTrasformation.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSelectValueDomain.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSettings.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.Switch.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataStructurePanel.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainPanel.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.Properties.Resources.resources
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.GenerateResource.cache
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CoreCompileInputs.cache
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\Codelist.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\CodelistCodes.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\ConvertFromGeneric.xslt
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\Dataflow.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataQueryMessage.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructure.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructureComponent.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\DataStructureDetailed.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getCategorySchema.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getConstrainedDimensionMember.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getDataFlows.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getInfo.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStartEndTimePeriods.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStructure.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\getStructureWithReference.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\PredefinedWS.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\StructureHeader.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Resources\xmlAutoComplete.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.config
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.manifest
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.application
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ApplicationSettings.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ArtefactInfo.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\FastColoredTextBox.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Newtonsoft.Json.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Oracle.ManagedDataAccess.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ScintillaNET.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTLlib.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceLayer.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Xml.Schema.Linq.dll
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ApplicationSettings.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ArtefactInfo.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll.config
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\VTLlib.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll.config
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\WebServiceLayer.pdb
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\FastColoredTextBox.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Newtonsoft.Json.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\bin\Debug\Xml.Schema.Linq.xml
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe.manifest
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.application
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CopyComplete
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe
-H:\ISTAT\VTLFramework_GIT\VTLEditor\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\Codelist.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\CodelistCodes.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\ConvertFromGeneric.xslt
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\Dataflow.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\DataQueryMessage.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\DataStructure.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\DataStructureComponent.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\DataStructureDetailed.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\getCategorySchema.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\getConstrainedDimensionMember.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\getDataFlows.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\getInfo.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\getStartEndTimePeriods.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\getStructure.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\getStructureWithReference.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\PredefinedWS.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\StructureHeader.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Resources\xmlAutoComplete.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.config
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe.manifest
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.application
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.exe
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\VTL_Editor_PL.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ApplicationSettings.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ArtefactInfo.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\FastColoredTextBox.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ScintillaNET.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\VTLlib.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\WebServiceLayer.dll
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ApplicationSettings.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ArtefactInfo.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\ISTAT_DB_DAL.dll.config
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SDMXMetadataLoader.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\VTLlib.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\WebServiceConnector.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\WebServiceConnector.dll.config
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\WebServiceLayer.pdb
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Antlr4.Runtime.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\FastColoredTextBox.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\log4net.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Newtonsoft.Json.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxApi.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxDataParser.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxEdiParser.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxObjects.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxParseBase.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxQueryBuilder.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxSourceUtil.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxStructureMutableParser.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxStructureParser.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\SdmxStructureRetrieval.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\TabularWriters.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\bin\Debug\Xml.Schema.Linq.xml
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csprojAssemblyReference.cache
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.ResolveComReference.cache
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmMain.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.frmStart.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.fastCodeTextBox.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.FindForm.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDataExecution.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMedataImportFile.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmOpenTrasformation.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveOperator.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSQLViewer.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmStartMessageBoxError.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.ReplaceForm.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainSubsetPanel.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataSetPanel.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddText.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactDescription.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmArtefactManager.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmAddWebService.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineDatapointRule.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineHierarchicalRule.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmDefineOperator.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.classes.gui.frmErrorDetails.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmMetadataImport.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSaveTrasformation.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSelectValueDomain.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.frmSettings.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.Switch.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedDataStructurePanel.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.gui.UserDefinedValueDomainPanel.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.Properties.Resources.resources
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.GenerateResource.cache
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CoreCompileInputs.cache
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.exe.manifest
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.application
+H:\SOURCE_CODE\VTL_GenLatVer\VTL_Editor_PL\obj\Debug\VTL_Editor_PL.csproj.CopyComplete

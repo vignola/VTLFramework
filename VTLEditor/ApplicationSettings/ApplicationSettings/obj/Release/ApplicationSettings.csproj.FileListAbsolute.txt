@@ -3,3 +3,8 @@ G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Release
 G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Release\ApplicationSettings.dll
 G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Release\ApplicationSettings.pdb
 G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Release\ApplicationSettings.csprojAssemblyReference.cache
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Release\ISTAT_DB_DAL.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Release\Oracle.ManagedDataAccess.dll
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Release\ISTAT_DB_DAL.pdb
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\bin\Release\ISTAT_DB_DAL.dll.config
+G:\SOURCE_CODE\VTL_GenLatVer\ApplicationSettings\ApplicationSettings\obj\Release\ApplicationSettings.csproj.CopyComplete

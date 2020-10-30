@@ -19,7 +19,7 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\WindowsFormsApplication1\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <TargetFrameworkProfile />
-    <PublishUrl>G:\VTLEditorDeploy\VTLEditor\app\VTLEditor\</PublishUrl>
+    <PublishUrl>H:\SOURCE_CODE\VTLEditorDeploy\app\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>

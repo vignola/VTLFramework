@@ -48,11 +48,11 @@ namespace VTL_Editor_PL
             {
                 CommonItem.CurrentSettings = new MainApplicationSettings();
                 CommonItem.ErrManger = new classes.tool.ErrorAndLogManager();
-                CommonConst.Loading_Status settingResult = CommonItem.CurrentSettings.LoadSettings(true);
+                List<CommonConst.Loading_Status> settingResult = CommonItem.CurrentSettings.LoadSettings(true);
 
-                if (settingResult == CommonConst.Loading_Status.NOT_FOUND)
+                if (settingResult[0] == CommonConst.Loading_Status.NOT_FOUND)
                 {
-                    _errorMessage.Add(" - Settings not found, please create them through the Settings module and restart the application! \n \n" + settingResult.ToString());
+                    _errorMessage.Add(" - Settings not found, please create them through the Settings module and restart the application! \n \n" + settingResult[0].ToString());
                     _error = true;
                     return;
                 }
@@ -61,9 +61,14 @@ namespace VTL_Editor_PL
                 //-----------------------------------------------------------------------------
                 System.Threading.Thread.Sleep(_millisecondDelay);
                 backgroundLoader.ReportProgress(1);
-                if (settingResult != CommonConst.Loading_Status.LOADED)
+                if (settingResult[0] != CommonConst.Loading_Status.LOADED)
                 {
-                    _errorMessage.Add(" - Error loading settings, please fix them through the Settings module and restart the application! \n \n" + settingResult.ToString());
+                    string resultList="";
+                    foreach (CommonConst.Loading_Status sr in settingResult)
+                    {
+                        resultList += sr + "  ";
+                    }
+                    _errorMessage.Add("Some settings are missed or not correct. They can cause malfunctions. \r\n Please fix them through the Settings module and restart the application! [" + resultList + "]");
                     _error = true;
                 }
 
@@ -71,25 +76,31 @@ namespace VTL_Editor_PL
                 //-----------------------------------------------------------------------------
                 System.Threading.Thread.Sleep(_millisecondDelay);
                 backgroundLoader.ReportProgress(2);
+                if (CommonItem.CurrentSettings.InteractionWebService != null)
+                {                    
+                    if (settingResult.Where(err => err == CommonConst.Loading_Status.INTERACTION_WS_LOADED).Count() >0)
+                    { 
+                        if (!RemoteFileExists.Check(CommonItem.CurrentSettings.InteractionWebService.WebService_clear_URL, true))
+                        {
+                            _errorMessage.Add(" - Connection to Interaction web service failed.");
+                            _error = true;
+                        }
+                        else 
+                        {                 
+                            //Interaction DB test
+                            //-----------------------------------------------------------------------------
+                            VTLInt_Service.ServiceClient VTL_service = VTLInt_ServiceManager.GetClient(CommonItem.CurrentSettings.InteractionWebService);
 
-                if (!RemoteFileExists.Check(CommonItem.CurrentSettings.InteractionWebService.WebService_clear_URL, true))
-                {
-                    _errorMessage.Add(" - Connection to Interaction web service failed.");
-                    _error = true;
+                            System.Threading.Thread.Sleep(_millisecondDelay);
+                            backgroundLoader.ReportProgress(3);
+                            if (!VTL_service.TestDatabaseConnection())
+                            {
+                                _errorMessage.Add(" - VTL Database connection from Interaction web service failed.");
+                                _error = true;
+                            }
+                        }
+                    }
                 }
-
-                //Interaction DB test
-                //-----------------------------------------------------------------------------
-                VTLInt_Service.ServiceClient VTL_service = VTLInt_ServiceManager.GetClient(CommonItem.CurrentSettings.InteractionWebService);
-
-                System.Threading.Thread.Sleep(_millisecondDelay);
-                backgroundLoader.ReportProgress(3);
-                if (!VTL_service.TestDatabaseConnection())
-                {
-                    _errorMessage.Add(" - VTL Database connection from Interaction web service failed.");
-                    _error = true;
-                }
-
                 //Validation Url test
                 //-----------------------------------------------------------------------------
                 System.Threading.Thread.Sleep(_millisecondDelay);

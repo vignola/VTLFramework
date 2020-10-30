@@ -13,10 +13,38 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTAT_DB_DAL", "ISTAT_DB_DAL\ISTAT_DB_DAL.csproj", "{AC3E3550-170B-4A5E-AABB-CCECC88A1986}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTL_Editor_PL", "VTL_Editor_PL\VTL_Editor_PL.csproj", "{E6901997-E4E6-4973-B049-2B56BBB1F267}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A85DF203-6213-41AC-992B-709F5BCCE862} = {A85DF203-6213-41AC-992B-709F5BCCE862}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTLlib", "VTLlib\VTLlib.csproj", "{C9C27FEB-AF21-460B-869E-8EADBC9A8394}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceConnector", "WebServiceConnector\WebServiceConnector.csproj", "{8443CB05-75A9-46F4-8C5D-204D2BBF4011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IstatVTLWebService", "IstatVTLWebService\IstatVTLWebService.csproj", "{96D89B66-E4C3-4187-AA41-6389522E31C2}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "VTLInt_WS", "http://localhost:2997", "{A85DF203-6213-41AC-992B-709F5BCCE862}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		ProjectReferences = "{8443cb05-75a9-46f4-8c5d-204d2bbf4011}|WebServiceConnector.dll;{ee436275-129c-47b7-9537-257f68d65886}|WebServiceLayer.dll;{ac3e3550-170b-4a5e-aabb-ccecc88a1986}|ISTAT_DB_DAL.dll;{9339d90a-abd1-48d8-84fe-92206a6d5797}|ApplicationSettings.dll;{a714d101-cbe3-4e2d-a0cf-507b80febc16}|ArtefactInfo.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2997"
+		Debug.AspNetCompiler.PhysicalPath = "VTLInt_WS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2997\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2997"
+		Release.AspNetCompiler.PhysicalPath = "VTLInt_WS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2997\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "VTLInt_WS\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceLayer", "WebServiceLayer\WebServiceLayer\WebServiceLayer.csproj", "{EE436275-129C-47B7-9537-257F68D65886}"
 EndProject
@@ -123,6 +151,44 @@ Global
 		{8443CB05-75A9-46F4-8C5D-204D2BBF4011}.SingleImage|Any CPU.Build.0 = Release|Any CPU
 		{8443CB05-75A9-46F4-8C5D-204D2BBF4011}.SingleImage|x64.ActiveCfg = Release|x64
 		{8443CB05-75A9-46F4-8C5D-204D2BBF4011}.SingleImage|x64.Build.0 = Release|x64
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.CD_ROM|x64.ActiveCfg = Release|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.DVD-5|x64.ActiveCfg = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Release|x64.ActiveCfg = Release|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Signed|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Signed|Any CPU.Build.0 = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Signed|x64.ActiveCfg = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.Signed|x64.Build.0 = Debug|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{96D89B66-E4C3-4187-AA41-6389522E31C2}.SingleImage|x64.ActiveCfg = Release|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.CD_ROM|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.CD_ROM|Any CPU.Build.0 = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.CD_ROM|x64.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.DVD-5|x64.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Release|x64.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Signed|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Signed|Any CPU.Build.0 = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Signed|x64.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.Signed|x64.Build.0 = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.SingleImage|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.SingleImage|Any CPU.Build.0 = Debug|Any CPU
+		{A85DF203-6213-41AC-992B-709F5BCCE862}.SingleImage|x64.ActiveCfg = Debug|Any CPU
 		{EE436275-129C-47B7-9537-257F68D65886}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
 		{EE436275-129C-47B7-9537-257F68D65886}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
 		{EE436275-129C-47B7-9537-257F68D65886}.CD_ROM|x64.ActiveCfg = Release|Any CPU

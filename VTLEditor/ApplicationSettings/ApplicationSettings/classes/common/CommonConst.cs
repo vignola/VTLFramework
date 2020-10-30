@@ -41,11 +41,17 @@ namespace ApplicationSettings.classes.common
             GENERIC_ERROR = 1,
             CONNECTION_ERROR = 2,
             URL_ERROR = 3,
-            WEBSERVICE_NOT_PRESENTS = 4,
+            SDMX_WEBSERVICE_NOT_PRESENT = 4,
             OBSOLETE_VERSION = 5,
             DB_CONNECTION_ERROR=6,
             NOT_FOUND=7,
-            DB_CONNECTIONS_NOT_PRESENTS=8
+            DB_CONNECTIONS_NOT_PRESENT=8,
+            INTERACTION_WS_NOT_PRESENT=9,
+            VALIDATION_WS_NOT_PRESENT=10,
+            SDMX_WEBSERVICE_LOADED = 11,
+            DB_CONNECTIONS_LOADED = 12,
+            INTERACTION_WS_LOADED = 13,
+            VALIDATION_WS_LOADED = 14
         };
 
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using System.Xml;
 using ApplicationSettings.classes.common;
@@ -48,14 +49,18 @@ namespace VTL_Editor_PL.classes.config
             }
         }
 
-        public CommonConst.Loading_Status LoadSettings(bool initialize)
+        public List<CommonConst.Loading_Status> LoadSettings(bool initialize)
         {        
             try
-            {                
-                CommonConst.Loading_Status result;
+            {
+                List<CommonConst.Loading_Status> result = new List<CommonConst.Loading_Status>();
                 
-                if (VTL_Editor_PL.Properties.Settings.Default.SettingVersion=="")
-                    return CommonConst.Loading_Status.NOT_FOUND;
+
+                if (VTL_Editor_PL.Properties.Settings.Default.SettingVersion == "")
+                {
+                    result.Add(CommonConst.Loading_Status.NOT_FOUND);
+                    return result;
+                }
     
                 base.SettingsVersion = VTL_Editor_PL.Properties.Settings.Default.SettingVersion;
 
@@ -82,27 +87,54 @@ namespace VTL_Editor_PL.classes.config
                 //    base.SettingsStatus = result;
                 //    return result;
                 //}
-
-                result = CommonConst.Loading_Status.LOADED;
                 
                 System.Xml.XmlDocument tmpDoc = VTL_Editor_PL.Properties.Settings.Default.WebServices;
-                
-                if (tmpDoc == null) return CommonConst.Loading_Status.WEBSERVICE_NOT_PRESENTS;
 
-                result = getWebServices(tmpDoc);
+                if (tmpDoc == null)
+                {
+                    result.Add(CommonConst.Loading_Status.SDMX_WEBSERVICE_NOT_PRESENT);
+                }
+                else
+                {
+                    result.Add(getWebServices(tmpDoc));
+                }
 
 
                 tmpDoc = VTL_Editor_PL.Properties.Settings.Default.InteractionWebService;
-                result = getInteractionWebService(tmpDoc);
+                if (tmpDoc == null)
+                {
+                    result.Add(CommonConst.Loading_Status.INTERACTION_WS_NOT_PRESENT);
+                }
+                else
+                {
+                    result.Add(getInteractionWebService(tmpDoc));
+                }
 
                 tmpDoc = VTL_Editor_PL.Properties.Settings.Default.ValidationWebService;
-                result = getValidationWebService(tmpDoc);
+                if (tmpDoc == null)
+                {
+                    result.Add(CommonConst.Loading_Status.VALIDATION_WS_NOT_PRESENT);
+                }
+                else
+                {
+                    result.Add(getValidationWebService(tmpDoc));
+                }
 
                 tmpDoc = VTL_Editor_PL.Properties.Settings.Default.DBConnections;
-                result = getDBConnections(tmpDoc);
+                if (tmpDoc == null)
+                {
+                    result.Add(CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENT);
+                }
+                else
+                {
+                    result.Add(getDBConnections(tmpDoc));
+                }
 
-                base.SettingsStatus = result;
-                return result;
+                if (result.Count==0)
+                    result.Add(CommonConst.Loading_Status.LOADED);
+                base.SettingsStatus = result[0];
+
+                        return result;
             }
             catch (Exception ex)
             {                
@@ -114,25 +146,35 @@ namespace VTL_Editor_PL.classes.config
         {
             try
             {
-                //Webservices list
                 XmlDocument xmlDoc;
-                xmlDoc = base.setXmlDocWebServices(this.WebServices);
-                VTL_Editor_PL.Properties.Settings.Default.WebServices = xmlDoc;
-                //------------------------------------------------------------------------------------------------------------------
 
                 //Interaction WebService
                 xmlDoc = base.setXmlDocInteractionWebServices(this.InteractionWebService);
                 VTL_Editor_PL.Properties.Settings.Default.InteractionWebService = xmlDoc;
                 //------------------------------------------------------------------------------------------------------------------
 
-                //Interaction WebService
+                //Validation WebService
                 xmlDoc = base.setXmlDocValidationWebServices(this.ValidationWebService);
                 VTL_Editor_PL.Properties.Settings.Default.ValidationWebService = xmlDoc;
                 //------------------------------------------------------------------------------------------------------------------
 
+                //SDMX Webservices list     
+                if (this.WebServices.Count > 0)
+                {
+                    xmlDoc = base.setXmlDocWebServices(this.WebServices);
+                    VTL_Editor_PL.Properties.Settings.Default.WebServices = xmlDoc;
+                }
+                //------------------------------------------------------------------------------------------------------------------
+
                 //DBConnections
-                xmlDoc = base.setDBConnections(this.DBConnections);
-                VTL_Editor_PL.Properties.Settings.Default.DBConnections = xmlDoc;
+                if (this.DBConnections != null) 
+                { 
+                    if (this.DBConnections.Count > 0) 
+                    { 
+                        xmlDoc = base.setDBConnections(this.DBConnections);
+                        VTL_Editor_PL.Properties.Settings.Default.DBConnections = xmlDoc;
+                    }
+                }
                 //------------------------------------------------------------------------------------------------------------------
 
                 //Further information

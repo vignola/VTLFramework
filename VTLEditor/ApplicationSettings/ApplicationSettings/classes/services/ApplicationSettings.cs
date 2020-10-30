@@ -191,13 +191,13 @@ namespace ApplicationSettings.classes.services
                     element1.AppendChild(element7);
 
                     XmlElement element8 = xmlDoc.CreateElement(string.Empty, "TSNName", string.Empty);
-                    XmlText text8 = xmlDoc.CreateTextNode(DBInfoItem.Pwd);
+                    XmlText text8 = xmlDoc.CreateTextNode(DBInfoItem.TSNName);
                     element8.AppendChild(text8);
                     element1.AppendChild(element8);
 
                     XmlElement element9 = xmlDoc.CreateElement(string.Empty, "WindowsAuthentication", string.Empty);
                     XmlText text9 = xmlDoc.CreateTextNode(DBInfoItem.WindowsAuthentication ? "true" : "false");
-                    element8.AppendChild(text9);
+                    element9.AppendChild(text9);
                     element1.AppendChild(element9);
 
                     return xmlDoc;
@@ -287,9 +287,9 @@ namespace ApplicationSettings.classes.services
 
                     XmlNodeList listNode = tmpDoc.SelectNodes("//WebService");
 
-                    if (listNode == null) return CommonConst.Loading_Status.WEBSERVICE_NOT_PRESENTS;
+                    if (listNode == null) return CommonConst.Loading_Status.SDMX_WEBSERVICE_NOT_PRESENT;
 
-                    if (listNode.Count == 0) return CommonConst.Loading_Status.WEBSERVICE_NOT_PRESENTS;
+                    if (listNode.Count == 0) return CommonConst.Loading_Status.SDMX_WEBSERVICE_NOT_PRESENT;
 
                     _WebServices = new List<WebServiceInfo>();
 
@@ -315,7 +315,7 @@ namespace ApplicationSettings.classes.services
                         _WebServices.Add(tmpWs);
                     }
 
-                    return CommonConst.Loading_Status.LOADED;
+                    return CommonConst.Loading_Status.SDMX_WEBSERVICE_LOADED;
                 }
                 catch (Exception ex)
                 {
@@ -325,12 +325,28 @@ namespace ApplicationSettings.classes.services
 
             public CommonConst.Loading_Status getInteractionWebService(XmlDocument WebServiceURLs) 
             {
-                return getWebService(WebServiceURLs, ref _interactionWebService);
+                CommonConst.Loading_Status result = getWebService(WebServiceURLs, ref _interactionWebService);
+                if (result== CommonConst.Loading_Status.LOADED)
+                { 
+                    return CommonConst.Loading_Status.INTERACTION_WS_LOADED; 
+                }
+                else
+                {
+                return result;
+                }                    
             }
 
             public CommonConst.Loading_Status getValidationWebService(XmlDocument WebServiceURLs)
             {
-                return getWebService(WebServiceURLs, ref _validationWebService);
+                CommonConst.Loading_Status result = getWebService(WebServiceURLs, ref _validationWebService);
+                if (result == CommonConst.Loading_Status.LOADED) 
+                {
+                    return CommonConst.Loading_Status.VALIDATION_WS_LOADED; 
+                }
+                else
+                { 
+                    return result;
+                }
             }
 
             private CommonConst.Loading_Status getWebService(XmlDocument WebServiceURLs, ref WebServiceInfo wsInfo)
@@ -339,11 +355,11 @@ namespace ApplicationSettings.classes.services
                 {                    
                     System.Xml.XmlDocument tmpDoc = WebServiceURLs;
 
-                    if (tmpDoc == null) return CommonConst.Loading_Status.WEBSERVICE_NOT_PRESENTS;
+                    if (tmpDoc == null) return CommonConst.Loading_Status.SDMX_WEBSERVICE_NOT_PRESENT;
 
                     XmlNode nd = tmpDoc.SelectSingleNode("//WebService");
 
-                    if (nd == null) return CommonConst.Loading_Status.WEBSERVICE_NOT_PRESENTS;
+                    if (nd == null) return CommonConst.Loading_Status.SDMX_WEBSERVICE_NOT_PRESENT;
 
                     wsInfo = new WebServiceInfo();
 
@@ -504,15 +520,15 @@ namespace ApplicationSettings.classes.services
 
                 System.Xml.XmlDocument tmpDoc = DBConnectionsXML;
 
-                if (tmpDoc == null) return CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENTS;
+                if (tmpDoc == null) return CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENT;
 
                 XmlNode nd = tmpDoc.SelectSingleNode("//DBConnections");
 
-                if (nd == null) return CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENTS;
+                if (nd == null) return CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENT;
 
                 XmlNodeList dbConnection = nd.SelectNodes("DBConnection");
-                if (dbConnection == null) return CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENTS;
-                if (dbConnection.Count == 0) return CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENTS;
+                if (dbConnection == null) return CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENT;
+                if (dbConnection.Count == 0) return CommonConst.Loading_Status.DB_CONNECTIONS_NOT_PRESENT;
 
                 foreach(XmlNode conn in dbConnection) 
                 {
