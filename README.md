@@ -28,7 +28,7 @@ VTL Framework is composed of four parts:
 
 ## Usage and documentation
 
-Usage info, documentation are available in doc folder
-[project site](https://github.com/VTLFrameworkDevelopment/VTLFramework/tree/master/docs).
+Usage info, documentation are available in 
+[docs folder](https://github.com/VTLFrameworkDevelopment/VTLFramework/tree/master/docs).
 
 ![](RackMultipart20200729-4-151tw08_html_dfedecc1f599f215.png)
