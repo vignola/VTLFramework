@@ -13,7 +13,7 @@
 
  ![](RackMultipart20200729-4-151tw08_html_d01ed521f0712cce.gif)
 
-In order to support the use of VTL, Italian Institute of Statistics, thanks to Eurostat&#39;s Grant project on Validation Grant, decided to develop the VTL Framework aimed to help the statisticians to create VTL rules and to convert them into an executable language.
+In order to support the use of VTL, Italian Institute of Statistics, thanks to EU funding of the project of Eurostat&#39;s Grants project on Validation (Agreement Number 886975-2019-IT-Validation), decided to develop the VTL Framework aimed to help the statisticians to create VTL rules and to convert them into an executable language.
 
 VTL Framework is composed of four parts:
 
